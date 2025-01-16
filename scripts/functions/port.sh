@@ -73,8 +73,8 @@ function upload_to_port() {
     response_body=$(echo "${response}" | sed "$d")
 
     if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-      print_error "Failed to upload an entity. HTTP Status: ${http_status}"
-      print_error "Response body: ${response_body}"
+      echo -e "\033[1;31m[ERROR]\033[0m Failed to upload an entity. HTTP Status: ${http_status}"
+      echo -e "\033[1;31m[ERROR]\033[0m Response body: ${response_body}"
       ((error_count++))
     fi
   '
