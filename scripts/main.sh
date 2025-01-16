@@ -90,9 +90,9 @@ function execute() {
     local dependabot_alerts_file="dependabot_alerts.json"
     local sbom_file="sbom.json"
 
-    echo ">>>> PWD : ${pwd}"
-    pwd
-
+    echo ">>>> PWD : $(pwd)"
+    echo ">>>> ENV : $(env)"
+    
     # Fetch Code Scanning Alerts from GitHub API
     fetch_code_scanning_alerts \
         "${INPUT_GITHUB_TOKEN}" \
