@@ -17,7 +17,7 @@ function fetch_code_scanning_alerts() {
 
   while true; do
     local response
-    response=$(curl -s -w "%{http_code}" -X GET \
+    response=$(curl -s -w "\n%{http_code}" -X GET \
       -H "Authorization: Bearer ${token}" \
       -H "Accept: application/vnd.github.v3+json" \
       "https://api.github.com/repos/${repository}/code-scanning/alerts?ref=refs/tags/${version}&per_page=${per_page}&page=${page}")
@@ -63,7 +63,7 @@ function fetch_dependabot_alerts() {
 
   while true; do
     local response
-    response=$(curl -s -w "%{http_code}" -X GET \
+    response=$(curl -s -w "\n%{http_code}" -X GET \
       -H "Authorization: Bearer ${token}" \
       -H "Accept: application/vnd.github.v3+json" \
       "https://api.github.com/repos/${repository}/dependabot/alerts?ref=refs/tags/${version}&per_page=${per_page}&page=${page}")
@@ -103,7 +103,7 @@ function fetch_dependencies() {
   print_info "Fetching Dependencies (SBOM) for repository ${repository}..."
 
   local response
-  response=$(curl -s -w "%{http_code}" -X GET \
+  response=$(curl -s -w "\n%{http_code}" -X GET \
     -H "Authorization: Bearer ${token}" \
     -H "Accept: application/vnd.github.v3+json" \
     "https://api.github.com/repos/${repository}/dependency-graph/sbom")
