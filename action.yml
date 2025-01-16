@@ -35,10 +35,9 @@ runs:
       run: |
         echo "SCRIPTS_ARGS=\
         --version '${{ inputs.version }}' \
-        --port-token '${{ inputs.portToken }}' \
         --github-token '${{ inputs.githubToken }}' \
         --port-client-id '${{ inputs.portClientId }}' \
-        --port-client-secret '${{ inputs.portClientSecret }}'  >> $GITHUB_ENV
+        --port-client-secret '${{ inputs.portClientSecret }}'" >> $GITHUB_ENV
       shell: bash
 
     - name: Check Prerequisite Binaries
