@@ -62,7 +62,7 @@ function upload_to_port() {
         local http_status
         local response_body
 
-        response=$(curl -s -w "%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+        response=$(curl -s -w "\n%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
             --header "Authorization: Bearer ${access_token}" \
             --header "Content-Type: application/json" \
             --data-raw "${entity}")
@@ -107,7 +107,7 @@ function upload_container_image() {
     local http_status
     local response_body
 
-    response=$(curl -s -w "%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/container_image/entities?upsert=true" \
+    response=$(curl -s -w "\n%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/container_image/entities?upsert=true" \
         --header "Authorization: Bearer ${access_token}" \
         --header "Content-Type: application/json" \
         --data-raw "$(cat "${container_image_file}")")
@@ -135,7 +135,7 @@ function update_port_app_with_container_image() {
     local http_status
     local response_body
 
-    response=$(curl -s -w "%{http_code}" --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
+    response=$(curl -s -w "\n%{http_code}" --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
         --header "Authorization: Bearer ${access_token}" \
         --header "Content-Type: application/json")
 
@@ -153,7 +153,7 @@ function update_port_app_with_container_image() {
     local updated_images
     updated_images=$(echo "${existing_images}" | jq -c --arg new_image "${container_image_identifier}" '. + [$new_image]')
 
-    response=$(curl -s -w "%{http_code}" --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
+    response=$(curl -s -w "\n%{http_code}" --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
         --header "Authorization: Bearer ${access_token}" \
         --header "Content-Type: application/json" \
         --data-raw "{
