@@ -42,7 +42,10 @@ function fetch_code_scanning_alerts() {
     done
 
     echo "${total_code_alerts[@]}" | jq -s '.' > "${output_file}"
-    print_success "Written ${#total_code_alerts[@]} Code Scanning Alerts to file ${output_file}."
+
+    local alert_count
+    alert_count=$(jq 'length' "${output_file}")
+    print_success "Written ${alert_count} Code Scanning Alerts to file ${output_file}."
 }
 
 # Fetch Dependabot Alerts
@@ -85,7 +88,10 @@ function fetch_dependabot_alerts() {
     done
 
     echo "${total_dependabot_alerts[@]}" | jq -s '.' > "${output_file}"
-    print_success "Written ${#total_dependabot_alerts[@]} Dependabot Alerts to file ${output_file}."
+
+    local alert_count
+    alert_count=$(jq 'length' "${output_file}")
+    print_success "Written ${alert_count} Dependabot Alerts to file ${output_file}."
 }
 
 # Fetch Dependencies
@@ -114,5 +120,8 @@ function fetch_dependencies() {
     fi
 
     echo "${response_body}" > "${output_file}"
-    print_success "Dependencies (SBOM) written to file ${output_file}."
+
+    local alert_count
+    dependency_count=$(jq '.sbom.packages | length' "${output_file}")
+    print_success "Written ${dependency_count} dependencies (SBOM) to file ${output_file}."
 }
