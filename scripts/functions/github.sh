@@ -42,6 +42,9 @@ function fetch_code_scanning_alerts() {
     done
 
     echo "${total_code_alerts[@]}" | jq -s '.' > "${output_file}"
+    echo "----------------------------------"
+    cat "${output_file}"
+    echo "----------------------------------"
     print_success "Written ${#total_code_alerts[@]} Code Scanning Alerts to file ${output_file}."
 }
 
@@ -85,6 +88,9 @@ function fetch_dependabot_alerts() {
     done
 
     echo "${total_dependabot_alerts[@]}" | jq -s '.' > "${output_file}"
+    echo "----------------------------------"
+    cat "${output_file}"
+    echo "----------------------------------"
     print_success "Written ${#total_dependabot_alerts[@]} Dependabot Alerts to file ${output_file}."
 }
 
@@ -114,5 +120,8 @@ function fetch_dependencies() {
     fi
 
     echo "${response_body}" > "${output_file}"
+    echo "----------------------------------"
+    cat "${output_file}"
+    echo "----------------------------------"
     print_success "Dependencies (SBOM) written to file ${output_file}."
 }
