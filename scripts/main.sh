@@ -20,6 +20,7 @@ function usage() {
     usage_message+="  --github-token <string>\n"
     usage_message+="  --port-client-id <string>\n"
     usage_message+="  --port-client-secret <string>\n"
+    usage_message+="  --application <string>\n"
     print_info "$usage_message"
     exit 1
 }
@@ -52,6 +53,10 @@ function parse_arguments() {
                 INPUT_PORT_CLIENT_SECRET="${2}"
                 shift 2
                 ;;
+            --application)
+                INPUT_APPLICATION="${2}"
+                shift 2
+                ;;
             *)
                 print_error "Unknown argument: ${1}"
                 usage
@@ -72,6 +77,7 @@ function validate_inputs() {
     validate_set "INPUT_GITHUB_TOKEN" "${INPUT_GITHUB_TOKEN:-}"
     validate_set "INPUT_PORT_CLIENT_ID" "${INPUT_PORT_CLIENT_ID:-}"
     validate_set "INPUT_PORT_CLIENT_SECRET" "${INPUT_PORT_CLIENT_SECRET:-}"
+    validate_set "INPUT_APPLICATION" "${INPUT_APPLICATION:-}"
     print_success "Inputs validated successfully."
 }
 
@@ -224,8 +230,8 @@ function execute() {
     DEPENDENCIES=$(jq -r '[.[] | .identifier]' < dependency_entities.json)
     CODE_SCANNING_ALERTS=$(jq -r '[.[] | .identifier]' < code_scanning_alert_entities.json)
     DEPENDABOT_ALERTS=$(jq -r '[.[] | .identifier]' < dependabot_alert_entities.json)
-    jq -n --arg identifier "${APP}:${INPUT_VERSION}" \
-        --arg title "${APP}:${INPUT_VERSION}" \
+    jq -n --arg identifier "${INPUT_APPLICATION}:${INPUT_VERSION}" \
+        --arg title "${INPUT_APPLICATION}:${INPUT_VERSION}" \
         --arg blueprint "container_image" \
         --arg version "${INPUT_VERSION}" \
         --argjson dependencies "${DEPENDENCIES}" \
@@ -251,10 +257,10 @@ function execute() {
         --data-raw "$(cat container_image.json)"
 
     echo "[INFO] Updating Port App with Container Image..."
-    EXISTING_CONTAINER_IMAGES=$(curl -s --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${APP}" \
+    EXISTING_CONTAINER_IMAGES=$(curl -s --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${INPUT_APPLICATION}" \
         --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" | jq -r '.entity.relations.container_images')
-    UPDATED_CONTAINER_IMAGES=$(echo "${EXISTING_CONTAINER_IMAGES}" | jq -c --arg new_image "${APP}:${INPUT_VERSION}" '. + [$new_image]')
-    curl -s --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${APP}" \
+    UPDATED_CONTAINER_IMAGES=$(echo "${EXISTING_CONTAINER_IMAGES}" | jq -c --arg new_image "${INPUT_APPLICATION}:${INPUT_VERSION}" '. + [$new_image]')
+    curl -s --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${INPUT_APPLICATION}" \
         --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
         --header "Content-Type: application/json" \
         --data-raw "{
