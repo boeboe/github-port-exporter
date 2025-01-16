@@ -1,0 +1,3896 @@
+{
+  "sbom": {
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "com.github.liantisit-platform-apps-staging/orderdemo-backend-app",
+    "documentNamespace": "https://spdx.org/spdxdocs/protobom/34b7bf4b-d7b1-4b2c-9b68-912d009bebe6",
+    "comment": "Exact versions could not be resolved for some packages. For more information: https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#dependencies-included.",
+    "creationInfo": {
+      "creators": [
+        "Tool: protobom-devel",
+        "Tool: GitHub.com-Dependency-Graph",
+        "Tool: maven-dependency-submission-action"
+      ],
+      "created": "2025-01-16T16:38:55Z"
+    },
+    "packages": [
+      {
+        "name": "org.springframework.boot:spring-boot-devtools",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-7b26ed",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-devtools"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-maven-plugin",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-maven-plugin-d87ce5",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-maven-plugin"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-test",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-test-41e328",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-test"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-web",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-web-613322",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-web"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.core:jackson-databind",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-databind-c8865b",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-databind"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-thymeleaf",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-58cb0d",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-thymeleaf"
+          }
+        ]
+      },
+      {
+        "name": "org.springdoc:springdoc-openapi-maven-plugin",
+        "SPDXID": "SPDXRef-maven-org.springdoc-springdoc-openapi-maven-plugin-1.4-447376",
+        "versionInfo": "1.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "licenseConcluded": "Apache-2.0",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springdoc/springdoc-openapi-maven-plugin@1.4"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-starter-keyvault-secrets",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-starter-keyvault-secrets-91a7d4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-starter-keyvault-secrets"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-appconfiguration-config-web",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-appconfiguration-config-web-892651",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-appconfiguration-config-web"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-feature-management-web",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-feature-management-web-fc0b53",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-feature-management-web"
+          }
+        ]
+      },
+      {
+        "name": "io.rest-assured:rest-assured",
+        "SPDXID": "SPDXRef-maven-io.rest-assured-rest-assured-5.5.0-6ce22e",
+        "versionInfo": "5.5.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "licenseConcluded": "Apache-2.0",
+        "copyrightText": "Copyright 2019 the original author or authors",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.rest-assured/rest-assured@5.5.0"
+          }
+        ]
+      },
+      {
+        "name": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+        "SPDXID": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-webmvc-ui-2.6.0-d8263e",
+        "versionInfo": "2.6.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "licenseConcluded": "Apache-2.0",
+        "copyrightText": "Copyright 2019-2023 the original author or authors",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springdoc/springdoc-openapi-starter-webmvc-ui@2.6.0"
+          }
+        ]
+      },
+      {
+        "name": "org.projectlombok:lombok",
+        "SPDXID": "SPDXRef-maven-org.projectlombok-lombok-1.18.36-665fca",
+        "versionInfo": "1.18.36",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.projectlombok/lombok@1.18.36"
+          }
+        ]
+      },
+      {
+        "name": "io.opentelemetry.javaagent:opentelemetry-javaagent",
+        "SPDXID": "SPDXRef-maven-io.opentelemetry.javaagent-opentelemetry-javaagent-2.10.0-b58159",
+        "versionInfo": "2.10.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.opentelemetry.javaagent/opentelemetry-javaagent@2.10.0"
+          }
+        ]
+      },
+      {
+        "name": "de.codecentric:spring-boot-admin-starter-client",
+        "SPDXID": "SPDXRef-maven-de.codecentric-spring-boot-admin-starter-client-3.4.1-2e9f19",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/de.codecentric/spring-boot-admin-starter-client@3.4.1"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-dependencies",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-dependencies-5.19.0-575b3d",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-dependencies@5.19.0"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-actuator",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-3.4.1-6455d5",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "licenseConcluded": "Apache-2.0",
+        "copyrightText": "Copyright (c) 2012-2024 VMware, Inc.",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@3.4.1"
+          }
+        ]
+      },
+      {
+        "name": "actions/checkout",
+        "SPDXID": "SPDXRef-githubactions-actions-checkout-4..-8bbc92",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/checkout@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "liantisit-ghrc/azure-login",
+        "SPDXID": "SPDXRef-githubactions-liantisit-ghrc-azure-login-1..-85c2b1",
+        "versionInfo": "1.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/liantisit-ghrc/azure-login@1.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "liantisit-platform-cicd/gh-azure-appconfig/sync-config",
+        "SPDXID": "SPDXRef-githubactions-liantisit-platform-cicdgh-azure-appconfig-sync-config-1..-f407c0",
+        "versionInfo": "1.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/liantisit-platform-cicd/gh-azure-appconfig/sync-config@1.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "liantisit-platform-cicd/gh-azure-appconfig/set-keyvalue",
+        "SPDXID": "SPDXRef-githubactions-liantisit-platform-cicdgh-azure-appconfig-set-keyvalue-1..-6db1e3",
+        "versionInfo": "1.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/liantisit-platform-cicd/gh-azure-appconfig/set-keyvalue@1.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/upload-artifact",
+        "SPDXID": "SPDXRef-githubactions-actions-upload-artifact-4..-437bcc",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/upload-artifact@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/download-artifact",
+        "SPDXID": "SPDXRef-githubactions-actions-download-artifact-4..-ac682a",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/download-artifact@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/setup-java",
+        "SPDXID": "SPDXRef-githubactions-actions-setup-java-4..-f9b5e4",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/setup-java@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "advanced-security/maven-dependency-submission-action",
+        "SPDXID": "SPDXRef-githubactions-advanced-security-maven-dependency-submission-action-4..-922e5f",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/advanced-security/maven-dependency-submission-action@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "github/codeql-action/upload-sarif",
+        "SPDXID": "SPDXRef-githubactions-githubcodeql-action-upload-sarif-3..-cb791e",
+        "versionInfo": "3.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/github/codeql-action/upload-sarif@3.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "anchore/scan-action",
+        "SPDXID": "SPDXRef-githubactions-anchore-scan-action-3..-315808",
+        "versionInfo": "3.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/anchore/scan-action@3.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "humanitec/setup-cli-action",
+        "SPDXID": "SPDXRef-githubactions-humanitec-setup-cli-action-1..-910f8b",
+        "versionInfo": "1.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/humanitec/setup-cli-action@1.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "gittools/actions/gitversion/setup",
+        "SPDXID": "SPDXRef-githubactions-gittoolsactionsgitversion-setup-3..-8609de",
+        "versionInfo": "3.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/gittools/actions/gitversion/setup@3.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "gittools/actions/gitversion/execute",
+        "SPDXID": "SPDXRef-githubactions-gittoolsactionsgitversion-execute-3..-02f500",
+        "versionInfo": "3.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/gittools/actions/gitversion/execute@3.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "liantisit-platform-cicd/gh-port-exporter",
+        "SPDXID": "SPDXRef-githubactions-liantisit-platform-cicd-gh-port-exporter-main-c3b888",
+        "versionInfo": "main",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/liantisit-platform-cicd/gh-port-exporter@main"
+          }
+        ]
+      },
+      {
+        "name": "org.junit.platform:junit-platform-engine",
+        "SPDXID": "SPDXRef-maven-org.junit.platform-junit-platform-engine-1.11.4-1695cf",
+        "versionInfo": "1.11.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-engine@1.11.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-resolver-dns-classes-macos",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-resolver-dns-classes-macos-4.1.116.Final-109ebc",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-resolver-dns-classes-macos@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.slf4j:jul-to-slf4j",
+        "SPDXID": "SPDXRef-maven-org.slf4j-jul-to-slf4j-2.0.16-683d5f",
+        "versionInfo": "2.0.16",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.16?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-thymeleaf",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-3.4.1-ef8bcf",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-thymeleaf@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.ccil.cowan.tagsoup:tagsoup",
+        "SPDXID": "SPDXRef-maven-org.ccil.cowan.tagsoup-tagsoup-1.2.1-4930ff",
+        "versionInfo": "1.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.ccil.cowan.tagsoup/tagsoup@1.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "ch.qos.logback:logback-classic",
+        "SPDXID": "SPDXRef-maven-ch.qos.logback-logback-classic-1.5.12-2fcdd8",
+        "versionInfo": "1.5.12",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/ch.qos.logback/logback-classic@1.5.12?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.microsoft.azure:msal4j-persistence-extension",
+        "SPDXID": "SPDXRef-maven-com.microsoft.azure-msal4j-persistence-extension-1.3.0-a8be73",
+        "versionInfo": "1.3.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.microsoft.azure/msal4j-persistence-extension@1.3.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-3.4.1-41a1af",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.webjars:swagger-ui",
+        "SPDXID": "SPDXRef-maven-org.webjars-swagger-ui-5.17.14-6a9d83",
+        "versionInfo": "5.17.14",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.webjars/swagger-ui@5.17.14?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.junit.platform:junit-platform-commons",
+        "SPDXID": "SPDXRef-maven-org.junit.platform-junit-platform-commons-1.11.4-30e921",
+        "versionInfo": "1.11.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-commons@1.11.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-test-autoconfigure",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-test-autoconfigure-3.4.1-78fcf4",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.latencyutils:LatencyUtils",
+        "SPDXID": "SPDXRef-maven-org.latencyutils-LatencyUtils-2.0.3-2315df",
+        "versionInfo": "2.0.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-transport-native-kqueue",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-transport-native-kqueue-4.1.116.Final-fb0af6",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-transport-native-kqueue@4.1.116.Final?classifier=osx-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.awaitility:awaitility",
+        "SPDXID": "SPDXRef-maven-org.awaitility-awaitility-4.2.2-215a63",
+        "versionInfo": "4.2.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.awaitility/awaitility@4.2.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.hamcrest:hamcrest",
+        "SPDXID": "SPDXRef-maven-org.hamcrest-hamcrest-2.2-f7d355",
+        "versionInfo": "2.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-transport-native-unix-common",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-transport-native-unix-common-4.1.116.Final-cded60",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.datatype-jackson-datatype-jdk8-2.18.2-44571c",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.attoparser:attoparser",
+        "SPDXID": "SPDXRef-maven-org.attoparser-attoparser-2.0.7.RELEASE-50e975",
+        "versionInfo": "2.0.7.RELEASE",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.attoparser/attoparser@2.0.7.RELEASE?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.cloud:spring-cloud-starter",
+        "SPDXID": "SPDXRef-maven-org.springframework.cloud-spring-cloud-starter-4.2.0-87a145",
+        "versionInfo": "4.2.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.cloud/spring-cloud-starter@4.2.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-security-keyvault-secrets",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-security-keyvault-secrets-4.9.1-3b0b76",
+        "versionInfo": "4.9.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-security-keyvault-secrets@4.9.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.slf4j:slf4j-api",
+        "SPDXID": "SPDXRef-maven-org.slf4j-slf4j-api-2.0.16-12e297",
+        "versionInfo": "2.0.16",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.slf4j/slf4j-api@2.0.16?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.tomcat.embed:tomcat-embed-core",
+        "SPDXID": "SPDXRef-maven-org.apache.tomcat.embed-tomcat-embed-core-10.1.34-c64815",
+        "versionInfo": "10.1.34",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.34?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-json",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-json-3.4.1-f0fd80",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-test",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-test-6.2.1-07c5e7",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-test@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-resolver",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-resolver-4.1.116.Final-3f3350",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-resolver@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.objenesis:objenesis",
+        "SPDXID": "SPDXRef-maven-org.objenesis-objenesis-3.3-be306e",
+        "versionInfo": "3.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.objenesis/objenesis@3.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.junit.jupiter:junit-jupiter-engine",
+        "SPDXID": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-engine-5.11.4-3c83d3",
+        "versionInfo": "5.11.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.11.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.mockito:mockito-core",
+        "SPDXID": "SPDXRef-maven-org.mockito-mockito-core-5.14.2-6ae594",
+        "versionInfo": "5.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.mockito/mockito-core@5.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-buffer",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-buffer-4.1.116.Final-4b77df",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-buffer@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-test",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-test-3.4.1-7174b1",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-test@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "de.codecentric:spring-boot-admin-starter-client",
+        "SPDXID": "SPDXRef-maven-de.codecentric-spring-boot-admin-starter-client-3.4.1-7f979b",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/de.codecentric/spring-boot-admin-starter-client@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.cloud:spring-cloud-commons",
+        "SPDXID": "SPDXRef-maven-org.springframework.cloud-spring-cloud-commons-4.2.0-b2cb40",
+        "versionInfo": "4.2.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.cloud/spring-cloud-commons@4.2.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-core-management",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-core-management-1.15.6-0c8825",
+        "versionInfo": "1.15.6",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-core-management@1.15.6?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-resolver-dns-native-macos",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-resolver-dns-native-macos-4.1.116.Final-286101",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-resolver-dns-native-macos@4.1.116.Final?classifier=osx-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.core:jackson-core",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-core-2.18.2-f9e8a6",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.projectreactor:reactor-core",
+        "SPDXID": "SPDXRef-maven-io.projectreactor-reactor-core-3.7.1-577342",
+        "versionInfo": "3.7.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.projectreactor/reactor-core@3.7.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.tomcat.embed:tomcat-embed-el",
+        "SPDXID": "SPDXRef-maven-org.apache.tomcat.embed-tomcat-embed-el-10.1.34-b2de0c",
+        "versionInfo": "10.1.34",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.34?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-web",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-web-6.2.1-7403c5",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-web@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.micrometer:micrometer-observation",
+        "SPDXID": "SPDXRef-maven-io.micrometer-micrometer-observation-1.14.2-b71411",
+        "versionInfo": "1.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.micrometer/micrometer-observation@1.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-data-appconfiguration",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-data-appconfiguration-1.7.3-5c052c",
+        "versionInfo": "1.7.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-data-appconfiguration@1.7.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-codec-socks",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-codec-socks-4.1.116.Final-0e8cbe",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-codec-socks@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-xml",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-xml-1.1.0-4bd906",
+        "versionInfo": "1.1.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-xml@1.1.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-feature-management",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-feature-management-5.19.0-aac096",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-feature-management@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.rest-assured:rest-assured",
+        "SPDXID": "SPDXRef-maven-io.rest-assured-rest-assured-5.5.0-dd719a",
+        "versionInfo": "5.5.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.rest-assured/rest-assured@5.5.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-webmvc",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-webmvc-6.2.1-8cdc8b",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-webmvc@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.yaml:snakeyaml",
+        "SPDXID": "SPDXRef-maven-org.yaml-snakeyaml-2.3-d5a414",
+        "versionInfo": "2.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.yaml/snakeyaml@2.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.logging.log4j:log4j-api",
+        "SPDXID": "SPDXRef-maven-org.apache.logging.log4j-log4j-api-2.24.3-8b0f76",
+        "versionInfo": "2.24.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "commons-logging:commons-logging",
+        "SPDXID": "SPDXRef-maven-commons-logging-commons-logging-1.2-81bbd3",
+        "versionInfo": "1.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/commons-logging/commons-logging@1.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.swagger.core.v3:swagger-models-jakarta",
+        "SPDXID": "SPDXRef-maven-io.swagger.core.v3-swagger-models-jakarta-2.2.22-a507de",
+        "versionInfo": "2.2.22",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.swagger.core.v3/swagger-models-jakarta@2.2.22?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-transport-classes-epoll",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-transport-classes-epoll-4.1.116.Final-b7fa5b",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-actuator-autoconfigure-3.4.1-ef7632",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-autoconfigure",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-autoconfigure-3.4.1-3c526e",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-jcl",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-jcl-6.2.1-3cc098",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-jcl@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.opentest4j:opentest4j",
+        "SPDXID": "SPDXRef-maven-org.opentest4j-opentest4j-1.3.0-a591f8",
+        "versionInfo": "1.3.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.rest-assured:xml-path",
+        "SPDXID": "SPDXRef-maven-io.rest-assured-xml-path-5.5.0-87a354",
+        "versionInfo": "5.5.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.rest-assured/xml-path@5.5.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-transport",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-transport-4.1.116.Final-500f1a",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-transport@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.httpcomponents:httpmime",
+        "SPDXID": "SPDXRef-maven-org.apache.httpcomponents-httpmime-4.5.13-106c55",
+        "versionInfo": "4.5.13",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.httpcomponents/httpmime@4.5.13?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-handler",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-handler-4.1.116.Final-d20db6",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-handler@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "jakarta.annotation:jakarta.annotation-api",
+        "SPDXID": "SPDXRef-maven-jakarta.annotation-jakarta.annotation-api-2.1.1-d24230",
+        "versionInfo": "2.1.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-common",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-common-4.1.116.Final-4dfa6f",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-common@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.core:jackson-databind",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-databind-2.18.2-5611ea",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "net.bytebuddy:byte-buddy-agent",
+        "SPDXID": "SPDXRef-maven-net.bytebuddy-byte-buddy-agent-1.15.11-35bfc0",
+        "versionInfo": "1.15.11",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.15.11?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.qpid:proton-j",
+        "SPDXID": "SPDXRef-maven-org.apache.qpid-proton-j-0.34.1-e171e5",
+        "versionInfo": "0.34.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.qpid/proton-j@0.34.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-boringssl-static",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-472763",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.69.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty.incubator:netty-incubator-codec-native-quic",
+        "SPDXID": "SPDXRef-maven-io.netty.incubator-netty-incubator-codec-native-quic-0.0.68.Final-9655cf",
+        "versionInfo": "0.0.68.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty.incubator/netty-incubator-codec-native-quic@0.0.68.Final?classifier=linux-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-classes",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-classes-2.0.69.Final-17e60c",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-classes@2.0.69.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.thymeleaf:thymeleaf-spring6",
+        "SPDXID": "SPDXRef-maven-org.thymeleaf-thymeleaf-spring6-3.1.3.RELEASE-bb2fef",
+        "versionInfo": "3.1.3.RELEASE",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.thymeleaf/thymeleaf-spring6@3.1.3.RELEASE?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "de.codecentric:spring-boot-admin-client",
+        "SPDXID": "SPDXRef-maven-de.codecentric-spring-boot-admin-client-3.4.1-f908ef",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/de.codecentric/spring-boot-admin-client@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.swagger.core.v3:swagger-annotations-jakarta",
+        "SPDXID": "SPDXRef-maven-io.swagger.core.v3-swagger-annotations-jakarta-2.2.22-d200ca",
+        "versionInfo": "2.2.22",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.swagger.core.v3/swagger-annotations-jakarta@2.2.22?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-actuator",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-3.4.1-1ffa2f",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.opentelemetry.javaagent:opentelemetry-javaagent",
+        "SPDXID": "SPDXRef-maven-io.opentelemetry.javaagent-opentelemetry-javaagent-2.10.0-5edef4",
+        "versionInfo": "2.10.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.opentelemetry.javaagent/opentelemetry-javaagent@2.10.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-autoconfigure",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-autoconfigure-5.19.0-6beaac",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-autoconfigure@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "jakarta.xml.bind:jakarta.xml.bind-api",
+        "SPDXID": "SPDXRef-maven-jakarta.xml.bind-jakarta.xml.bind-api-4.0.2-baa2e9",
+        "versionInfo": "4.0.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-appconfiguration-config-web",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-appconfiguration-config-web-5.19.0-e84f04",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-appconfiguration-config-web@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.groovy:groovy-json",
+        "SPDXID": "SPDXRef-maven-org.apache.groovy-groovy-json-4.0.24-080c3a",
+        "versionInfo": "4.0.24",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.groovy/groovy-json@4.0.24?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.micrometer:micrometer-commons",
+        "SPDXID": "SPDXRef-maven-io.micrometer-micrometer-commons-1.14.2-b22324",
+        "versionInfo": "1.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.micrometer/micrometer-commons@1.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-boringssl-static",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-dd8c87",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.69.Final?classifier=linux-aarch_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-transport-classes-kqueue",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-transport-classes-kqueue-4.1.116.Final-21e581",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-transport-classes-kqueue@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springdoc:springdoc-openapi-starter-common",
+        "SPDXID": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-common-2.6.0-69f0eb",
+        "versionInfo": "2.6.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springdoc/springdoc-openapi-starter-common@2.6.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-handler-proxy",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-handler-proxy-4.1.116.Final-8e4caa",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-handler-proxy@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "jakarta.validation:jakarta.validation-api",
+        "SPDXID": "SPDXRef-maven-jakarta.validation-jakarta.validation-api-3.0.2-bce64f",
+        "versionInfo": "3.0.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/jakarta.validation/jakarta.validation-api@3.0.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.assertj:assertj-core",
+        "SPDXID": "SPDXRef-maven-org.assertj-assertj-core-3.26.3-c859ed",
+        "versionInfo": "3.26.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.assertj/assertj-core@3.26.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.rest-assured:json-path",
+        "SPDXID": "SPDXRef-maven-io.rest-assured-json-path-5.5.0-8f3eb4",
+        "versionInfo": "5.5.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.rest-assured/json-path@5.5.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-beans",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-beans-6.2.1-baa920",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-beans@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.nimbusds:nimbus-jose-jwt",
+        "SPDXID": "SPDXRef-maven-com.nimbusds-nimbus-jose-jwt-9.40-190fbc",
+        "versionInfo": "9.40",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.nimbusds/nimbus-jose-jwt@9.40?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "net.minidev:accessors-smart",
+        "SPDXID": "SPDXRef-maven-net.minidev-accessors-smart-2.5.1-bedbd8",
+        "versionInfo": "2.5.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/net.minidev/accessors-smart@2.5.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-expression",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-expression-6.2.1-e49333",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-expression@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.microsoft.azure:msal4j",
+        "SPDXID": "SPDXRef-maven-com.microsoft.azure-msal4j-1.17.2-82bbce",
+        "versionInfo": "1.17.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.microsoft.azure/msal4j@1.17.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.dataformat-jackson-dataformat-yaml-2.18.2-33945b",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-logging",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-logging-3.4.1-3011fc",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.projectreactor.netty:reactor-netty-core",
+        "SPDXID": "SPDXRef-maven-io.projectreactor.netty-reactor-netty-core-1.2.1-843155",
+        "versionInfo": "1.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.projectreactor.netty/reactor-netty-core@1.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.core:jackson-annotations",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-annotations-2.18.2-f73bf4",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-codec-http",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-codec-http-4.1.116.Final-c316ca",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-codec-http@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.commons:commons-lang3",
+        "SPDXID": "SPDXRef-maven-org.apache.commons-commons-lang3-3.17.0-b8f17d",
+        "versionInfo": "3.17.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.commons/commons-lang3@3.17.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.datatype-jackson-datatype-jsr310-2.18.2-e7fcd2",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.projectreactor.netty:reactor-netty",
+        "SPDXID": "SPDXRef-maven-io.projectreactor.netty-reactor-netty-1.2.1-6665a8",
+        "versionInfo": "1.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.projectreactor.netty/reactor-netty@1.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.projectlombok:lombok",
+        "SPDXID": "SPDXRef-maven-org.projectlombok-lombok-1.18.36-903bde",
+        "versionInfo": "1.18.36",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.projectlombok/lombok@1.18.36?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-transport-native-epoll",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-transport-native-epoll-4.1.116.Final-0d8415",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.116.Final?classifier=linux-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.cloud:spring-cloud-starter-bootstrap",
+        "SPDXID": "SPDXRef-maven-org.springframework.cloud-spring-cloud-starter-bootstrap-4.2.0-e8522a",
+        "versionInfo": "4.2.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.cloud/spring-cloud-starter-bootstrap@4.2.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-actuator",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-actuator-3.4.1-70f490",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-actuator@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-core",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-core-1.54.1-dcc7b1",
+        "versionInfo": "1.54.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-core@1.54.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.junit.jupiter:junit-jupiter",
+        "SPDXID": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-5.11.4-866e1b",
+        "versionInfo": "5.11.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter@5.11.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+        "SPDXID": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-webmvc-ui-2.6.0-0e348f",
+        "versionInfo": "2.6.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springdoc/springdoc-openapi-starter-webmvc-ui@2.6.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.microsoft.azure:qpid-proton-j-extensions",
+        "SPDXID": "SPDXRef-maven-com.microsoft.azure-qpid-proton-j-extensions-1.2.5-fe5680",
+        "versionInfo": "1.2.5",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.microsoft.azure/qpid-proton-j-extensions@1.2.5?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.github.stephenc.jcip:jcip-annotations",
+        "SPDXID": "SPDXRef-maven-com.github.stephenc.jcip-jcip-annotations-1.0-1-330e00",
+        "versionInfo": "1.0-1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "net.java.dev.jna:jna",
+        "SPDXID": "SPDXRef-maven-net.java.dev.jna-jna-5.13.0-f86bcd",
+        "versionInfo": "5.13.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/net.java.dev.jna/jna@5.13.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "net.bytebuddy:byte-buddy",
+        "SPDXID": "SPDXRef-maven-net.bytebuddy-byte-buddy-1.15.11-9ca8ef",
+        "versionInfo": "1.15.11",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/net.bytebuddy/byte-buddy@1.15.11?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-codec-dns",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-codec-dns-4.1.116.Final-88765b",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-codec-dns@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.cloud:spring-cloud-context",
+        "SPDXID": "SPDXRef-maven-org.springframework.cloud-spring-cloud-context-4.2.0-b9ebfe",
+        "versionInfo": "4.2.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.cloud/spring-cloud-context@4.2.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.groovy:groovy",
+        "SPDXID": "SPDXRef-maven-org.apache.groovy-groovy-4.0.24-ea35d1",
+        "versionInfo": "4.0.24",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.groovy/groovy@4.0.24?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.unbescape:unbescape",
+        "SPDXID": "SPDXRef-maven-org.unbescape-unbescape-1.1.6.RELEASE-d04af2",
+        "versionInfo": "1.1.6.RELEASE",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.unbescape/unbescape@1.1.6.RELEASE?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-json",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-json-1.3.0-d163ac",
+        "versionInfo": "1.3.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-json@1.3.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.jayway.jsonpath:json-path",
+        "SPDXID": "SPDXRef-maven-com.jayway.jsonpath-json-path-2.9.0-fae76b",
+        "versionInfo": "2.9.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.jayway.jsonpath/json-path@2.9.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apiguardian:apiguardian-api",
+        "SPDXID": "SPDXRef-maven-org.apiguardian-apiguardian-api-1.1.2-4acb47",
+        "versionInfo": "1.1.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.micrometer:micrometer-core",
+        "SPDXID": "SPDXRef-maven-io.micrometer-micrometer-core-1.14.2-f74fa3",
+        "versionInfo": "1.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.micrometer/micrometer-core@1.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.rest-assured:rest-assured-common",
+        "SPDXID": "SPDXRef-maven-io.rest-assured-rest-assured-common-5.5.0-c009aa",
+        "versionInfo": "5.5.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.rest-assured/rest-assured-common@5.5.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.vaadin.external.google:android-json",
+        "SPDXID": "SPDXRef-maven-com.vaadin.external.google-android-json-0.0.20131108.vaadin1-b3571a",
+        "versionInfo": "0.0.20131108.vaadin1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springdoc:springdoc-openapi-starter-webmvc-api",
+        "SPDXID": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-webmvc-api-2.6.0-0e6cea",
+        "versionInfo": "2.6.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springdoc/springdoc-openapi-starter-webmvc-api@2.6.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-feature-management-web",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-feature-management-web-5.19.0-e0164f",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-feature-management-web@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-aop",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-aop-6.2.1-9ac459",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-aop@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty.incubator:netty-incubator-codec-classes-quic",
+        "SPDXID": "SPDXRef-maven-io.netty.incubator-netty-incubator-codec-classes-quic-0.0.68.Final-dc7dac",
+        "versionInfo": "0.0.68.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty.incubator/netty-incubator-codec-classes-quic@0.0.68.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-context",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-context-6.2.1-c2c457",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-context@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.groovy:groovy-xml",
+        "SPDXID": "SPDXRef-maven-org.apache.groovy-groovy-xml-4.0.24-87fb41",
+        "versionInfo": "4.0.24",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.groovy/groovy-xml@4.0.24?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-starter",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-starter-5.19.0-830454",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-starter@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.httpcomponents:httpcore",
+        "SPDXID": "SPDXRef-maven-org.apache.httpcomponents-httpcore-4.4.16-0c3a99",
+        "versionInfo": "4.4.16",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.16?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.junit.jupiter:junit-jupiter-params",
+        "SPDXID": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-params-5.11.4-5d3e34",
+        "versionInfo": "5.11.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.11.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework:spring-core",
+        "SPDXID": "SPDXRef-maven-org.springframework-spring-core-6.2.1-57c2a5",
+        "versionInfo": "6.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework/spring-core@6.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-boringssl-static",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-7805b1",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.69.Final?classifier=osx-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-3.4.1-69ff94",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.nimbusds:oauth2-oidc-sdk",
+        "SPDXID": "SPDXRef-maven-com.nimbusds-oauth2-oidc-sdk-11.18-b68171",
+        "versionInfo": "11.18",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.nimbusds/oauth2-oidc-sdk@11.18?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.projectreactor.netty.incubator:reactor-netty-incubator-quic",
+        "SPDXID": "SPDXRef-maven-io.projectreactor.netty.incubator-reactor-netty-incubator-quic-0.2.1-56287f",
+        "versionInfo": "0.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.projectreactor.netty.incubator/reactor-netty-incubator-quic@0.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.micrometer:micrometer-jakarta9",
+        "SPDXID": "SPDXRef-maven-io.micrometer-micrometer-jakarta9-1.14.2-d72cd9",
+        "versionInfo": "1.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.micrometer/micrometer-jakarta9@1.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "ch.qos.logback:logback-core",
+        "SPDXID": "SPDXRef-maven-ch.qos.logback-logback-core-1.5.12-7fa89f",
+        "versionInfo": "1.5.12",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/ch.qos.logback/logback-core@1.5.12?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.logging.log4j:log4j-to-slf4j",
+        "SPDXID": "SPDXRef-maven-org.apache.logging.log4j-log4j-to-slf4j-2.24.3-5ed7c0",
+        "versionInfo": "2.24.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-codec-http2",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-codec-http2-4.1.116.Final-4c6eb4",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-codec-http2@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-boringssl-static",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-f671ad",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.69.Final?classifier=windows-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "net.minidev:json-smart",
+        "SPDXID": "SPDXRef-maven-net.minidev-json-smart-2.5.1-c3c4a9",
+        "versionInfo": "2.5.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/net.minidev/json-smart@2.5.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.ow2.asm:asm",
+        "SPDXID": "SPDXRef-maven-org.ow2.asm-asm-9.6-fa7db4",
+        "versionInfo": "9.6",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.ow2.asm/asm@9.6?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.thymeleaf:thymeleaf",
+        "SPDXID": "SPDXRef-maven-org.thymeleaf-thymeleaf-3.1.3.RELEASE-1f2222",
+        "versionInfo": "3.1.3.RELEASE",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.thymeleaf/thymeleaf@3.1.3.RELEASE?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-boringssl-static",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-de4b30",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.69.Final?classifier=linux-x86_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "jakarta.activation:jakarta.activation-api",
+        "SPDXID": "SPDXRef-maven-jakarta.activation-jakarta.activation-api-2.1.3-9153d9",
+        "versionInfo": "2.1.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "commons-codec:commons-codec",
+        "SPDXID": "SPDXRef-maven-commons-codec-commons-codec-1.17.1-b86cc5",
+        "versionInfo": "1.17.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/commons-codec/commons-codec@1.17.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-appconfiguration-config",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-appconfiguration-config-5.19.0-875ad9",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-appconfiguration-config@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-resolver-dns",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-resolver-dns-4.1.116.Final-e2597f",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-resolver-dns@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-tcnative-boringssl-static",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-b8a02c",
+        "versionInfo": "2.0.69.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.69.Final?classifier=osx-aarch_64&type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+        "SPDXID": "SPDXRef-maven-com.fasterxml.jackson.module-jackson-module-parameter-names-2.18.2-6c1222",
+        "versionInfo": "2.18.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.18.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-starter-keyvault-secrets",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-starter-keyvault-secrets-5.19.0-9630f1",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-starter-keyvault-secrets@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.swagger.core.v3:swagger-core-jakarta",
+        "SPDXID": "SPDXRef-maven-io.swagger.core.v3-swagger-core-jakarta-2.2.22-134c67",
+        "versionInfo": "2.2.22",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.swagger.core.v3/swagger-core-jakarta@2.2.22?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.bouncycastle:bcprov-jdk18on",
+        "SPDXID": "SPDXRef-maven-org.bouncycastle-bcprov-jdk18on-1.78.1-e742c5",
+        "versionInfo": "1.78.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.bouncycastle/bcprov-jdk18on@1.78.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.junit.jupiter:junit-jupiter-api",
+        "SPDXID": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-api-5.11.4-8a3576",
+        "versionInfo": "5.11.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.11.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-test",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-test-3.4.1-1721be",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+        "SPDXID": "SPDXRef-maven-org.apache.tomcat.embed-tomcat-embed-websocket-10.1.34-a067a1",
+        "versionInfo": "10.1.34",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.34?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.mockito:mockito-junit-jupiter",
+        "SPDXID": "SPDXRef-maven-org.mockito-mockito-junit-jupiter-5.14.2-9f7978",
+        "versionInfo": "5.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.mockito/mockito-junit-jupiter@5.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-service",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-service-5.19.0-1e2f56",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-service@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.skyscreamer:jsonassert",
+        "SPDXID": "SPDXRef-maven-org.skyscreamer-jsonassert-1.5.3-9bbe61",
+        "versionInfo": "1.5.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.skyscreamer/jsonassert@1.5.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.nimbusds:lang-tag",
+        "SPDXID": "SPDXRef-maven-com.nimbusds-lang-tag-1.7-19bc40",
+        "versionInfo": "1.7",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.nimbusds/lang-tag@1.7?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-identity",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-identity-1.14.2-cf4d5f",
+        "versionInfo": "1.14.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-identity@1.14.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "net.java.dev.jna:jna-platform",
+        "SPDXID": "SPDXRef-maven-net.java.dev.jna-jna-platform-5.13.0-ab5491",
+        "versionInfo": "5.13.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/net.java.dev.jna/jna-platform@5.13.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-tomcat",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-tomcat-3.4.1-6297eb",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.hdrhistogram:HdrHistogram",
+        "SPDXID": "SPDXRef-maven-org.hdrhistogram-HdrHistogram-2.2.2-43f373",
+        "versionInfo": "2.2.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.hdrhistogram/HdrHistogram@2.2.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.netty:netty-codec",
+        "SPDXID": "SPDXRef-maven-io.netty-netty-codec-4.1.116.Final-2b4673",
+        "versionInfo": "4.1.116.Final",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.netty/netty-codec@4.1.116.Final?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-devtools",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-3.4.1-51bfa3",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-devtools@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure.spring:spring-cloud-azure-core",
+        "SPDXID": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-core-5.19.0-bd06e6",
+        "versionInfo": "5.19.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure.spring/spring-cloud-azure-core@5.19.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.reactivestreams:reactive-streams",
+        "SPDXID": "SPDXRef-maven-org.reactivestreams-reactive-streams-1.0.4-dc818f",
+        "versionInfo": "1.0.4",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.reactivestreams/reactive-streams@1.0.4?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.boot:spring-boot-starter-web",
+        "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-web-3.4.1-aff390",
+        "versionInfo": "3.4.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.4.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.nimbusds:content-type",
+        "SPDXID": "SPDXRef-maven-com.nimbusds-content-type-2.3-2d0ebd",
+        "versionInfo": "2.3",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.nimbusds/content-type@2.3?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.httpcomponents:httpclient",
+        "SPDXID": "SPDXRef-maven-org.apache.httpcomponents-httpclient-4.5.13-0d93d1",
+        "versionInfo": "4.5.13",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.13?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-core-http-netty",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-core-http-netty-1.15.7-f7581c",
+        "versionInfo": "1.15.7",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-core-http-netty@1.15.7?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.xmlunit:xmlunit-core",
+        "SPDXID": "SPDXRef-maven-org.xmlunit-xmlunit-core-2.10.0-9e5677",
+        "versionInfo": "2.10.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.xmlunit/xmlunit-core@2.10.0?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "org.springframework.security:spring-security-crypto",
+        "SPDXID": "SPDXRef-maven-org.springframework.security-spring-security-crypto-6.4.2-5b7767",
+        "versionInfo": "6.4.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.springframework.security/spring-security-crypto@6.4.2?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "io.projectreactor.netty:reactor-netty-http",
+        "SPDXID": "SPDXRef-maven-io.projectreactor.netty-reactor-netty-http-1.2.1-e0bddd",
+        "versionInfo": "1.2.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/io.projectreactor.netty/reactor-netty-http@1.2.1?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.azure:azure-core-amqp",
+        "SPDXID": "SPDXRef-maven-com.azure-azure-core-amqp-2.9.12-7bb956",
+        "versionInfo": "2.9.12",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/com.azure/azure-core-amqp@2.9.12?type=jar"
+          }
+        ]
+      },
+      {
+        "name": "com.github.liantisit-platform-apps-staging/orderdemo-backend-app",
+        "SPDXID": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "versionInfo": "main",
+        "downloadLocation": "git+https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:github/liantisit-platform-apps-staging/orderdemo-backend-app@main"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-7b26ed",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-maven-plugin-d87ce5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-test-41e328",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-web-613322",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-databind-c8865b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-58cb0d",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springdoc-springdoc-openapi-maven-plugin-1.4-447376",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-starter-keyvault-secrets-91a7d4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-appconfiguration-config-web-892651",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-feature-management-web-fc0b53",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.rest-assured-rest-assured-5.5.0-6ce22e",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-webmvc-ui-2.6.0-d8263e",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.projectlombok-lombok-1.18.36-665fca",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.opentelemetry.javaagent-opentelemetry-javaagent-2.10.0-b58159",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-de.codecentric-spring-boot-admin-starter-client-3.4.1-2e9f19",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-dependencies-5.19.0-575b3d",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-3.4.1-6455d5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-checkout-4..-8bbc92",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-liantisit-ghrc-azure-login-1..-85c2b1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-liantisit-platform-cicdgh-azure-appconfig-sync-config-1..-f407c0",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-liantisit-platform-cicdgh-azure-appconfig-set-keyvalue-1..-6db1e3",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-upload-artifact-4..-437bcc",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-download-artifact-4..-ac682a",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-setup-java-4..-f9b5e4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-advanced-security-maven-dependency-submission-action-4..-922e5f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-githubcodeql-action-upload-sarif-3..-cb791e",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-anchore-scan-action-3..-315808",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-humanitec-setup-cli-action-1..-910f8b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-gittoolsactionsgitversion-setup-3..-8609de",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-gittoolsactionsgitversion-execute-3..-02f500",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-githubactions-liantisit-platform-cicd-gh-port-exporter-main-c3b888",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.junit.platform-junit-platform-engine-1.11.4-1695cf",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-resolver-dns-classes-macos-4.1.116.Final-109ebc",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.slf4j-jul-to-slf4j-2.0.16-683d5f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-3.4.1-ef8bcf",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.ccil.cowan.tagsoup-tagsoup-1.2.1-4930ff",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-ch.qos.logback-logback-classic-1.5.12-2fcdd8",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.microsoft.azure-msal4j-persistence-extension-1.3.0-a8be73",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-3.4.1-41a1af",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.webjars-swagger-ui-5.17.14-6a9d83",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.junit.platform-junit-platform-commons-1.11.4-30e921",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-test-autoconfigure-3.4.1-78fcf4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.latencyutils-LatencyUtils-2.0.3-2315df",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-transport-native-kqueue-4.1.116.Final-fb0af6",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.awaitility-awaitility-4.2.2-215a63",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.hamcrest-hamcrest-2.2-f7d355",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-transport-native-unix-common-4.1.116.Final-cded60",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.datatype-jackson-datatype-jdk8-2.18.2-44571c",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.attoparser-attoparser-2.0.7.RELEASE-50e975",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.cloud-spring-cloud-starter-4.2.0-87a145",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-security-keyvault-secrets-4.9.1-3b0b76",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.slf4j-slf4j-api-2.0.16-12e297",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.tomcat.embed-tomcat-embed-core-10.1.34-c64815",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-json-3.4.1-f0fd80",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-test-6.2.1-07c5e7",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-resolver-4.1.116.Final-3f3350",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.objenesis-objenesis-3.3-be306e",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-engine-5.11.4-3c83d3",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.mockito-mockito-core-5.14.2-6ae594",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-buffer-4.1.116.Final-4b77df",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-test-3.4.1-7174b1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-de.codecentric-spring-boot-admin-starter-client-3.4.1-7f979b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.cloud-spring-cloud-commons-4.2.0-b2cb40",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-core-management-1.15.6-0c8825",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-resolver-dns-native-macos-4.1.116.Final-286101",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-core-2.18.2-f9e8a6",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.projectreactor-reactor-core-3.7.1-577342",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.tomcat.embed-tomcat-embed-el-10.1.34-b2de0c",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-web-6.2.1-7403c5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.micrometer-micrometer-observation-1.14.2-b71411",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-data-appconfiguration-1.7.3-5c052c",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-codec-socks-4.1.116.Final-0e8cbe",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-xml-1.1.0-4bd906",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-feature-management-5.19.0-aac096",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.rest-assured-rest-assured-5.5.0-dd719a",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-webmvc-6.2.1-8cdc8b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.yaml-snakeyaml-2.3-d5a414",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.logging.log4j-log4j-api-2.24.3-8b0f76",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-commons-logging-commons-logging-1.2-81bbd3",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.swagger.core.v3-swagger-models-jakarta-2.2.22-a507de",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-transport-classes-epoll-4.1.116.Final-b7fa5b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-actuator-autoconfigure-3.4.1-ef7632",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-autoconfigure-3.4.1-3c526e",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-jcl-6.2.1-3cc098",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.opentest4j-opentest4j-1.3.0-a591f8",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.rest-assured-xml-path-5.5.0-87a354",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-transport-4.1.116.Final-500f1a",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.httpcomponents-httpmime-4.5.13-106c55",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-handler-4.1.116.Final-d20db6",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-jakarta.annotation-jakarta.annotation-api-2.1.1-d24230",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-common-4.1.116.Final-4dfa6f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-databind-2.18.2-5611ea",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-net.bytebuddy-byte-buddy-agent-1.15.11-35bfc0",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.qpid-proton-j-0.34.1-e171e5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-472763",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty.incubator-netty-incubator-codec-native-quic-0.0.68.Final-9655cf",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-classes-2.0.69.Final-17e60c",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.thymeleaf-thymeleaf-spring6-3.1.3.RELEASE-bb2fef",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-de.codecentric-spring-boot-admin-client-3.4.1-f908ef",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.swagger.core.v3-swagger-annotations-jakarta-2.2.22-d200ca",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-3.4.1-1ffa2f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.opentelemetry.javaagent-opentelemetry-javaagent-2.10.0-5edef4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-autoconfigure-5.19.0-6beaac",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-jakarta.xml.bind-jakarta.xml.bind-api-4.0.2-baa2e9",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-appconfiguration-config-web-5.19.0-e84f04",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.groovy-groovy-json-4.0.24-080c3a",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.micrometer-micrometer-commons-1.14.2-b22324",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-dd8c87",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-transport-classes-kqueue-4.1.116.Final-21e581",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-common-2.6.0-69f0eb",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-handler-proxy-4.1.116.Final-8e4caa",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-jakarta.validation-jakarta.validation-api-3.0.2-bce64f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.assertj-assertj-core-3.26.3-c859ed",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.rest-assured-json-path-5.5.0-8f3eb4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-beans-6.2.1-baa920",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.nimbusds-nimbus-jose-jwt-9.40-190fbc",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-net.minidev-accessors-smart-2.5.1-bedbd8",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-expression-6.2.1-e49333",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.microsoft.azure-msal4j-1.17.2-82bbce",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.dataformat-jackson-dataformat-yaml-2.18.2-33945b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-logging-3.4.1-3011fc",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.projectreactor.netty-reactor-netty-core-1.2.1-843155",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.core-jackson-annotations-2.18.2-f73bf4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-codec-http-4.1.116.Final-c316ca",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.commons-commons-lang3-3.17.0-b8f17d",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.datatype-jackson-datatype-jsr310-2.18.2-e7fcd2",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.projectreactor.netty-reactor-netty-1.2.1-6665a8",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.projectlombok-lombok-1.18.36-903bde",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-transport-native-epoll-4.1.116.Final-0d8415",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.cloud-spring-cloud-starter-bootstrap-4.2.0-e8522a",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-actuator-3.4.1-70f490",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-core-1.54.1-dcc7b1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-5.11.4-866e1b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-webmvc-ui-2.6.0-0e348f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.microsoft.azure-qpid-proton-j-extensions-1.2.5-fe5680",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.github.stephenc.jcip-jcip-annotations-1.0-1-330e00",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-net.java.dev.jna-jna-5.13.0-f86bcd",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-net.bytebuddy-byte-buddy-1.15.11-9ca8ef",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-codec-dns-4.1.116.Final-88765b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.cloud-spring-cloud-context-4.2.0-b9ebfe",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.groovy-groovy-4.0.24-ea35d1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.unbescape-unbescape-1.1.6.RELEASE-d04af2",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-json-1.3.0-d163ac",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.jayway.jsonpath-json-path-2.9.0-fae76b",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apiguardian-apiguardian-api-1.1.2-4acb47",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.micrometer-micrometer-core-1.14.2-f74fa3",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.rest-assured-rest-assured-common-5.5.0-c009aa",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.vaadin.external.google-android-json-0.0.20131108.vaadin1-b3571a",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springdoc-springdoc-openapi-starter-webmvc-api-2.6.0-0e6cea",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-feature-management-web-5.19.0-e0164f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-aop-6.2.1-9ac459",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty.incubator-netty-incubator-codec-classes-quic-0.0.68.Final-dc7dac",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-context-6.2.1-c2c457",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.groovy-groovy-xml-4.0.24-87fb41",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-starter-5.19.0-830454",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.httpcomponents-httpcore-4.4.16-0c3a99",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-params-5.11.4-5d3e34",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework-spring-core-6.2.1-57c2a5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-7805b1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-3.4.1-69ff94",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.nimbusds-oauth2-oidc-sdk-11.18-b68171",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.projectreactor.netty.incubator-reactor-netty-incubator-quic-0.2.1-56287f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.micrometer-micrometer-jakarta9-1.14.2-d72cd9",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-ch.qos.logback-logback-core-1.5.12-7fa89f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.logging.log4j-log4j-to-slf4j-2.24.3-5ed7c0",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-codec-http2-4.1.116.Final-4c6eb4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-f671ad",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-net.minidev-json-smart-2.5.1-c3c4a9",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.ow2.asm-asm-9.6-fa7db4",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.thymeleaf-thymeleaf-3.1.3.RELEASE-1f2222",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-de4b30",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-jakarta.activation-jakarta.activation-api-2.1.3-9153d9",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-commons-codec-commons-codec-1.17.1-b86cc5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-appconfiguration-config-5.19.0-875ad9",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-resolver-dns-4.1.116.Final-e2597f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-tcnative-boringssl-static-2.0.69.Final-b8a02c",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.fasterxml.jackson.module-jackson-module-parameter-names-2.18.2-6c1222",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-starter-keyvault-secrets-5.19.0-9630f1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.swagger.core.v3-swagger-core-jakarta-2.2.22-134c67",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.bouncycastle-bcprov-jdk18on-1.78.1-e742c5",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.junit.jupiter-junit-jupiter-api-5.11.4-8a3576",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-test-3.4.1-1721be",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.tomcat.embed-tomcat-embed-websocket-10.1.34-a067a1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.mockito-mockito-junit-jupiter-5.14.2-9f7978",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-service-5.19.0-1e2f56",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.skyscreamer-jsonassert-1.5.3-9bbe61",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.nimbusds-lang-tag-1.7-19bc40",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-identity-1.14.2-cf4d5f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-net.java.dev.jna-jna-platform-5.13.0-ab5491",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-tomcat-3.4.1-6297eb",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.hdrhistogram-HdrHistogram-2.2.2-43f373",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.netty-netty-codec-4.1.116.Final-2b4673",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-3.4.1-51bfa3",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure.spring-spring-cloud-azure-core-5.19.0-bd06e6",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.reactivestreams-reactive-streams-1.0.4-dc818f",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-web-3.4.1-aff390",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.nimbusds-content-type-2.3-2d0ebd",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.httpcomponents-httpclient-4.5.13-0d93d1",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-core-http-netty-1.15.7-f7581c",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.xmlunit-xmlunit-core-2.10.0-9e5677",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-org.springframework.security-spring-security-crypto-6.4.2-5b7767",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-io.projectreactor.netty-reactor-netty-http-1.2.1-e0bddd",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relatedSpdxElement": "SPDXRef-maven-com.azure-azure-core-amqp-2.9.12-7bb956",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-DOCUMENT",
+        "relatedSpdxElement": "SPDXRef-github-liantisit-platform-apps-staging-orderdemo-backend-app-main-4980cd",
+        "relationshipType": "DESCRIBES"
+      }
+    ]
+  }
+}

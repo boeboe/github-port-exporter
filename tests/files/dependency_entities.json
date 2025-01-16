@@ -1,0 +1,1838 @@
+[
+  {
+    "identifier": "org.springframework.boot:spring-boot-devtools",
+    "title": "org.springframework.boot:spring-boot-devtools",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-maven-plugin",
+    "title": "org.springframework.boot:spring-boot-maven-plugin",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-test",
+    "title": "org.springframework.boot:spring-boot-starter-test",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-web",
+    "title": "org.springframework.boot:spring-boot-starter-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.core:jackson-databind",
+    "title": "com.fasterxml.jackson.core:jackson-databind",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-thymeleaf",
+    "title": "org.springframework.boot:spring-boot-starter-thymeleaf",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "org.springdoc:springdoc-openapi-maven-plugin",
+    "title": "org.springdoc:springdoc-openapi-maven-plugin",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.4"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-starter-keyvault-secrets",
+    "title": "com.azure.spring:spring-cloud-azure-starter-keyvault-secrets",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-appconfiguration-config-web",
+    "title": "com.azure.spring:spring-cloud-azure-appconfiguration-config-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-feature-management-web",
+    "title": "com.azure.spring:spring-cloud-azure-feature-management-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": null
+    }
+  },
+  {
+    "identifier": "io.rest-assured:rest-assured",
+    "title": "io.rest-assured:rest-assured",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.5.0"
+    }
+  },
+  {
+    "identifier": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+    "title": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.6.0"
+    }
+  },
+  {
+    "identifier": "org.projectlombok:lombok",
+    "title": "org.projectlombok:lombok",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.18.36"
+    }
+  },
+  {
+    "identifier": "io.opentelemetry.javaagent:opentelemetry-javaagent",
+    "title": "io.opentelemetry.javaagent:opentelemetry-javaagent",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.10.0"
+    }
+  },
+  {
+    "identifier": "de.codecentric:spring-boot-admin-starter-client",
+    "title": "de.codecentric:spring-boot-admin-starter-client",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-dependencies",
+    "title": "com.azure.spring:spring-cloud-azure-dependencies",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-actuator",
+    "title": "org.springframework.boot:spring-boot-starter-actuator",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "actions/checkout",
+    "title": "actions/checkout",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.*.*"
+    }
+  },
+  {
+    "identifier": "liantisit-ghrc/azure-login",
+    "title": "liantisit-ghrc/azure-login",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.*.*"
+    }
+  },
+  {
+    "identifier": "liantisit-platform-cicd/gh-azure-appconfig/sync-config",
+    "title": "liantisit-platform-cicd/gh-azure-appconfig/sync-config",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.*.*"
+    }
+  },
+  {
+    "identifier": "liantisit-platform-cicd/gh-azure-appconfig/set-keyvalue",
+    "title": "liantisit-platform-cicd/gh-azure-appconfig/set-keyvalue",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.*.*"
+    }
+  },
+  {
+    "identifier": "actions/upload-artifact",
+    "title": "actions/upload-artifact",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.*.*"
+    }
+  },
+  {
+    "identifier": "actions/download-artifact",
+    "title": "actions/download-artifact",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.*.*"
+    }
+  },
+  {
+    "identifier": "actions/setup-java",
+    "title": "actions/setup-java",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.*.*"
+    }
+  },
+  {
+    "identifier": "advanced-security/maven-dependency-submission-action",
+    "title": "advanced-security/maven-dependency-submission-action",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.*.*"
+    }
+  },
+  {
+    "identifier": "github/codeql-action/upload-sarif",
+    "title": "github/codeql-action/upload-sarif",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.*.*"
+    }
+  },
+  {
+    "identifier": "anchore/scan-action",
+    "title": "anchore/scan-action",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.*.*"
+    }
+  },
+  {
+    "identifier": "humanitec/setup-cli-action",
+    "title": "humanitec/setup-cli-action",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.*.*"
+    }
+  },
+  {
+    "identifier": "gittools/actions/gitversion/setup",
+    "title": "gittools/actions/gitversion/setup",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.*.*"
+    }
+  },
+  {
+    "identifier": "gittools/actions/gitversion/execute",
+    "title": "gittools/actions/gitversion/execute",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.*.*"
+    }
+  },
+  {
+    "identifier": "liantisit-platform-cicd/gh-port-exporter",
+    "title": "liantisit-platform-cicd/gh-port-exporter",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "main"
+    }
+  },
+  {
+    "identifier": "org.junit.platform:junit-platform-engine",
+    "title": "org.junit.platform:junit-platform-engine",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.11.4"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-resolver-dns-classes-macos",
+    "title": "io.netty:netty-resolver-dns-classes-macos",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.slf4j:jul-to-slf4j",
+    "title": "org.slf4j:jul-to-slf4j",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.16"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-thymeleaf",
+    "title": "org.springframework.boot:spring-boot-starter-thymeleaf",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.ccil.cowan.tagsoup:tagsoup",
+    "title": "org.ccil.cowan.tagsoup:tagsoup",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.2.1"
+    }
+  },
+  {
+    "identifier": "ch.qos.logback:logback-classic",
+    "title": "ch.qos.logback:logback-classic",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.5.12"
+    }
+  },
+  {
+    "identifier": "com.microsoft.azure:msal4j-persistence-extension",
+    "title": "com.microsoft.azure:msal4j-persistence-extension",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter",
+    "title": "org.springframework.boot:spring-boot-starter",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.webjars:swagger-ui",
+    "title": "org.webjars:swagger-ui",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.17.14"
+    }
+  },
+  {
+    "identifier": "org.junit.platform:junit-platform-commons",
+    "title": "org.junit.platform:junit-platform-commons",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.11.4"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-test-autoconfigure",
+    "title": "org.springframework.boot:spring-boot-test-autoconfigure",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.latencyutils:LatencyUtils",
+    "title": "org.latencyutils:LatencyUtils",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.3"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-transport-native-kqueue",
+    "title": "io.netty:netty-transport-native-kqueue",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.awaitility:awaitility",
+    "title": "org.awaitility:awaitility",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.2.2"
+    }
+  },
+  {
+    "identifier": "org.hamcrest:hamcrest",
+    "title": "org.hamcrest:hamcrest",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.2"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-transport-native-unix-common",
+    "title": "io.netty:netty-transport-native-unix-common",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+    "title": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "org.attoparser:attoparser",
+    "title": "org.attoparser:attoparser",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.7.RELEASE"
+    }
+  },
+  {
+    "identifier": "org.springframework.cloud:spring-cloud-starter",
+    "title": "org.springframework.cloud:spring-cloud-starter",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.2.0"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-security-keyvault-secrets",
+    "title": "com.azure:azure-security-keyvault-secrets",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.9.1"
+    }
+  },
+  {
+    "identifier": "org.slf4j:slf4j-api",
+    "title": "org.slf4j:slf4j-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.16"
+    }
+  },
+  {
+    "identifier": "org.apache.tomcat.embed:tomcat-embed-core",
+    "title": "org.apache.tomcat.embed:tomcat-embed-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "10.1.34"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-json",
+    "title": "org.springframework.boot:spring-boot-starter-json",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-test",
+    "title": "org.springframework:spring-test",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-resolver",
+    "title": "io.netty:netty-resolver",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.objenesis:objenesis",
+    "title": "org.objenesis:objenesis",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.3"
+    }
+  },
+  {
+    "identifier": "org.junit.jupiter:junit-jupiter-engine",
+    "title": "org.junit.jupiter:junit-jupiter-engine",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.11.4"
+    }
+  },
+  {
+    "identifier": "org.mockito:mockito-core",
+    "title": "org.mockito:mockito-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.14.2"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-buffer",
+    "title": "io.netty:netty-buffer",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-test",
+    "title": "org.springframework.boot:spring-boot-test",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "de.codecentric:spring-boot-admin-starter-client",
+    "title": "de.codecentric:spring-boot-admin-starter-client",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.springframework.cloud:spring-cloud-commons",
+    "title": "org.springframework.cloud:spring-cloud-commons",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.2.0"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-core-management",
+    "title": "com.azure:azure-core-management",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.15.6"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-resolver-dns-native-macos",
+    "title": "io.netty:netty-resolver-dns-native-macos",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.core:jackson-core",
+    "title": "com.fasterxml.jackson.core:jackson-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "io.projectreactor:reactor-core",
+    "title": "io.projectreactor:reactor-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.7.1"
+    }
+  },
+  {
+    "identifier": "org.apache.tomcat.embed:tomcat-embed-el",
+    "title": "org.apache.tomcat.embed:tomcat-embed-el",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "10.1.34"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-web",
+    "title": "org.springframework:spring-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "io.micrometer:micrometer-observation",
+    "title": "io.micrometer:micrometer-observation",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.14.2"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-data-appconfiguration",
+    "title": "com.azure:azure-data-appconfiguration",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.7.3"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-codec-socks",
+    "title": "io.netty:netty-codec-socks",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-xml",
+    "title": "com.azure:azure-xml",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.1.0"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-feature-management",
+    "title": "com.azure.spring:spring-cloud-azure-feature-management",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "io.rest-assured:rest-assured",
+    "title": "io.rest-assured:rest-assured",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.5.0"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-webmvc",
+    "title": "org.springframework:spring-webmvc",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "org.yaml:snakeyaml",
+    "title": "org.yaml:snakeyaml",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.3"
+    }
+  },
+  {
+    "identifier": "org.apache.logging.log4j:log4j-api",
+    "title": "org.apache.logging.log4j:log4j-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.24.3"
+    }
+  },
+  {
+    "identifier": "commons-logging:commons-logging",
+    "title": "commons-logging:commons-logging",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.2"
+    }
+  },
+  {
+    "identifier": "io.swagger.core.v3:swagger-models-jakarta",
+    "title": "io.swagger.core.v3:swagger-models-jakarta",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.2.22"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-transport-classes-epoll",
+    "title": "io.netty:netty-transport-classes-epoll",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+    "title": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-autoconfigure",
+    "title": "org.springframework.boot:spring-boot-autoconfigure",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-jcl",
+    "title": "org.springframework:spring-jcl",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "org.opentest4j:opentest4j",
+    "title": "org.opentest4j:opentest4j",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "identifier": "io.rest-assured:xml-path",
+    "title": "io.rest-assured:xml-path",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.5.0"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-transport",
+    "title": "io.netty:netty-transport",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.apache.httpcomponents:httpmime",
+    "title": "org.apache.httpcomponents:httpmime",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.5.13"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-handler",
+    "title": "io.netty:netty-handler",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "jakarta.annotation:jakarta.annotation-api",
+    "title": "jakarta.annotation:jakarta.annotation-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.1.1"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-common",
+    "title": "io.netty:netty-common",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.core:jackson-databind",
+    "title": "com.fasterxml.jackson.core:jackson-databind",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "net.bytebuddy:byte-buddy-agent",
+    "title": "net.bytebuddy:byte-buddy-agent",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.15.11"
+    }
+  },
+  {
+    "identifier": "org.apache.qpid:proton-j",
+    "title": "org.apache.qpid:proton-j",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "0.34.1"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-boringssl-static",
+    "title": "io.netty:netty-tcnative-boringssl-static",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "io.netty.incubator:netty-incubator-codec-native-quic",
+    "title": "io.netty.incubator:netty-incubator-codec-native-quic",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "0.0.68.Final"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-classes",
+    "title": "io.netty:netty-tcnative-classes",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "org.thymeleaf:thymeleaf-spring6",
+    "title": "org.thymeleaf:thymeleaf-spring6",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.1.3.RELEASE"
+    }
+  },
+  {
+    "identifier": "de.codecentric:spring-boot-admin-client",
+    "title": "de.codecentric:spring-boot-admin-client",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "io.swagger.core.v3:swagger-annotations-jakarta",
+    "title": "io.swagger.core.v3:swagger-annotations-jakarta",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.2.22"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-actuator",
+    "title": "org.springframework.boot:spring-boot-starter-actuator",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "io.opentelemetry.javaagent:opentelemetry-javaagent",
+    "title": "io.opentelemetry.javaagent:opentelemetry-javaagent",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.10.0"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-autoconfigure",
+    "title": "com.azure.spring:spring-cloud-azure-autoconfigure",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "jakarta.xml.bind:jakarta.xml.bind-api",
+    "title": "jakarta.xml.bind:jakarta.xml.bind-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.0.2"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-appconfiguration-config-web",
+    "title": "com.azure.spring:spring-cloud-azure-appconfiguration-config-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "org.apache.groovy:groovy-json",
+    "title": "org.apache.groovy:groovy-json",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.0.24"
+    }
+  },
+  {
+    "identifier": "io.micrometer:micrometer-commons",
+    "title": "io.micrometer:micrometer-commons",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.14.2"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-boringssl-static",
+    "title": "io.netty:netty-tcnative-boringssl-static",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-transport-classes-kqueue",
+    "title": "io.netty:netty-transport-classes-kqueue",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.springdoc:springdoc-openapi-starter-common",
+    "title": "org.springdoc:springdoc-openapi-starter-common",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.6.0"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-handler-proxy",
+    "title": "io.netty:netty-handler-proxy",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "jakarta.validation:jakarta.validation-api",
+    "title": "jakarta.validation:jakarta.validation-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.0.2"
+    }
+  },
+  {
+    "identifier": "org.assertj:assertj-core",
+    "title": "org.assertj:assertj-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.26.3"
+    }
+  },
+  {
+    "identifier": "io.rest-assured:json-path",
+    "title": "io.rest-assured:json-path",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.5.0"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-beans",
+    "title": "org.springframework:spring-beans",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "com.nimbusds:nimbus-jose-jwt",
+    "title": "com.nimbusds:nimbus-jose-jwt",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "9.40"
+    }
+  },
+  {
+    "identifier": "net.minidev:accessors-smart",
+    "title": "net.minidev:accessors-smart",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.5.1"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-expression",
+    "title": "org.springframework:spring-expression",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "com.microsoft.azure:msal4j",
+    "title": "com.microsoft.azure:msal4j",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.17.2"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+    "title": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-logging",
+    "title": "org.springframework.boot:spring-boot-starter-logging",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "io.projectreactor.netty:reactor-netty-core",
+    "title": "io.projectreactor.netty:reactor-netty-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.2.1"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.core:jackson-annotations",
+    "title": "com.fasterxml.jackson.core:jackson-annotations",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-codec-http",
+    "title": "io.netty:netty-codec-http",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.apache.commons:commons-lang3",
+    "title": "org.apache.commons:commons-lang3",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.17.0"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+    "title": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "io.projectreactor.netty:reactor-netty",
+    "title": "io.projectreactor.netty:reactor-netty",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.2.1"
+    }
+  },
+  {
+    "identifier": "org.projectlombok:lombok",
+    "title": "org.projectlombok:lombok",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.18.36"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-transport-native-epoll",
+    "title": "io.netty:netty-transport-native-epoll",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework.cloud:spring-cloud-starter-bootstrap",
+    "title": "org.springframework.cloud:spring-cloud-starter-bootstrap",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.2.0"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-actuator",
+    "title": "org.springframework.boot:spring-boot-actuator",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-core",
+    "title": "com.azure:azure-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.54.1"
+    }
+  },
+  {
+    "identifier": "org.junit.jupiter:junit-jupiter",
+    "title": "org.junit.jupiter:junit-jupiter",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.11.4"
+    }
+  },
+  {
+    "identifier": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+    "title": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.6.0"
+    }
+  },
+  {
+    "identifier": "com.microsoft.azure:qpid-proton-j-extensions",
+    "title": "com.microsoft.azure:qpid-proton-j-extensions",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.2.5"
+    }
+  },
+  {
+    "identifier": "com.github.stephenc.jcip:jcip-annotations",
+    "title": "com.github.stephenc.jcip:jcip-annotations",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.0-1"
+    }
+  },
+  {
+    "identifier": "net.java.dev.jna:jna",
+    "title": "net.java.dev.jna:jna",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.13.0"
+    }
+  },
+  {
+    "identifier": "net.bytebuddy:byte-buddy",
+    "title": "net.bytebuddy:byte-buddy",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.15.11"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-codec-dns",
+    "title": "io.netty:netty-codec-dns",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework.cloud:spring-cloud-context",
+    "title": "org.springframework.cloud:spring-cloud-context",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.2.0"
+    }
+  },
+  {
+    "identifier": "org.apache.groovy:groovy",
+    "title": "org.apache.groovy:groovy",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.0.24"
+    }
+  },
+  {
+    "identifier": "org.unbescape:unbescape",
+    "title": "org.unbescape:unbescape",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.1.6.RELEASE"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-json",
+    "title": "com.azure:azure-json",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "identifier": "com.jayway.jsonpath:json-path",
+    "title": "com.jayway.jsonpath:json-path",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.9.0"
+    }
+  },
+  {
+    "identifier": "org.apiguardian:apiguardian-api",
+    "title": "org.apiguardian:apiguardian-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.1.2"
+    }
+  },
+  {
+    "identifier": "io.micrometer:micrometer-core",
+    "title": "io.micrometer:micrometer-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.14.2"
+    }
+  },
+  {
+    "identifier": "io.rest-assured:rest-assured-common",
+    "title": "io.rest-assured:rest-assured-common",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.5.0"
+    }
+  },
+  {
+    "identifier": "com.vaadin.external.google:android-json",
+    "title": "com.vaadin.external.google:android-json",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "0.0.20131108.vaadin1"
+    }
+  },
+  {
+    "identifier": "org.springdoc:springdoc-openapi-starter-webmvc-api",
+    "title": "org.springdoc:springdoc-openapi-starter-webmvc-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.6.0"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-feature-management-web",
+    "title": "com.azure.spring:spring-cloud-azure-feature-management-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-aop",
+    "title": "org.springframework:spring-aop",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "io.netty.incubator:netty-incubator-codec-classes-quic",
+    "title": "io.netty.incubator:netty-incubator-codec-classes-quic",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "0.0.68.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-context",
+    "title": "org.springframework:spring-context",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "org.apache.groovy:groovy-xml",
+    "title": "org.apache.groovy:groovy-xml",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.0.24"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-starter",
+    "title": "com.azure.spring:spring-cloud-azure-starter",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "org.apache.httpcomponents:httpcore",
+    "title": "org.apache.httpcomponents:httpcore",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.4.16"
+    }
+  },
+  {
+    "identifier": "org.junit.jupiter:junit-jupiter-params",
+    "title": "org.junit.jupiter:junit-jupiter-params",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.11.4"
+    }
+  },
+  {
+    "identifier": "org.springframework:spring-core",
+    "title": "org.springframework:spring-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.2.1"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-boringssl-static",
+    "title": "io.netty:netty-tcnative-boringssl-static",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot",
+    "title": "org.springframework.boot:spring-boot",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "com.nimbusds:oauth2-oidc-sdk",
+    "title": "com.nimbusds:oauth2-oidc-sdk",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "11.18"
+    }
+  },
+  {
+    "identifier": "io.projectreactor.netty.incubator:reactor-netty-incubator-quic",
+    "title": "io.projectreactor.netty.incubator:reactor-netty-incubator-quic",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "0.2.1"
+    }
+  },
+  {
+    "identifier": "io.micrometer:micrometer-jakarta9",
+    "title": "io.micrometer:micrometer-jakarta9",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.14.2"
+    }
+  },
+  {
+    "identifier": "ch.qos.logback:logback-core",
+    "title": "ch.qos.logback:logback-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.5.12"
+    }
+  },
+  {
+    "identifier": "org.apache.logging.log4j:log4j-to-slf4j",
+    "title": "org.apache.logging.log4j:log4j-to-slf4j",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.24.3"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-codec-http2",
+    "title": "io.netty:netty-codec-http2",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-boringssl-static",
+    "title": "io.netty:netty-tcnative-boringssl-static",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "net.minidev:json-smart",
+    "title": "net.minidev:json-smart",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.5.1"
+    }
+  },
+  {
+    "identifier": "org.ow2.asm:asm",
+    "title": "org.ow2.asm:asm",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "9.6"
+    }
+  },
+  {
+    "identifier": "org.thymeleaf:thymeleaf",
+    "title": "org.thymeleaf:thymeleaf",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.1.3.RELEASE"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-boringssl-static",
+    "title": "io.netty:netty-tcnative-boringssl-static",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "jakarta.activation:jakarta.activation-api",
+    "title": "jakarta.activation:jakarta.activation-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.1.3"
+    }
+  },
+  {
+    "identifier": "commons-codec:commons-codec",
+    "title": "commons-codec:commons-codec",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.17.1"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-appconfiguration-config",
+    "title": "com.azure.spring:spring-cloud-azure-appconfiguration-config",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-resolver-dns",
+    "title": "io.netty:netty-resolver-dns",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-tcnative-boringssl-static",
+    "title": "io.netty:netty-tcnative-boringssl-static",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.0.69.Final"
+    }
+  },
+  {
+    "identifier": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+    "title": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.18.2"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-starter-keyvault-secrets",
+    "title": "com.azure.spring:spring-cloud-azure-starter-keyvault-secrets",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "io.swagger.core.v3:swagger-core-jakarta",
+    "title": "io.swagger.core.v3:swagger-core-jakarta",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.2.22"
+    }
+  },
+  {
+    "identifier": "org.bouncycastle:bcprov-jdk18on",
+    "title": "org.bouncycastle:bcprov-jdk18on",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.78.1"
+    }
+  },
+  {
+    "identifier": "org.junit.jupiter:junit-jupiter-api",
+    "title": "org.junit.jupiter:junit-jupiter-api",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.11.4"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-test",
+    "title": "org.springframework.boot:spring-boot-starter-test",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.apache.tomcat.embed:tomcat-embed-websocket",
+    "title": "org.apache.tomcat.embed:tomcat-embed-websocket",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "10.1.34"
+    }
+  },
+  {
+    "identifier": "org.mockito:mockito-junit-jupiter",
+    "title": "org.mockito:mockito-junit-jupiter",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.14.2"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-service",
+    "title": "com.azure.spring:spring-cloud-azure-service",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "org.skyscreamer:jsonassert",
+    "title": "org.skyscreamer:jsonassert",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.5.3"
+    }
+  },
+  {
+    "identifier": "com.nimbusds:lang-tag",
+    "title": "com.nimbusds:lang-tag",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.7"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-identity",
+    "title": "com.azure:azure-identity",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.14.2"
+    }
+  },
+  {
+    "identifier": "net.java.dev.jna:jna-platform",
+    "title": "net.java.dev.jna:jna-platform",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.13.0"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-tomcat",
+    "title": "org.springframework.boot:spring-boot-starter-tomcat",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "org.hdrhistogram:HdrHistogram",
+    "title": "org.hdrhistogram:HdrHistogram",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.2.2"
+    }
+  },
+  {
+    "identifier": "io.netty:netty-codec",
+    "title": "io.netty:netty-codec",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.1.116.Final"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-devtools",
+    "title": "org.springframework.boot:spring-boot-devtools",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "com.azure.spring:spring-cloud-azure-core",
+    "title": "com.azure.spring:spring-cloud-azure-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "5.19.0"
+    }
+  },
+  {
+    "identifier": "org.reactivestreams:reactive-streams",
+    "title": "org.reactivestreams:reactive-streams",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.0.4"
+    }
+  },
+  {
+    "identifier": "org.springframework.boot:spring-boot-starter-web",
+    "title": "org.springframework.boot:spring-boot-starter-web",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "3.4.1"
+    }
+  },
+  {
+    "identifier": "com.nimbusds:content-type",
+    "title": "com.nimbusds:content-type",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.3"
+    }
+  },
+  {
+    "identifier": "org.apache.httpcomponents:httpclient",
+    "title": "org.apache.httpcomponents:httpclient",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "4.5.13"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-core-http-netty",
+    "title": "com.azure:azure-core-http-netty",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.15.7"
+    }
+  },
+  {
+    "identifier": "org.xmlunit:xmlunit-core",
+    "title": "org.xmlunit:xmlunit-core",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.10.0"
+    }
+  },
+  {
+    "identifier": "org.springframework.security:spring-security-crypto",
+    "title": "org.springframework.security:spring-security-crypto",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "6.4.2"
+    }
+  },
+  {
+    "identifier": "io.projectreactor.netty:reactor-netty-http",
+    "title": "io.projectreactor.netty:reactor-netty-http",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "1.2.1"
+    }
+  },
+  {
+    "identifier": "com.azure:azure-core-amqp",
+    "title": "com.azure:azure-core-amqp",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "2.9.12"
+    }
+  },
+  {
+    "identifier": "com.github.liantisit-platform-apps-staging/orderdemo-backend-app",
+    "title": "com.github.liantisit-platform-apps-staging/orderdemo-backend-app",
+    "icon": "dependabot",
+    "blueprint": "dependency",
+    "properties": {
+      "version": "main"
+    }
+  }
+]

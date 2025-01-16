@@ -1,0 +1,3302 @@
+[
+  {
+    "number": 142,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/142",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/142",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-pr98-23f8-jwxv-logback-core",
+      "severity": "warning",
+      "description": "GHSA-pr98-23f8-jwxv medium vulnerability for logback-core package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "QOS.CH logback-core Expression Language Injection vulnerability",
+      "help": "**Vulnerability GHSA-pr98-23f8-jwxv**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | logback-core  | 1.5.12  | 1.5.13  | java-archive  | /workspace/BOOT-INF/lib/logback-core-1.5.12.jar  | github:language:java  | [GHSA-pr98-23f8-jwxv](https://github.com/advisories/GHSA-pr98-23f8-jwxv)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /workspace/BOOT-INF/lib/logback-core-1.5.12.jar reports logback-core at version 1.5.12  which is a vulnerable (java-archive) package installed in the container"
+      },
+      "location": {
+        "path": "image//workspace/BOOT-INF/lib/logback-core-1.5.12.jar",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "library"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/142/instances"
+  },
+  {
+    "number": 141,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/141",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/141",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-6v67-2wr5-gvf4-logback-core",
+      "severity": "warning",
+      "description": "GHSA-6v67-2wr5-gvf4 low vulnerability for logback-core package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "QOS.CH logback-core Server-Side Request Forgery vulnerability",
+      "help": "**Vulnerability GHSA-6v67-2wr5-gvf4**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | logback-core  | 1.5.12  | 1.5.13  | java-archive  | /workspace/BOOT-INF/lib/logback-core-1.5.12.jar  | github:language:java  | [GHSA-6v67-2wr5-gvf4](https://github.com/advisories/GHSA-6v67-2wr5-gvf4)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "low"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /workspace/BOOT-INF/lib/logback-core-1.5.12.jar reports logback-core at version 1.5.12  which is a vulnerable (java-archive) package installed in the container"
+      },
+      "location": {
+        "path": "image//workspace/BOOT-INF/lib/logback-core-1.5.12.jar",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "library"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/141/instances"
+  },
+  {
+    "number": 140,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/140",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/140",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-9143-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-9143 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApp",
+      "help": "**Vulnerability CVE-2024-9143**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zl,1.1.1zb,3.0.16,3.1.8,3.2.4,3.3.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-9143](https://nvd.nist.gov/vuln/detail/CVE-2024-9143)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/140/instances"
+  },
+  {
+    "number": 139,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/139",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/139",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-6119-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-6119 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extrac",
+      "help": "**Vulnerability CVE-2024-6119**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.15,3.1.7,3.2.3,3.3.2  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-6119](https://nvd.nist.gov/vuln/detail/CVE-2024-6119)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/139/instances"
+  },
+  {
+    "number": 138,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/138",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/138",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-5535-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-5535 critical vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was nev",
+      "help": "**Vulnerability CVE-2024-5535**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | openssl  | 3.0.2  | 1.0.2zk,1.1.1za,3.0.15,3.1.7,3.2.3,3.3.2  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-5535](https://nvd.nist.gov/vuln/detail/CVE-2024-5535)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/138/instances"
+  },
+  {
+    "number": 137,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/137",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/137",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-4741-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-4741 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Calling the OpenSSL API function SSL_free_buffers may cause\nmemory to be accessed that was previously freed in some situations\n\nImpact summary: A use after free can have a range of potential consequences such\nas the corruption of valid data, crashes or execution of arbitrary code.\nHowever, only applications that directly call the SSL_free_buffers function are\naffected by this issue. Applications that do not call this function are not\nvulnerable. Our investigations indicate that this function is rarely used by\napplications.\n\nThe SSL_free_buffers function is used to free the internal OpenSSL buffer used\nwhen processing an incoming record from the network. The call is only expected\nto succeed if the buffer is not currently in use. However, two scenarios have\nbeen identified where the buffer is freed even when still in use.\n\nThe first scenario occurs where a record header has been received from the\nnetwork and processed by OpenSSL, but the full record body has not yet arrived.\nIn this case calling ",
+      "help": "**Vulnerability CVE-2024-4741**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 1.1.1y,3.0.14,3.1.6,3.2.2,3.3.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-4741](https://nvd.nist.gov/vuln/detail/CVE-2024-4741)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/137/instances"
+  },
+  {
+    "number": 136,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/136",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/136",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-4603-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-4603 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to",
+      "help": "**Vulnerability CVE-2024-4603**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.14,3.1.6,3.2.2,3.3.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-4603](https://nvd.nist.gov/vuln/detail/CVE-2024-4603)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/136/instances"
+  },
+  {
+    "number": 135,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/135",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/135",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-2511-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-2511 low vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this ",
+      "help": "**Vulnerability CVE-2024-2511**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | openssl  | 3.0.2  | 1.1.1y,3.0.14,3.1.6,3.2.2  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-2511](https://nvd.nist.gov/vuln/detail/CVE-2024-2511)  |\n",
+      "help_uri": "https://github.com/anchore/grype"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/135/instances"
+  },
+  {
+    "number": 134,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/134",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/134",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-0727-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-0727 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in ",
+      "help": "**Vulnerability CVE-2024-0727**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zj,1.1.1x,3.0.13,3.1.5  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-0727](https://nvd.nist.gov/vuln/detail/CVE-2024-0727)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/134/instances"
+  },
+  {
+    "number": 133,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/133",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/133",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-6237-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-6237 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Checking excessively long invalid RSA public keys may take\na long time.\n\nImpact summary: Applications that use the function EVP_PKEY_public_check()\nto check RSA public keys may experience long delays. Where the key that\nis being checked has been obtained from an untrusted source this may lead\nto a Denial of Service.\n\nWhen function EVP_PKEY_public_check() is called on RSA public keys,\na computation is done to confirm that the RSA modulus, n, is composite.\nFor valid RSA keys, n is a product of two or more large primes and this\ncomputation completes quickly. However, if n is an overly large prime,\nthen this computation would take a long time.\n\nAn application that calls EVP_PKEY_public_check() and supplies an RSA key\nobtained from an untrusted source could be vulnerable to a Denial of Service\nattack.\n\nThe function EVP_PKEY_public_check() is not called from other OpenSSL\nfunctions however it is called from the OpenSSL pkey command line\napplication. For that reason that application is also vulnerable",
+      "help": "**Vulnerability CVE-2023-6237**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.13,3.1.5,3.2.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-6237](https://nvd.nist.gov/vuln/detail/CVE-2023-6237)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/133/instances"
+  },
+  {
+    "number": 132,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/132",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/132",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-6129-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-6129 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where th",
+      "help": "**Vulnerability CVE-2023-6129**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.13,3.1.5,3.2.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-6129](https://nvd.nist.gov/vuln/detail/CVE-2023-6129)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/132/instances"
+  },
+  {
+    "number": 131,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/131",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/131",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-5678-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-5678 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted sour",
+      "help": "**Vulnerability CVE-2023-5678**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zj,1.1.1x,3.0.13,3.1.5  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-5678](https://nvd.nist.gov/vuln/detail/CVE-2023-5678)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/131/instances"
+  },
+  {
+    "number": 130,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/130",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/130",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-5363-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-5363 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: A bug has been identified in the processing of key and\ninitialisation vector (IV) lengths.  This can lead to potential truncation\nor overruns during the initialisation of some symmetric ciphers.\n\nImpact summary: A truncation in the IV can result in non-uniqueness,\nwhich could result in loss of confidentiality for some cipher modes.\n\nWhen calling EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() or\nEVP_CipherInit_ex2() the provided OSSL_PARAM array is processed after\nthe key and IV have been established.  Any alterations to the key length,\nvia the \"keylen\" parameter or the IV length, via the \"ivlen\" parameter,\nwithin the OSSL_PARAM array will not take effect as intended, potentially\ncausing truncation or overreading of these values.  The following ciphers\nand cipher modes are impacted: RC2, RC4, RC5, CCM, GCM and OCB.\n\nFor the CCM, GCM and OCB cipher modes, truncation of the IV can result in\nloss of confidentiality.  For example, when following NIST's SP 800-38D\nsection 8.2.1 guidance for constructin",
+      "help": "**Vulnerability CVE-2023-5363**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.12,3.1.4  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-5363](https://nvd.nist.gov/vuln/detail/CVE-2023-5363)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/130/instances"
+  },
+  {
+    "number": 129,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/129",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/129",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-4807-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-4807 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications on the\nWindows 64 platform when running on newer X86_64 processors supporting the\nAVX512-IFMA instructions.\n\nImpact summary: If in an application that uses the OpenSSL library an attacker\ncan influence whether the POLY1305 MAC algorithm is used, the application\nstate might be corrupted with various application dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL does\nnot save the contents of non-volatile XMM registers on Windows 64 platform\nwhen calculating the MAC of data larger than 64 bytes. Before returning to\nthe caller all the XMM registers are set to zero rather than restoring their\nprevious content. The vulnerable code is used only on newer x86_64 processors\nsupporting the AVX512-IFMA instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the",
+      "help": "**Vulnerability CVE-2023-4807**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 1.1.1w,3.0.11,3.1.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-4807](https://nvd.nist.gov/vuln/detail/CVE-2023-4807)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/129/instances"
+  },
+  {
+    "number": 128,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/128",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/128",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-3817-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-3817 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those othe",
+      "help": "**Vulnerability CVE-2023-3817**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.10,3.1.2  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-3817](https://nvd.nist.gov/vuln/detail/CVE-2023-3817)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/128/instances"
+  },
+  {
+    "number": 127,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/127",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/127",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-3446-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-3446 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe ",
+      "help": "**Vulnerability CVE-2023-3446**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zi,1.1.1v,3.0.10,3.1.2  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-3446](https://nvd.nist.gov/vuln/detail/CVE-2023-3446)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/127/instances"
+  },
+  {
+    "number": 126,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/126",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/126",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-2975-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-2975 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: The AES-SIV cipher implementation contains a bug that causes\nit to ignore empty associated data entries which are unauthenticated as\na consequence.\n\nImpact summary: Applications that use the AES-SIV algorithm and want to\nauthenticate empty data entries as associated data can be misled by removing,\nadding or reordering such empty entries as these are ignored by the OpenSSL\nimplementation. We are currently unaware of any such applications.\n\nThe AES-SIV algorithm allows for authentication of multiple associated\ndata entries along with the encryption. To authenticate empty data the\napplication has to call EVP_EncryptUpdate() (or EVP_CipherUpdate()) with\nNULL pointer as the output buffer and 0 as the input buffer length.\nThe AES-SIV implementation in OpenSSL just returns success for such a call\ninstead of performing the associated data authentication operation.\nThe empty data thus will not be authenticated.\n\nAs this issue does not affect non-empty associated data authentication and\nwe expect it to b",
+      "help": "**Vulnerability CVE-2023-2975**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.10,3.1.2  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-2975](https://nvd.nist.gov/vuln/detail/CVE-2023-2975)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/126/instances"
+  },
+  {
+    "number": 125,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/125",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/125",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-2650-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-2650 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Processing some specially crafted ASN.1 object identifiers or\ndata containing them may be very slow.\n\nImpact summary: Applications that use OBJ_obj2txt() directly, or use any of\nthe OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message\nsize limit may experience notable to very long delays when processing those\nmessages, which may lead to a Denial of Service.\n\nAn OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -\nmost of which have no size limit.  OBJ_obj2txt() may be used to translate\nan ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL\ntype ASN1_OBJECT) to its canonical numeric text form, which are the\nsub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by\nperiods.\n\nWhen one of the sub-identifiers in the OBJECT IDENTIFIER is very large\n(these are sizes that are seen as absurdly large, taking up tens or hundreds\nof KiBs), the translation to a decimal number in text may take a very long\ntime.  The time complexity is O(",
+      "help": "**Vulnerability CVE-2023-2650**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zh,1.1.1u,3.0.9,3.1.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-2650](https://nvd.nist.gov/vuln/detail/CVE-2023-2650)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/125/instances"
+  },
+  {
+    "number": 124,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/124",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/124",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-1255-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-1255 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: The AES-XTS cipher decryption implementation for 64 bit ARM\nplatform contains a bug that could cause it to read past the input buffer,\nleading to a crash.\n\nImpact summary: Applications that use the AES-XTS algorithm on the 64 bit ARM\nplatform can crash in rare circumstances. The AES-XTS algorithm is usually\nused for disk encryption.\n\nThe AES-XTS cipher decryption implementation for 64 bit ARM platform will read\npast the end of the ciphertext buffer if the ciphertext size is 4 mod 5 in 16\nbyte blocks, e.g. 144 bytes or 1024 bytes. If the memory after the ciphertext\nbuffer is unmapped, this will trigger a crash which results in a denial of\nservice.\n\nIf an attacker can control the size and location of the ciphertext buffer\nbeing decrypted by an application using AES-XTS on 64 bit ARM, the\napplication is affected. This is fairly unlikely making this issue\na Low severity one.",
+      "help": "**Vulnerability CVE-2023-1255**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.9,3.1.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-1255](https://nvd.nist.gov/vuln/detail/CVE-2023-1255)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/124/instances"
+  },
+  {
+    "number": 123,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/123",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/123",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0466-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0466 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The function X509_VERIFY_PARAM_add0_policy() is documented to\nimplicitly enable the certificate policy check when doing certificate\nverification. However the implementation of the function does not\nenable the check which allows certificates with invalid or incorrect\npolicies to pass the certificate verification.\n\nAs suddenly enabling the policy check could break existing deployments it was\ndecided to keep the existing behavior of the X509_VERIFY_PARAM_add0_policy()\nfunction.\n\nInstead the applications that require OpenSSL to perform certificate\npolicy check need to use X509_VERIFY_PARAM_set1_policies() or explicitly\nenable the policy check by calling X509_VERIFY_PARAM_set_flags() with\nthe X509_V_FLAG_POLICY_CHECK flag argument.\n\nCertificate policy checks are disabled by default in OpenSSL and are not\ncommonly used by applications.",
+      "help": "**Vulnerability CVE-2023-0466**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zh,1.1.1u,3.0.9,3.1.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0466](https://nvd.nist.gov/vuln/detail/CVE-2023-0466)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/123/instances"
+  },
+  {
+    "number": 122,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/122",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/122",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0465-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0465 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Applications that use a non-default option when verifying certificates may be\nvulnerable to an attack from a malicious CA to circumvent certain checks.\n\nInvalid certificate policies in leaf certificates are silently ignored by\nOpenSSL and other certificate policy checks are skipped for that certificate.\nA malicious CA could use this to deliberately assert invalid certificate policies\nin order to circumvent policy checking on the certificate altogether.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+      "help": "**Vulnerability CVE-2023-0465**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zh,1.1.1u,3.0.9,3.1.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0465](https://nvd.nist.gov/vuln/detail/CVE-2023-0465)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/122/instances"
+  },
+  {
+    "number": 121,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/121",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/121",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0464-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0464 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "A security vulnerability has been identified in all supported versions\n\nof OpenSSL related to the verification of X.509 certificate chains\nthat include policy constraints.  Attackers may be able to exploit this\nvulnerability by creating a malicious certificate chain that triggers\nexponential use of computational resources, leading to a denial-of-service\n(DoS) attack on affected systems.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+      "help": "**Vulnerability CVE-2023-0464**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 1.0.2zh,1.1.1u,3.0.9,3.1.1  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0464](https://nvd.nist.gov/vuln/detail/CVE-2023-0464)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/121/instances"
+  },
+  {
+    "number": 120,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/120",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/120",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0401-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0401 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "A NULL pointer can be dereferenced when signatures are being\nverified on PKCS7 signed or signedAndEnveloped data. In case the hash\nalgorithm used for the signature is known to the OpenSSL library but\nthe implementation of the hash algorithm is not available the digest\ninitialization will fail. There is a missing check for the return\nvalue from the initialization function which later leads to invalid\nusage of the digest API most likely leading to a crash.\n\nThe unavailability of an algorithm can be caused by using FIPS\nenabled configuration of providers or more commonly by not loading\nthe legacy provider.\n\nPKCS7 data is processed by the SMIME library calls and also by the\ntime stamp (TS) library calls. The TLS implementation in OpenSSL does\nnot call these functions however third party applications would be\naffected if they call these functions to verify signatures on untrusted\ndata.\n\n",
+      "help": "**Vulnerability CVE-2023-0401**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0401](https://nvd.nist.gov/vuln/detail/CVE-2023-0401)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/120/instances"
+  },
+  {
+    "number": 119,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/119",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/119",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0286-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0286 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "There is a type confusion vulnerability relating to X.400 address processing\ninside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\nthe public structure definition for GENERAL_NAME incorrectly specified the type\nof the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\nthe OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\nASN1_STRING.\n\nWhen CRL checking is enabled (i.e. the application sets the\nX509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass\narbitrary pointers to a memcmp call, enabling them to read memory contents or\nenact a denial of service. In most cases, the attack requires the attacker to\nprovide both the certificate chain and CRL, neither of which need to have a\nvalid signature. If the attacker only controls one of these inputs, the other\ninput must already contain an X.400 address as a CRL distribution point, which\nis uncommon. As such, this vulnerability is most likely to only affect\napplications which have im",
+      "help": "**Vulnerability CVE-2023-0286**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 1.0.2zg,1.1.1t,3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0286](https://nvd.nist.gov/vuln/detail/CVE-2023-0286)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/119/instances"
+  },
+  {
+    "number": 118,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/118",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/118",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0217-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0217 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "An invalid pointer dereference on read can be triggered when an\napplication tries to check a malformed DSA public key by the\nEVP_PKEY_public_check() function. This will most likely lead\nto an application crash. This function can be called on public\nkeys supplied from untrusted sources which could allow an attacker\nto cause a denial of service attack.\n\nThe TLS implementation in OpenSSL does not call this function\nbut applications might call the function if there are additional\nsecurity requirements imposed by standards such as FIPS 140-3.\n\n",
+      "help": "**Vulnerability CVE-2023-0217**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0217](https://nvd.nist.gov/vuln/detail/CVE-2023-0217)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/118/instances"
+  },
+  {
+    "number": 117,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/117",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/117",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0216-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0216 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "An invalid pointer dereference on read can be triggered when an\napplication tries to load malformed PKCS7 data with the\nd2i_PKCS7(), d2i_PKCS7_bio() or d2i_PKCS7_fp() functions.\n\nThe result of the dereference is an application crash which could\nlead to a denial of service attack. The TLS implementation in OpenSSL\ndoes not call this function however third party applications might\ncall these functions on untrusted data.\n\n",
+      "help": "**Vulnerability CVE-2023-0216**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0216](https://nvd.nist.gov/vuln/detail/CVE-2023-0216)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/117/instances"
+  },
+  {
+    "number": 116,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/116",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/116",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-0215-openssl",
+      "severity": "warning",
+      "description": "CVE-2023-0215 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The public API function BIO_new_NDEF is a helper function used for streaming\nASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\nSMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\nend user applications.\n\nThe function receives a BIO from the caller, prepends a new BIO_f_asn1 filter\nBIO onto the front of it to form a BIO chain, and then returns the new head of\nthe BIO chain to the caller. Under certain conditions, for example if a CMS\nrecipient public key is invalid, the new filter BIO is freed and the function\nreturns a NULL result indicating a failure. However, in this case, the BIO chain\nis not properly cleaned up and the BIO passed by the caller still retains\ninternal pointers to the previously freed filter BIO. If the caller then goes on\nto call BIO_pop() on the BIO then a use-after-free will occur. This will most\nlikely result in a crash.\n\n\n\nThis scenario occurs directly in the internal function B64_write_ASN1() which\nmay cause BIO_new_NDEF() to be ",
+      "help": "**Vulnerability CVE-2023-0215**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 1.0.2zg,1.1.1t,3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2023-0215](https://nvd.nist.gov/vuln/detail/CVE-2023-0215)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/116/instances"
+  },
+  {
+    "number": 115,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/115",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/115",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-4450-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-4450 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\ndecodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\nIf the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\npopulated with pointers to buffers containing the relevant decoded data. The\ncaller is responsible for freeing those buffers. It is possible to construct a\nPEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\nwill return a failure code but will populate the header argument with a pointer\nto a buffer that has already been freed. If the caller also frees this buffer\nthen a double free will occur. This will most likely lead to a crash. This\ncould be exploited by an attacker who has the ability to supply malicious PEM\nfiles for parsing to achieve a denial of service attack.\n\nThe functions PEM_read_bio() and PEM_read() are simple wrappers around\nPEM_read_bio_ex() and therefore these functions are also directly affected.\n\nThese functions are also called indir",
+      "help": "**Vulnerability CVE-2022-4450**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 1.1.1t,3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-4450](https://nvd.nist.gov/vuln/detail/CVE-2022-4450)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/115/instances"
+  },
+  {
+    "number": 114,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/114",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/114",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-4304-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-4304 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation\nwhich could be sufficient to recover a plaintext across a network in a\nBleichenbacher style attack. To achieve a successful decryption an attacker\nwould have to be able to send a very large number of trial messages for\ndecryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\nRSA-OEAP and RSASVE.\n\nFor example, in a TLS connection, RSA is commonly used by a client to send an\nencrypted pre-master secret to the server. An attacker that had observed a\ngenuine connection between a client and a server could use this flaw to send\ntrial messages to the server and record the time taken to process them. After a\nsufficiently large number of messages the attacker could recover the pre-master\nsecret used for the original connection and thus be able to decrypt the\napplication data sent over that connection.\n\n",
+      "help": "**Vulnerability CVE-2022-4304**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zg,1.1.1t,3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-4304](https://nvd.nist.gov/vuln/detail/CVE-2022-4304)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/114/instances"
+  },
+  {
+    "number": 113,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/113",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/113",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-4203-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-4203 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "A read buffer overrun can be triggered in X.509 certificate verification,\nspecifically in name constraint checking. Note that this occurs\nafter certificate chain signature verification and requires either a\nCA to have signed the malicious certificate or for the application to\ncontinue certificate verification despite failure to construct a path\nto a trusted issuer.\n\nThe read buffer overrun might result in a crash which could lead to\na denial of service attack. In theory it could also result in the disclosure\nof private memory contents (such as private keys, or sensitive plaintext)\nalthough we are not aware of any working exploit leading to memory\ncontents disclosure as of the time of release of this advisory.\n\nIn a TLS client, this can be triggered by connecting to a malicious\nserver. In a TLS server, this can be triggered if the server requests\nclient authentication and a malicious client connects.\n\n",
+      "help": "**Vulnerability CVE-2022-4203**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-4203](https://nvd.nist.gov/vuln/detail/CVE-2022-4203)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/113/instances"
+  },
+  {
+    "number": 112,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/112",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/112",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-3996-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-3996 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "If an X.509 certificate contains a malformed policy constraint and\npolicy processing is enabled, then a write lock will be taken twice\nrecursively.  On some operating systems (most widely: Windows) this\nresults in a denial of service when the affected process hangs.  Policy\nprocessing being enabled on a publicly facing server is not considered\nto be a common setup.\n\nPolicy processing is enabled by passing the `-policy'\nargument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.\n\nUpdate (31 March 2023): The description of the policy processing enablement\nwas corrected based on CVE-2023-0466.",
+      "help": "**Vulnerability CVE-2022-3996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.8  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-3996](https://nvd.nist.gov/vuln/detail/CVE-2022-3996)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/112/instances"
+  },
+  {
+    "number": 111,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/111",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/111",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-3786-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-3786 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects.\n\n",
+      "help": "**Vulnerability CVE-2022-3786**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.7  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-3786](https://nvd.nist.gov/vuln/detail/CVE-2022-3786)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/111/instances"
+  },
+  {
+    "number": 110,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/110",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/110",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-3602-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-3602 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address to overflow four attacker-controlled bytes on the stack. This buffer overflow could result in a crash (causing a denial of service) or potentially remote code execution. Many platforms implement stack overflow protections which would mitigate against the risk of remote code execution. The risk may be further mitigated based on stack layout for any given platform/compiler. Pre-announcements of CVE-2022-3602 described this issue as CRITICAL. Further analysis based on some of the mitigating factors described above have led this to be downgraded to HIGH. Users are still encouraged to upgrade to a new version a",
+      "help": "**Vulnerability CVE-2022-3602**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.7  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-3602](https://nvd.nist.gov/vuln/detail/CVE-2022-3602)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/110/instances"
+  },
+  {
+    "number": 109,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/109",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/109",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-3358-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-3358 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "OpenSSL supports creating a custom cipher via the legacy EVP_CIPHER_meth_new() function and associated function calls. This function was deprecated in OpenSSL 3.0 and application authors are instead encouraged to use the new provider mechanism in order to implement custom ciphers. OpenSSL versions 3.0.0 to 3.0.5 incorrectly handle legacy custom ciphers passed to the EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() and EVP_CipherInit_ex2() functions (as well as other similarly named encryption and decryption initialisation functions). Instead of using the custom cipher directly it incorrectly tries to fetch an equivalent cipher from the available providers. An equivalent cipher is found based on the NID passed to EVP_CIPHER_meth_new(). This NID is supposed to represent the unique NID for a given cipher. However it is possible for an application to incorrectly pass NID_undef as this value in the call to EVP_CIPHER_meth_new(). When NID_undef is used in this way the OpenSSL encryption/decryption initialisation functi",
+      "help": "**Vulnerability CVE-2022-3358**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.6  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-3358](https://nvd.nist.gov/vuln/detail/CVE-2022-3358)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/109/instances"
+  },
+  {
+    "number": 108,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/108",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/108",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-2097-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-2097 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).",
+      "help": "**Vulnerability CVE-2022-2097**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.1.1q,3.0.5  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-2097](https://nvd.nist.gov/vuln/detail/CVE-2022-2097)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/108/instances"
+  },
+  {
+    "number": 107,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/107",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/107",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-2068-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-2068 critical vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "In addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).",
+      "help": "**Vulnerability CVE-2022-2068**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | openssl  | 3.0.2  | 1.0.2zf,1.1.1p,3.0.4  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-2068](https://nvd.nist.gov/vuln/detail/CVE-2022-2068)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/107/instances"
+  },
+  {
+    "number": 106,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/106",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/106",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-1473-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-1473 high vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The OPENSSL_LH_flush() function, which empties a hash table, contains a bug that breaks reuse of the memory occuppied by the removed hash table entries. This function is used when decoding certificates or keys. If a long lived process periodically decodes certificates or keys its memory usage will expand without bounds and the process might be terminated by the operating system causing a denial of service. Also traversing the empty hash table entries will take increasingly more time. Typically such long lived processes might be TLS clients or TLS servers configured to accept client certificate authentication. The function was added in the OpenSSL 3.0 version thus older releases are not affected by the issue. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2).",
+      "help": "**Vulnerability CVE-2022-1473**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | openssl  | 3.0.2  | 3.0.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-1473](https://nvd.nist.gov/vuln/detail/CVE-2022-1473)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/106/instances"
+  },
+  {
+    "number": 105,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/105",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/105",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-1434-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-1434 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The OpenSSL 3.0 implementation of the RC4-MD5 ciphersuite incorrectly uses the AAD data as the MAC key. This makes the MAC key trivially predictable. An attacker could exploit this issue by performing a man-in-the-middle attack to modify data being sent from one endpoint to an OpenSSL 3.0 recipient such that the modified data would still pass the MAC integrity check. Note that data sent from an OpenSSL 3.0 endpoint to a non-OpenSSL 3.0 endpoint will always be rejected by the recipient and the connection will fail at that point. Many application protocols require data to be sent from the client to the server first. Therefore, in such a case, only an OpenSSL 3.0 server would be impacted when talking to a non-OpenSSL 3.0 client. If both endpoints are OpenSSL 3.0 then the attacker could modify data being sent in both directions. In this case both clients and servers could be affected, regardless of the application protocol. Note that in the absence of an attacker this bug means that an OpenSSL 3.0 endpoint commun",
+      "help": "**Vulnerability CVE-2022-1434**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-1434](https://nvd.nist.gov/vuln/detail/CVE-2022-1434)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/105/instances"
+  },
+  {
+    "number": 104,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/104",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/104",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-1343-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-1343 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The function `OCSP_basic_verify` verifies the signer certificate on an OCSP response. In the case where the (non-default) flag OCSP_NOCHECKS is used then the response will be positive (meaning a successful verification) even in the case where the response signing certificate fails to verify. It is anticipated that most users of `OCSP_basic_verify` will not use the OCSP_NOCHECKS flag. In this case the `OCSP_basic_verify` function will return a negative value (indicating a fatal error) in the case of a certificate verification failure. The normal expected return value in this case would be 0. This issue also impacts the command line OpenSSL \"ocsp\" application. When verifying an ocsp response with the \"-no_cert_checks\" option the command line application will report that the verification is successful even though it has in fact failed. In this case the incorrect successful response will also be accompanied by error messages showing the failure and contradicting the apparently successful result. Fixed in OpenSSL ",
+      "help": "**Vulnerability CVE-2022-1343**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 3.0.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-1343](https://nvd.nist.gov/vuln/detail/CVE-2022-1343)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/104/instances"
+  },
+  {
+    "number": 103,
+    "created_at": "2025-01-06T09:47:36Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/103",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/103",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-1292-openssl",
+      "severity": "warning",
+      "description": "CVE-2022-1292 critical vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "The c_rehash script does not properly sanitise shell metacharacters to prevent command injection. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2). Fixed in OpenSSL 1.1.1o (Affected 1.1.1-1.1.1n). Fixed in OpenSSL 1.0.2ze (Affected 1.0.2-1.0.2zd).",
+      "help": "**Vulnerability CVE-2022-1292**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | openssl  | 3.0.2  | 1.0.2ze,1.1.1o,3.0.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2022-1292](https://nvd.nist.gov/vuln/detail/CVE-2022-1292)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/bin/openssl reports openssl at version 3.0.2  which is a vulnerable (binary) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/bin/openssl",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/103/instances"
+  },
+  {
+    "number": 102,
+    "created_at": "2025-01-06T09:45:45Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/102",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/102",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-pr98-23f8-jwxv-logback-core",
+      "severity": "warning",
+      "description": "GHSA-pr98-23f8-jwxv medium vulnerability for logback-core package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "QOS.CH logback-core Expression Language Injection vulnerability",
+      "help": "**Vulnerability GHSA-pr98-23f8-jwxv**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | logback-core  | 1.5.12  | 1.5.13  | java-archive  | /target/order-service-0.0.1-SNAPSHOT.jar:BOOT-INF/lib/logback-core-1.5.12.jar  | github:language:java  | [GHSA-pr98-23f8-jwxv](https://github.com/advisories/GHSA-pr98-23f8-jwxv)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /target/order-service-0.0.1-SNAPSHOT.jar:BOOT-INF/lib/logback-core-1.5.12.jar reports logback-core at version 1.5.12  which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/target/order-service-0.0.1-SNAPSHOT.jar:BOOT-INF/lib/logback-core-1.5.12.jar",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "library"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/102/instances"
+  },
+  {
+    "number": 101,
+    "created_at": "2025-01-06T09:45:45Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/101",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/101",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-6v67-2wr5-gvf4-logback-core",
+      "severity": "warning",
+      "description": "GHSA-6v67-2wr5-gvf4 low vulnerability for logback-core package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "QOS.CH logback-core Server-Side Request Forgery vulnerability",
+      "help": "**Vulnerability GHSA-6v67-2wr5-gvf4**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | logback-core  | 1.5.12  | 1.5.13  | java-archive  | /target/order-service-0.0.1-SNAPSHOT.jar:BOOT-INF/lib/logback-core-1.5.12.jar  | github:language:java  | [GHSA-6v67-2wr5-gvf4](https://github.com/advisories/GHSA-6v67-2wr5-gvf4)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "low"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /target/order-service-0.0.1-SNAPSHOT.jar:BOOT-INF/lib/logback-core-1.5.12.jar reports logback-core at version 1.5.12  which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/target/order-service-0.0.1-SNAPSHOT.jar:BOOT-INF/lib/logback-core-1.5.12.jar",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "library"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/101/instances"
+  },
+  {
+    "number": 100,
+    "created_at": "2024-12-23T16:08:45Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/100",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/100",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-w32m-9786-jp63-golang.org/x/net",
+      "severity": "warning",
+      "description": "GHSA-w32m-9786-jp63 high vulnerability for golang.org/x/net package",
+      "name": "GoModuleMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Non-linear parsing of case-insensitive content in golang.org/x/net/html",
+      "help": "**Vulnerability GHSA-w32m-9786-jp63**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | golang.org/x/net  | v0.32.0  | 0.33.0  | go-module  | /layers/paketo-buildpacks_bellsoft-liberica/helper/helper  | github:language:go  | [GHSA-w32m-9786-jp63](https://github.com/advisories/GHSA-w32m-9786-jp63)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /layers/paketo-buildpacks_bellsoft-liberica/helper/helper reports golang.org/x/net at version v0.32.0  which is a vulnerable (go-module) package installed in the container"
+      },
+      "location": {
+        "path": "image//layers/paketo-buildpacks_bellsoft-liberica/helper/helper",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/100/instances"
+  },
+  {
+    "number": 79,
+    "created_at": "2024-11-13T13:21:46Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/79",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/79",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-9143-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-9143 medium vulnerability for openssl package",
+      "name": "StockMatcherCpeMatch",
+      "tags": [],
+      "full_description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApp",
+      "help": "**Vulnerability CVE-2024-9143**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | openssl  | 3.0.2  | 1.0.2zl,1.1.1zb,3.0.16,3.1.8,3.2.4,3.3.3  | binary  | /usr/bin/openssl  | nvd:cpe  | [CVE-2024-9143](https://nvd.nist.gov/vuln/detail/CVE-2024-9143)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/share/doc/openssl/copyright reports openssl at version 3.0.2-0ubuntu1.18  which is a vulnerable (deb) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/share/doc/openssl/copyright",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "documentation"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/79/instances"
+  },
+  {
+    "number": 78,
+    "created_at": "2024-11-13T13:21:46Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/78",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/78",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-9143-libssl3",
+      "severity": "warning",
+      "description": "CVE-2024-9143 low vulnerability for libssl3 package",
+      "name": "DpkgMatcherExactIndirectMatch",
+      "tags": [],
+      "full_description": "Version 3.0.2-0ubuntu1.18 is affected with no fixes reported yet.",
+      "help": "**Vulnerability CVE-2024-9143**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.18  |   | deb  | /usr/share/doc/libssl3/copyright  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-9143](https://ubuntu.com/security/CVE-2024-9143)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/share/doc/libssl3/copyright reports libssl3 at version 3.0.2-0ubuntu1.18  which is a vulnerable (deb) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/share/doc/libssl3/copyright",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "documentation"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/78/instances"
+  },
+  {
+    "number": 76,
+    "created_at": "2024-11-13T13:21:46Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/76",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/76",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-41996-openssl",
+      "severity": "warning",
+      "description": "CVE-2024-41996 low vulnerability for openssl package",
+      "name": "DpkgMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Version 3.0.2-0ubuntu1.18 is affected with no fixes reported yet.",
+      "help": "**Vulnerability CVE-2024-41996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | openssl  | 3.0.2-0ubuntu1.18  |   | deb  | /usr/share/doc/openssl/copyright  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/share/doc/openssl/copyright reports openssl at version 3.0.2-0ubuntu1.18  which is a vulnerable (deb) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/share/doc/openssl/copyright",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "documentation"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/76/instances"
+  },
+  {
+    "number": 75,
+    "created_at": "2024-11-13T13:21:46Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/75",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/75",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-41996-libssl3",
+      "severity": "warning",
+      "description": "CVE-2024-41996 low vulnerability for libssl3 package",
+      "name": "DpkgMatcherExactIndirectMatch",
+      "tags": [],
+      "full_description": "Version 3.0.2-0ubuntu1.18 is affected with no fixes reported yet.",
+      "help": "**Vulnerability CVE-2024-41996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.18  |   | deb  | /usr/share/doc/libssl3/copyright  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/share/doc/libssl3/copyright reports libssl3 at version 3.0.2-0ubuntu1.18  which is a vulnerable (deb) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/share/doc/libssl3/copyright",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "documentation"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/75/instances"
+  },
+  {
+    "number": 22,
+    "created_at": "2024-11-13T13:21:46Z",
+    "updated_at": "2025-01-10T14:22:10Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/22",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/22",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2016-20013-libc6",
+      "severity": "warning",
+      "description": "CVE-2016-20013 low vulnerability for libc6 package",
+      "name": "DpkgMatcherExactIndirectMatch",
+      "tags": [],
+      "full_description": "Version 2.35-0ubuntu3.8 is affected with no fixes reported yet.",
+      "help": "**Vulnerability CVE-2016-20013**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libc6  | 2.35-0ubuntu3.8  |   | deb  | /usr/share/doc/libc6/copyright  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-20013](https://ubuntu.com/security/CVE-2016-20013)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:package",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:package",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /usr/share/doc/libc6/copyright reports libc6 at version 2.35-0ubuntu3.8  which is a vulnerable (deb) package installed in the container"
+      },
+      "location": {
+        "path": "image//usr/share/doc/libc6/copyright",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": [
+        "documentation"
+      ]
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/22/instances"
+  },
+  {
+    "number": 20,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/20",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/20",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-w3f4-3q6j-rh82-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-w3f4-3q6j-rh82 high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Deserialization of Untrusted Data in jackson-databind",
+      "help": "**Vulnerability GHSA-w3f4-3q6j-rh82**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.7.9.5  | java-archive  | /pom.xml  | github:language:java  | [GHSA-w3f4-3q6j-rh82](https://github.com/advisories/GHSA-w3f4-3q6j-rh82)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/20/instances"
+  },
+  {
+    "number": 19,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/19",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/19",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-vfqx-33qm-g869-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-vfqx-33qm-g869 high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Unsafe Deserialization in jackson-databind",
+      "help": "**Vulnerability GHSA-vfqx-33qm-g869**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.6.7.5  | java-archive  | /pom.xml  | github:language:java  | [GHSA-vfqx-33qm-g869](https://github.com/advisories/GHSA-vfqx-33qm-g869)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/19/instances"
+  },
+  {
+    "number": 18,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/18",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/18",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-rpr3-cw39-3pxh-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-rpr3-cw39-3pxh high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "jackson-databind before 2.9.10.4 vulnerable to unsafe deserialization",
+      "help": "**Vulnerability GHSA-rpr3-cw39-3pxh**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.9.10.4  | java-archive  | /pom.xml  | github:language:java  | [GHSA-rpr3-cw39-3pxh](https://github.com/advisories/GHSA-rpr3-cw39-3pxh)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/18/instances"
+  },
+  {
+    "number": 17,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/17",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/17",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-rgv9-q543-rqg4-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-rgv9-q543-rqg4 high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Uncontrolled Resource Consumption in FasterXML jackson-databind",
+      "help": "**Vulnerability GHSA-rgv9-q543-rqg4**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.12.7.1  | java-archive  | /pom.xml  | github:language:java  | [GHSA-rgv9-q543-rqg4](https://github.com/advisories/GHSA-rgv9-q543-rqg4)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/17/instances"
+  },
+  {
+    "number": 16,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/16",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/16",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-rfx6-vp9g-rh7v-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-rfx6-vp9g-rh7v critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "jackson-databind vulnerable to remote code execution due to incorrect deserialization and blocklist bypass",
+      "help": "**Vulnerability GHSA-rfx6-vp9g-rh7v**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.7.9.2  | java-archive  | /pom.xml  | github:language:java  | [GHSA-rfx6-vp9g-rh7v](https://github.com/advisories/GHSA-rfx6-vp9g-rh7v)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/16/instances"
+  },
+  {
+    "number": 15,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/15",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/15",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-qxxx-2pp7-5hmx-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-qxxx-2pp7-5hmx critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "jackson-databind is vulnerable to a deserialization flaw",
+      "help": "**Vulnerability GHSA-qxxx-2pp7-5hmx**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.6.7.1  | java-archive  | /pom.xml  | github:language:java  | [GHSA-qxxx-2pp7-5hmx](https://github.com/advisories/GHSA-qxxx-2pp7-5hmx)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/15/instances"
+  },
+  {
+    "number": 14,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/14",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/14",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-h822-r4r5-v8jg-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-h822-r4r5-v8jg critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Polymorphic Typing issue in FasterXML jackson-databind",
+      "help": "**Vulnerability GHSA-h822-r4r5-v8jg**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.6.7.3  | java-archive  | /pom.xml  | github:language:java  | [GHSA-h822-r4r5-v8jg](https://github.com/advisories/GHSA-h822-r4r5-v8jg)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/14/instances"
+  },
+  {
+    "number": 13,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/13",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/13",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-gwp4-hfv6-p7hw-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-gwp4-hfv6-p7hw high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Deserialization of untrusted data in FasterXML jackson-databind",
+      "help": "**Vulnerability GHSA-gwp4-hfv6-p7hw**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.6.7.3  | java-archive  | /pom.xml  | github:language:java  | [GHSA-gwp4-hfv6-p7hw](https://github.com/advisories/GHSA-gwp4-hfv6-p7hw)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/13/instances"
+  },
+  {
+    "number": 12,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/12",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/12",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-gjmw-vf9h-g25v-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-gjmw-vf9h-g25v critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "jackson-databind polymorphic typing issue",
+      "help": "**Vulnerability GHSA-gjmw-vf9h-g25v**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.6.7.3  | java-archive  | /pom.xml  | github:language:java  | [GHSA-gjmw-vf9h-g25v](https://github.com/advisories/GHSA-gjmw-vf9h-g25v)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/12/instances"
+  },
+  {
+    "number": 11,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/11",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/11",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-fmmc-742q-jg75-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-fmmc-742q-jg75 critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "jackson-databind polymorphic typing issue",
+      "help": "**Vulnerability GHSA-fmmc-742q-jg75**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.6.7.3  | java-archive  | /pom.xml  | github:language:java  | [GHSA-fmmc-742q-jg75](https://github.com/advisories/GHSA-fmmc-742q-jg75)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/11/instances"
+  },
+  {
+    "number": 10,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/10",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/10",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-f3j5-rmmp-3fc5-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-f3j5-rmmp-3fc5 critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Improper Input Validation in jackson-databind",
+      "help": "**Vulnerability GHSA-f3j5-rmmp-3fc5**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.8.11.5  | java-archive  | /pom.xml  | github:language:java  | [GHSA-f3j5-rmmp-3fc5](https://github.com/advisories/GHSA-f3j5-rmmp-3fc5)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/10/instances"
+  },
+  {
+    "number": 9,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/9",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/9",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-cjjf-94ff-43w7-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-cjjf-94ff-43w7 high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "jackson-databind Deserialization of Untrusted Data vulnerability",
+      "help": "**Vulnerability GHSA-cjjf-94ff-43w7**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.7.9.4  | java-archive  | /pom.xml  | github:language:java  | [GHSA-cjjf-94ff-43w7](https://github.com/advisories/GHSA-cjjf-94ff-43w7)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/9/instances"
+  },
+  {
+    "number": 8,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/8",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/8",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-cggj-fvv3-cqwv-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-cggj-fvv3-cqwv critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "FasterXML jackson-databind allows unauthenticated remote code execution ",
+      "help": "**Vulnerability GHSA-cggj-fvv3-cqwv**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.6.7.5  | java-archive  | /pom.xml  | github:language:java  | [GHSA-cggj-fvv3-cqwv](https://github.com/advisories/GHSA-cggj-fvv3-cqwv)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/8/instances"
+  },
+  {
+    "number": 7,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/7",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/7",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-cf6r-3wgc-h863-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-cf6r-3wgc-h863 high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Polymorphic deserialization of malicious object in jackson-databind",
+      "help": "**Vulnerability GHSA-cf6r-3wgc-h863**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.6.7.3  | java-archive  | /pom.xml  | github:language:java  | [GHSA-cf6r-3wgc-h863](https://github.com/advisories/GHSA-cf6r-3wgc-h863)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/7/instances"
+  },
+  {
+    "number": 6,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/6",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/6",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-85cw-hj65-qqv9-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-85cw-hj65-qqv9 critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Polymorphic Typing issue in FasterXML jackson-databind",
+      "help": "**Vulnerability GHSA-85cw-hj65-qqv9**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.6.7.3  | java-archive  | /pom.xml  | github:language:java  | [GHSA-85cw-hj65-qqv9](https://github.com/advisories/GHSA-85cw-hj65-qqv9)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/6/instances"
+  },
+  {
+    "number": 5,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/5",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/5",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-6fpp-rgj9-8rwc-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-6fpp-rgj9-8rwc critical vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Deserialization of untrusted data in FasterXML jackson-databind",
+      "help": "**Vulnerability GHSA-6fpp-rgj9-8rwc**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | jackson-databind  |   | 2.7.9.6  | java-archive  | /pom.xml  | github:language:java  | [GHSA-6fpp-rgj9-8rwc](https://github.com/advisories/GHSA-6fpp-rgj9-8rwc)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/5/instances"
+  },
+  {
+    "number": 4,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/4",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/4",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-5949-rw7g-wx7w-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-5949-rw7g-wx7w high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Deserialization of untrusted data in jackson-databind",
+      "help": "**Vulnerability GHSA-5949-rw7g-wx7w**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.6.7.5  | java-archive  | /pom.xml  | github:language:java  | [GHSA-5949-rw7g-wx7w](https://github.com/advisories/GHSA-5949-rw7g-wx7w)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/4/instances"
+  },
+  {
+    "number": 3,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/3",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/3",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-57j2-w4cx-62h2-jackson-databind",
+      "severity": "warning",
+      "description": "GHSA-57j2-w4cx-62h2 high vulnerability for jackson-databind package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Deeply nested json in jackson-databind",
+      "help": "**Vulnerability GHSA-57j2-w4cx-62h2**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | jackson-databind  |   | 2.12.6.1  | java-archive  | /pom.xml  | github:language:java  | [GHSA-57j2-w4cx-62h2](https://github.com/advisories/GHSA-57j2-w4cx-62h2)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports jackson-databind at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/3/instances"
+  },
+  {
+    "number": 1,
+    "created_at": "2024-11-13T13:19:55Z",
+    "updated_at": "2025-01-10T14:20:14Z",
+    "url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/1",
+    "html_url": "https://github.com/liantisit-platform-apps-staging/orderdemo-backend-app/security/code-scanning/1",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "GHSA-36p3-wjmg-h94x-spring-boot-starter-web",
+      "severity": "warning",
+      "description": "GHSA-36p3-wjmg-h94x critical vulnerability for spring-boot-starter-web package",
+      "name": "JavaMatcherExactDirectMatch",
+      "tags": [],
+      "full_description": "Remote Code Execution in Spring Framework",
+      "help": "**Vulnerability GHSA-36p3-wjmg-h94x**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | spring-boot-starter-web  |   | 2.5.12  | java-archive  | /pom.xml  | github:language:java  | [GHSA-36p3-wjmg-h94x](https://github.com/advisories/GHSA-36p3-wjmg-h94x)  |\n",
+      "help_uri": "https://github.com/anchore/grype",
+      "security_severity_level": "critical"
+    },
+    "tool": {
+      "name": "Grype",
+      "guid": null,
+      "version": "0.74.4"
+    },
+    "most_recent_instance": {
+      "ref": "refs/tags/0.1.154",
+      "analysis_key": ".github/workflows/build-package-stage.yml:build",
+      "environment": "{}",
+      "category": ".github/workflows/build-package-stage.yml:build",
+      "state": "open",
+      "commit_sha": "7c2dffbf54aad2537f80f63dbf98617df56e9805",
+      "message": {
+        "text": "The path /pom.xml reports spring-boot-starter-web at version   which would result in a vulnerable (java-archive) package installed"
+      },
+      "location": {
+        "path": "/pom.xml",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/liantisit-platform-apps-staging/orderdemo-backend-app/code-scanning/alerts/1/instances"
+  }
+]
