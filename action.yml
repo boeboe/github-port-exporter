@@ -59,9 +59,9 @@ runs:
       run: main.sh execute ${{ env.SCRIPTS_ARGS }}
       shell: bash
 
-    - name: Archive intermediate github data
+    - name: Archive intermediate json artifacts
+      id: archive-json-artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: github-data
-        path: |
-          *.json
+        name: github-json-artifacts
+        path: ${{ github.workspace }}/*.json
