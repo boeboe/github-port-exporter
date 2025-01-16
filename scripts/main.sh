@@ -96,7 +96,7 @@ function execute() {
   local dependency_entities_file="dependency_entities.json"
   local container_image_file="container_image.json"
 
-  # Fetch Code Scanning Alerts, Dependabot Alerts and Dependencies from GitHub API
+  # Fetch Code Scanning Alerts, Dependabot Alerts, and Dependencies from GitHub API
   fetch_code_scanning_alerts \
     "${INPUT_GITHUB_TOKEN}" \
     "${GITHUB_REPOSITORY}" \
@@ -125,70 +125,23 @@ function execute() {
     "${container_image_file}"
 
   # Authenticate with Port API
-  print_info "Authenticating with Port API..."
-  PORT_ACCESS_TOKEN=$(curl -s --location --request POST 'https://api.getport.io/v1/auth/access_token' \
-    --header 'Content-Type: application/json' \
-    --data-raw "{
-      \"clientId\": \"${INPUT_PORT_CLIENT_ID}\",
-      \"clientSecret\": \"${INPUT_PORT_CLIENT_SECRET}\"
-    }" | jq -r '.accessToken')
-  echo "::add-mask::$PORT_ACCESS_TOKEN"
-  print_info "Successfully authenticated with Port API."
+  local port_access_token
+  port_access_token=$(authenticate_with_port "${INPUT_PORT_CLIENT_ID}" "${INPUT_PORT_CLIENT_SECRET}")
+  echo "::add-mask::${port_access_token}"
 
   # Upsert Data to Port
-  print_info "Upserting Code Scanning Alerts to Port..."
-  while IFS= read -r entity; do
-    curl -s --location --request POST "https://api.getport.io/v1/blueprints/code_scanning_alert/entities?upsert=true" \
-      --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
-      --header "Content-Type: application/json" \
-      --data-raw "$entity" \
-      --parallel \
-      --parallel-max 20 &
-  done < <(jq -c '.[]' code_scanning_alert_entities.json)
-  wait
+  upload_code_scanning_alerts "${port_access_token}" "${code_scanning_alerts_entities_file}"
+  upload_dependabot_alerts "${port_access_token}" "${dependabot_alerts_entities_file}"
+  upload_dependencies "${port_access_token}" "${dependency_entities_file}"
+  upload_container_image "${port_access_token}" "${container_image_file}"
 
-  print_info "Upserting Dependabot Alerts to Port..."
-  while IFS= read -r entity; do
-    curl -s --location --request POST "https://api.getport.io/v1/blueprints/dependabot_alert/entities?upsert=true" \
-      --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
-      --header "Content-Type: application/json" \
-      --data-raw "$entity" \
-      --parallel \
-      --parallel-max 20 &
-  done < <(jq -c '.[]' dependabot_alert_entities.json)
-  wait
+  # Update Port App with Container Image
+  update_port_app_with_container_image \
+    "${port_access_token}" \
+    "${INPUT_APPLICATION}" \
+    "${INPUT_APPLICATION}:${INPUT_VERSION}"
 
-  print_info "Upserting Dependencies to Port..."
-  while IFS= read -r entity; do
-    curl -s --location --request POST "https://api.getport.io/v1/blueprints/dependency/entities?upsert=true" \
-      --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
-      --header "Content-Type: application/json" \
-      --data-raw "$entity" \
-      --parallel \
-      --parallel-max 20 &
-  done < <(jq -c '.[]' dependency_entities.json)
-  wait
-
-  print_info "Upserting Container Image to Port..."
-  curl -s --location --request POST "https://api.getport.io/v1/blueprints/container_image/entities?upsert=true" \
-    --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
-    --header "Content-Type: application/json" \
-    --data-raw "$(cat container_image.json)"
-
-  print_info "Updating Port App with Container Image..."
-  EXISTING_CONTAINER_IMAGES=$(curl -s --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${INPUT_APPLICATION}" \
-    --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" | jq -r '.entity.relations.container_images')
-  UPDATED_CONTAINER_IMAGES=$(echo "${EXISTING_CONTAINER_IMAGES}" | jq -c --arg new_image "${INPUT_APPLICATION}:${INPUT_VERSION}" '. + [$new_image]')
-  curl -s --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${INPUT_APPLICATION}" \
-    --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
-    --header "Content-Type: application/json" \
-    --data-raw "{
-      \"relations\": {
-        \"container_images\": ${UPDATED_CONTAINER_IMAGES}
-      }
-    }"
-
-  print_info "GitHub-to-Port export process completed successfully."
+  print_success "GitHub-to-Port export process completed successfully."
   echo "success=true" >> "${GITHUB_OUTPUT}"
 }
 
