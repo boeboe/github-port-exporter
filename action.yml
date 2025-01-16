@@ -1,0 +1,57 @@
+name: "Port Exporter"
+description: "Fetch and sync GitHub metadata (Code Scanning Alerts, Dependabot Alerts, Dependencies) to Port."
+
+inputs:
+  version:
+    description: "Version tag to export ingest metadata from GitHub into Port."
+    required: true
+  githubToken:
+    description: "GitHub token with access to the repository."
+    required: true
+  portClientId:
+    description: "Port API client ID for authentication."
+    required: true
+  portClientSecret:
+    description: "Port API client secret for authentication."
+    required: true
+
+outputs:
+  success:
+    description: "Indicates whether the export operation completed successfully."
+    value: ${{ steps.export-to-port.outputs.success }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Script and GitHub Path
+      id: setup-path
+      run: |
+        echo "SCRIPTS_DIR=${{ github.action_path }}/scripts" >> $GITHUB_ENV
+        echo "${{ github.action_path }}/scripts" >> $GITHUB_PATH
+      shell: bash
+
+    - name: Setup Script Args
+      id: setup-args
+      run: |
+        echo "SCRIPTS_ARGS=\
+        --version '${{ inputs.version }}' \
+        --port-token '${{ inputs.portToken }}' \
+        --github-token '${{ inputs.githubToken }}' \
+        --port-client-id '${{ inputs.portClientId }}' \
+        --port-client-secret '${{ inputs.portClientSecret }}'  >> $GITHUB_ENV
+      shell: bash
+
+    - name: Check Prerequisite Binaries
+      id: check-binaries
+      run: check-dependencies.sh jq
+      shell: bash
+
+    - name: Validate Code Scanning Alerts Inputs
+      id: validate-inputs
+      run: main.sh validate-inputs ${{ env.SCRIPTS_ARGS }}
+      shell: bash
+
+    - name: Sync Code Scanning Alerts from GitHub to Port
+      id: export-to-port
+      run: main.sh execute ${{ env.SCRIPTS_ARGS }}
+      shell: bash
