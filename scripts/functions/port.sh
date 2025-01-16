@@ -52,39 +52,21 @@ function authenticate_with_port() {
 #   $2 - Entity type (blueprint name)
 #   $3 - Path to the JSON file containing entities
 function upload_to_port() {
-  local access_token="$1"
-  local entity_type="$2"
-  local json_file="$3"
+    local access_token="$1"
+    local entity_type="$2"
+    local json_file="$3"
 
-  print_info "Uploading ${entity_type} entities to Port using parallelism..."
-
-  local error_count=0
-
-  # Use jq to read each entity and process them in parallel
-  jq -c '.[]' "${json_file}" | \
-  xargs -P 20 -I {} bash -c "
-    entity=\"{}\"
-    response=$(curl -s -w \"\n%{http_code}\" --location --request POST \
-      \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" \
-      --header \"Authorization: Bearer ${access_token}\" \
-      --header \"Content-Type: application/json\" \
-      --data-raw \"${entity}\")
-    http_status=$(echo \"${response}\" | tail -n1)
-    response_body=$(echo \"${response}\" | sed \"$d\")
-
-    if ! [[ \"${http_status}\" =~ ^2[0-9]{2}$ ]]; then
-      echo -e \"\033[1;31m[ERROR]\033[0m Failed to upload an entity. HTTP Status: ${http_status}\"
-      echo -e \"\033[1;31m[ERROR]\033[0m Response body: ${response_body}\"
-      ((error_count++))
-    fi
-  "
-
-  if [[ "${error_count}" -gt 0 ]]; then
-    print_error "Upload of ${entity_type} entities completed with ${error_count} errors."
-    return 1
-  else
-    print_success "Successfully uploaded all ${entity_type} entities to Port."
-  fi
+    print_info "Uploading ${entity_type} entities to Port..."
+    while IFS= read -r entity; do
+        curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+            --header "Authorization: Bearer ${access_token}" \
+            --header "Content-Type: application/json" \
+            --data-raw "${entity}" \
+            --parallel \
+            --parallel-max 20 &
+    done < <(jq -c '.[]' "${json_file}")
+    wait
+    print_success "Successfully uploaded ${entity_type} entities to Port."
 }
 
 # Upload code scanning alerts to Port
