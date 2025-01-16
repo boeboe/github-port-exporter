@@ -97,7 +97,7 @@ function fetch_dependencies() {
     print_info "Fetching Dependencies (SBOM) for repository ${repository}..."
 
     local response
-    response=$(curl -s -X GET \
+    response=$(curl -s -w "%{http_code}" -X GET \
         -H "Authorization: Bearer ${token}" \
         -H "Accept: application/vnd.github.v3+json" \
         "https://api.github.com/repos/${repository}/dependency-graph/sbom")
