@@ -13,22 +13,19 @@ set -euo pipefail
 function authenticate_with_port() {
     local port_client_id="$1"
     local port_client_secret="$2"
-    local response
-    local http_status
-    local response_body
-    local access_token
 
     print_info "Authenticating with Port API..." >&2
 
     # Perform the API call to get the access token
-    response=$(curl -s -w "%{http_code}" --location --request POST 'https://api.getport.io/v1/auth/access_token' \
+    local response
+    response=$(curl -s -w "%{http_code}" --location -X POST \
         --header 'Content-Type: application/json' \
-        --data-raw "{
-            \"clientId\": \"${port_client_id}\",
-            \"clientSecret\": \"${port_client_secret}\"
-        }")
+        --data-raw "{ \"clientId\": \"${port_client_id}\", \"clientSecret\": \"${port_client_secret}\" }" \
+        'https://api.getport.io/v1/auth/access_token')
 
+    local http_status
     http_status=$(echo "${response}" | tail -n1)
+    local response_body
     response_body=$(echo "${response}" | sed '$d')
 
     # Check HTTP status code
@@ -38,6 +35,7 @@ function authenticate_with_port() {
         exit 1
     fi
 
+    local access_token
     access_token=$(echo "${response_body}" | jq -r '.accessToken')
     if [[ -z "${access_token}" || "${access_token}" == "null" ]]; then
         print_error "Failed to retrieve access token. Response: ${response_body}" >&2
