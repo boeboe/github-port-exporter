@@ -11,39 +11,39 @@ set -euo pipefail
 # Outputs:
 #   Access token for further interactions (to stdout)
 function authenticate_with_port() {
-    local port_client_id="$1"
-    local port_client_secret="$2"
+  local port_client_id="$1"
+  local port_client_secret="$2"
 
-    print_info "Authenticating with Port API..." >&2
+  print_info "Authenticating with Port API..." >&2
 
-    # Perform the API call to get the access token
-    local response
-    response=$(curl -s -w "\n%{http_code}" --location -X POST \
-        --header 'Content-Type: application/json' \
-        --data-raw "{ \"clientId\": \"${port_client_id}\", \"clientSecret\": \"${port_client_secret}\" }" \
-        'https://api.getport.io/v1/auth/access_token')
+  # Perform the API call to get the access token
+  local response
+  response=$(curl -s -w "\n%{http_code}" --location -X POST \
+    --header 'Content-Type: application/json' \
+    --data-raw "{ \"clientId\": \"${port_client_id}\", \"clientSecret\": \"${port_client_secret}\" }" \
+    'https://api.getport.io/v1/auth/access_token')
 
-    local http_status
-    http_status=$(echo "${response}" | tail -n1)
-    local response_body
-    response_body=$(echo "${response}" | sed '$d')
+  local http_status
+  http_status=$(echo "${response}" | tail -n1)
+  local response_body
+  response_body=$(echo "${response}" | sed '$d')
 
-    # Check HTTP status code
-    if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-        print_error "Failed to authenticate with Port API. HTTP Status: ${http_status}" >&2
-        print_error "Response body: ${response_body}" >&2
-        exit 1
-    fi
+  # Check HTTP status code
+  if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+    print_error "Failed to authenticate with Port API. HTTP Status: ${http_status}" >&2
+    print_error "Response body: ${response_body}" >&2
+    exit 1
+  fi
 
-    local access_token
-    access_token=$(echo "${response_body}" | jq -r '.accessToken')
-    if [[ -z "${access_token}" || "${access_token}" == "null" ]]; then
-        print_error "Failed to retrieve access token. Response: ${response_body}" >&2
-        exit 1
-    fi
+  local access_token
+  access_token=$(echo "${response_body}" | jq -r '.accessToken')
+  if [[ -z "${access_token}" || "${access_token}" == "null" ]]; then
+    print_error "Failed to retrieve access token. Response: ${response_body}" >&2
+    exit 1
+  fi
 
-    print_success "Successfully authenticated with Port API." >&2
-    echo "${access_token}"
+  print_success "Successfully authenticated with Port API." >&2
+  echo "${access_token}"
 }
 
 # Upload JSON entities to Port API
@@ -52,46 +52,54 @@ function authenticate_with_port() {
 #   $2 - Entity type (blueprint name)
 #   $3 - Path to the JSON file containing entities
 function upload_to_port() {
-    local access_token="$1"
-    local entity_type="$2"
-    local json_file="$3"
+  local access_token="$1"
+  local entity_type="$2"
+  local json_file="$3"
 
-    print_info "Uploading ${entity_type} entities to Port..."
-    while IFS= read -r entity; do
-        local response
-        local http_status
-        local response_body
+  print_info "Uploading ${entity_type} entities to Port using parallelism..."
 
-        response=$(curl -s -w "\n%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-            --header "Authorization: Bearer ${access_token}" \
-            --header "Content-Type: application/json" \
-            --data-raw "${entity}")
+  local error_count=0
 
-        http_status=$(echo "${response}" | tail -n1)
-        response_body=$(echo "${response}" | sed '$d')
+  # Use jq to read each entity and process them in parallel
+  jq -c '.[]' "${json_file}" | \
+  xargs -P 20 -I {} bash -c '
+    entity="{}"
+    response=$(curl -s -w "\n%{http_code}" --location --request POST \
+      "https://api.getport.io/v1/blueprints/'"${entity_type}"'/entities?upsert=true" \
+      --header "Authorization: Bearer '"${access_token}"'" \
+      --header "Content-Type: application/json" \
+      --data-raw "${entity}")
+    http_status=$(echo "${response}" | tail -n1)
+    response_body=$(echo "${response}" | sed "$d")
 
-        if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-            print_error "Failed to upload ${entity_type}. HTTP Status: ${http_status}"
-            print_error "Response body: ${response_body}"
-        else
-            print_success "Successfully uploaded an entity of type ${entity_type}."
-        fi
-    done < <(jq -c '.[]' "${json_file}")
+    if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+      print_error "Failed to upload an entity. HTTP Status: ${http_status}"
+      print_error "Response body: ${response_body}"
+      ((error_count++))
+    fi
+  '
+
+  if [[ "${error_count}" -gt 0 ]]; then
+    print_error "Upload of ${entity_type} entities completed with ${error_count} errors."
+    return 1
+  else
+    print_success "Successfully uploaded all ${entity_type} entities to Port."
+  fi
 }
 
 # Upload code scanning alerts to Port
 function upload_code_scanning_alerts() {
-    upload_to_port "$1" "code_scanning_alert" "$2"
+  upload_to_port "$1" "code_scanning_alert" "$2"
 }
 
 # Upload Dependabot alerts to Port
 function upload_dependabot_alerts() {
-    upload_to_port "$1" "dependabot_alert" "$2"
+  upload_to_port "$1" "dependabot_alert" "$2"
 }
 
 # Upload dependencies to Port
 function upload_dependencies() {
-    upload_to_port "$1" "dependency" "$2"
+  upload_to_port "$1" "dependency" "$2"
 }
 
 # Upload container image data to Port
@@ -99,77 +107,77 @@ function upload_dependencies() {
 #   $1 - Access token
 #   $2 - Path to the JSON file containing the container image data
 function upload_container_image() {
-    local access_token="$1"
-    local container_image_file="$2"
+  local access_token="$1"
+  local container_image_file="$2"
 
-    print_info "Uploading container image to Port..."
-    local response
-    local http_status
-    local response_body
+  print_info "Uploading container image to Port..."
+  local response
+  local http_status
+  local response_body
 
-    response=$(curl -s -w "\n%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/container_image/entities?upsert=true" \
-        --header "Authorization: Bearer ${access_token}" \
-        --header "Content-Type: application/json" \
-        --data-raw "$(cat "${container_image_file}")")
+  response=$(curl -s -w "\n%{http_code}" --location --request POST "https://api.getport.io/v1/blueprints/container_image/entities?upsert=true" \
+    --header "Authorization: Bearer ${access_token}" \
+    --header "Content-Type: application/json" \
+    --data-raw "$(cat "${container_image_file}")")
 
-    http_status=$(echo "${response}" | tail -n1)
-    response_body=$(echo "${response}" | sed '$d')
+  http_status=$(echo "${response}" | tail -n1)
+  response_body=$(echo "${response}" | sed '$d')
 
-    if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-        print_error "Failed to upload container image. HTTP Status: ${http_status}"
-        print_error "Response body: ${response_body}"
-        exit 1
-    fi
+  if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+    print_error "Failed to upload container image. HTTP Status: ${http_status}"
+    print_error "Response body: ${response_body}"
+    exit 1
+  fi
 
-    print_success "Successfully uploaded container image to Port."
+  print_success "Successfully uploaded container image to Port."
 }
 
 # Update Port application with the new container image
 function update_port_app_with_container_image() {
-    local access_token="$1"
-    local application_id="$2"
-    local container_image_identifier="$3"
+  local access_token="$1"
+  local application_id="$2"
+  local container_image_identifier="$3"
 
-    print_info "Updating Port application ${application_id} with container image ${container_image_identifier}..."
-    local response
-    local http_status
-    local response_body
+  print_info "Updating Port application ${application_id} with container image ${container_image_identifier}..."
+  local response
+  local http_status
+  local response_body
 
-    response=$(curl -s -w "\n%{http_code}" --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
-        --header "Authorization: Bearer ${access_token}" \
-        --header "Content-Type: application/json")
+  response=$(curl -s -w "\n%{http_code}" --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
+    --header "Authorization: Bearer ${access_token}" \
+    --header "Content-Type: application/json")
 
-    http_status=$(echo "${response}" | tail -n1)
-    response_body=$(echo "${response}" | sed '$d')
+  http_status=$(echo "${response}" | tail -n1)
+  response_body=$(echo "${response}" | sed '$d')
 
-    if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-        print_error "Failed to fetch existing container images. HTTP Status: ${http_status}"
-        print_error "Response body: ${response_body}"
-        exit 1
-    fi
+  if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+    print_error "Failed to fetch existing container images. HTTP Status: ${http_status}"
+    print_error "Response body: ${response_body}"
+    exit 1
+  fi
 
-    local existing_images
-    existing_images=$(echo "${response_body}" | jq -r '.entity.relations.container_images')
-    local updated_images
-    updated_images=$(echo "${existing_images}" | jq -c --arg new_image "${container_image_identifier}" '. + [$new_image]')
+  local existing_images
+  existing_images=$(echo "${response_body}" | jq -r '.entity.relations.container_images')
+  local updated_images
+  updated_images=$(echo "${existing_images}" | jq -c --arg new_image "${container_image_identifier}" '. + [$new_image]')
 
-    response=$(curl -s -w "\n%{http_code}" --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
-        --header "Authorization: Bearer ${access_token}" \
-        --header "Content-Type: application/json" \
-        --data-raw "{
-            \"relations\": {
-                \"container_images\": ${updated_images}
-            }
-        }")
+  response=$(curl -s -w "\n%{http_code}" --location --request PATCH "https://api.getport.io/v1/blueprints/app/entities/${application_id}" \
+    --header "Authorization: Bearer ${access_token}" \
+    --header "Content-Type: application/json" \
+    --data-raw "{
+      \"relations\": {
+        \"container_images\": ${updated_images}
+      }
+    }")
 
-    http_status=$(echo "${response}" | tail -n1)
-    response_body=$(echo "${response}" | sed '$d')
+  http_status=$(echo "${response}" | tail -n1)
+  response_body=$(echo "${response}" | sed '$d')
 
-    if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-        print_error "Failed to update Port application. HTTP Status: ${http_status}"
-        print_error "Response body: ${response_body}"
-        exit 1
-    fi
+  if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+    print_error "Failed to update Port application. HTTP Status: ${http_status}"
+    print_error "Response body: ${response_body}"
+    exit 1
+  fi
 
-    print_success "Successfully updated application ${application_id} with container image ${container_image_identifier}."
+  print_success "Successfully updated application ${application_id} with container image ${container_image_identifier}."
 }
