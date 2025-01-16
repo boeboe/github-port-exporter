@@ -8,6 +8,7 @@ trap 'echo "[ERROR] Script failed at line $LINENO with exit code $? (last comman
 # Source shared functions
 source "${SCRIPTS_DIR}/functions/logging.sh"
 source "${SCRIPTS_DIR}/functions/validation.sh"
+source "${SCRIPTS_DIR}/functions/github.sh"
 
 # Usage message
 function usage() {
@@ -85,63 +86,29 @@ function validate_inputs() {
 function execute() {
     echo "[INFO] Starting GitHub-to-Port export process..."
 
+    local code_scanning_alerts_file="code_scanning_alerts.json"
+    local dependabot_alerts_file="dependabot_alerts.json"
+    local sbom_file="sbom.json"
+
     # Fetch Code Scanning Alerts from GitHub API
-    echo "[INFO] Fetching Code Scanning Alerts from GitHub..."
-    PAGE=1
-    PER_PAGE=100
-    TOTAL_CODE_ALERTS=()
-    while true; do
-        RESPONSE=$(curl -s -w "%{http_code}" -X GET \
-            -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/code-scanning/alerts?ref=refs/tags/${INPUT_VERSION}&per_page=${PER_PAGE}&page=${PAGE}")
-        HTTP_STATUS=$(echo "${RESPONSE}" | tail -n1)
-        RESPONSE_BODY=$(echo "${RESPONSE}" | sed '$d')
-        if [ "$HTTP_STATUS" -ne 200 ]; then
-            echo "[ERROR] Non-2XX response code: ${HTTP_STATUS}, exiting loop."
-            break
-        fi
-        ALERTS=$(echo "${RESPONSE_BODY}" | jq '.[]')
-        if [ -z "${ALERTS}" ]; then break; fi
-        TOTAL_CODE_ALERTS+=("${ALERTS}")
-        PAGE=$((PAGE + 1))
-    done
-    echo "${TOTAL_CODE_ALERTS[@]}" | jq -s '.' > code_scanning_alerts.json
+    fetch_code_scanning_alerts \
+        "${INPUT_GITHUB_TOKEN}" \
+        "${GITHUB_REPOSITORY}" \
+        "${INPUT_VERSION}" \
+        "${code_scanning_alerts_file}"
 
     # Fetch Dependabot Alerts from GitHub API
-    echo "[INFO] Fetching Dependabot Alerts from GitHub..."
-    PAGE=1
-    PER_PAGE=100
-    TOTAL_DEPENDABOT_ALERTS=()
-    while true; do
-        RESPONSE=$(curl -s -w "%{http_code}" -X GET \
-            -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/dependabot/alerts?ref=refs/tags/${INPUT_VERSION}&per_page=${PER_PAGE}&page=${PAGE}")
-        HTTP_STATUS=$(echo "${RESPONSE}" | tail -n1)
-        RESPONSE_BODY=$(echo "${RESPONSE}" | sed '$d')
-        if [ "${HTTP_STATUS}" -ne 200 ]; then
-            echo "[ERROR] Non-2XX response code: ${HTTP_STATUS}, exiting loop."
-            break
-        fi
-        ALERTS=$(echo "${RESPONSE_BODY}" | jq '.[]')
-        if [ -z "${ALERTS}" ]; then break; fi
-        if [ "$(echo "$RESPONSE_BODY" | jq 'length')" -lt "${PER_PAGE}" ]; then
-            TOTAL_DEPENDABOT_ALERTS+=("${ALERTS}")
-            break
-        fi
-        TOTAL_DEPENDABOT_ALERTS+=("${ALERTS}")
-        PAGE=$((PAGE + 1))
-    done
-    echo "${TOTAL_DEPENDABOT_ALERTS[@]}" | jq -s '.' > dependabot_alerts.json
+    fetch_dependabot_alerts \
+        "${INPUT_GITHUB_TOKEN}" \
+        "${GITHUB_REPOSITORY}" \
+        "${INPUT_VERSION}" \
+        "${dependabot_alerts_file}"
 
     # Fetch Dependencies from GitHub API
-    echo "[INFO] Fetching Dependencies from GitHub..."
-    curl -s -X GET \
-        -H "Authorization: Bearer ${INPUT_GITHUB_TOKEN}" \
-        -H "Accept: application/vnd.github.v3+json" \
-        "https://api.github.com/repos/${GITHUB_REPOSITORY}/dependency-graph/sbom" \
-        -o sbom.json
+    fetch_dependencies \
+        "${INPUT_GITHUB_TOKEN}" \
+        "${GITHUB_REPOSITORY}" \
+        "${sbom_file}"
 
     # Authenticate with Port API
     echo "[INFO] Authenticating with Port API..."
@@ -166,7 +133,7 @@ function execute() {
             description: .rule.full_description,
             security_tool: .tool.name
         }
-    }]' < code_scanning_alerts.json > code_scanning_alert_entities.json
+    }]' < ${code_scanning_alerts_file} > code_scanning_alert_entities.json
 
     echo "[INFO] Transforming Dependabot Alerts..."
     jq '[.[] | {
@@ -178,7 +145,7 @@ function execute() {
             url: .html_url,
             description: .security_advisory.description
         }
-    }]' < dependabot_alerts.json > dependabot_alert_entities.json
+    }]' < ${dependabot_alerts_file} > dependabot_alert_entities.json
 
     echo "[INFO] Transforming Dependencies..."
     jq '[.sbom.packages[] | {
@@ -189,7 +156,7 @@ function execute() {
         properties: {
             version: .versionInfo
         }
-    }]' < sbom.json > dependency_entities.json
+    }]' < ${sbom_file} > dependency_entities.json
 
     # Upsert Data to Port
     echo "[INFO] Upserting Code Scanning Alerts to Port..."
