@@ -17,7 +17,6 @@ function usage() {
     usage_message+="  execute\n"
     usage_message+="Arguments:\n"
     usage_message+="  --version <string>\n"
-    usage_message+="  --port-token <string>\n"
     usage_message+="  --github-token <string>\n"
     usage_message+="  --port-client-id <string>\n"
     usage_message+="  --port-client-secret <string>\n"
@@ -39,10 +38,6 @@ function parse_arguments() {
                 ;;
             --version)
                 INPUT_VERSION="${2}"
-                shift 2
-                ;;
-            --port-token)
-                INPUT_PORT_TOKEN="${2}"
                 shift 2
                 ;;
             --github-token)
@@ -74,7 +69,6 @@ function parse_arguments() {
 function validate_inputs() {
     print_info "Validating inputs..."
     validate_set "INPUT_VERSION" "${INPUT_VERSION:-}"
-    validate_set "INPUT_PORT_TOKEN" "${INPUT_PORT_TOKEN:-}"
     validate_set "INPUT_GITHUB_TOKEN" "${INPUT_GITHUB_TOKEN:-}"
     validate_set "INPUT_PORT_CLIENT_ID" "${INPUT_PORT_CLIENT_ID:-}"
     validate_set "INPUT_PORT_CLIENT_SECRET" "${INPUT_PORT_CLIENT_SECRET:-}"
