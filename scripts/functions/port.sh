@@ -18,7 +18,7 @@ function authenticate_with_port() {
 
     # Perform the API call to get the access token
     local response
-    response=$(curl -s -w "%{http_code}" --location -X POST \
+    response=$(curl -s -w "\n%{http_code}" --location -X POST \
         --header 'Content-Type: application/json' \
         --data-raw "{ \"clientId\": \"${port_client_id}\", \"clientSecret\": \"${port_client_secret}\" }" \
         'https://api.getport.io/v1/auth/access_token')
