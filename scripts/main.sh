@@ -84,11 +84,14 @@ function validate_inputs() {
 
 # Execute the main operation
 function execute() {
-    echo "[INFO] Starting GitHub-to-Port export process..."
+    print_info "Starting GitHub-to-Port export process..."
 
     local code_scanning_alerts_file="code_scanning_alerts.json"
     local dependabot_alerts_file="dependabot_alerts.json"
     local sbom_file="sbom.json"
+
+    echo ">>>> PWD : ${pwd}"
+    pwd
 
     # Fetch Code Scanning Alerts from GitHub API
     fetch_code_scanning_alerts \
@@ -111,7 +114,7 @@ function execute() {
         "${sbom_file}"
 
     # Authenticate with Port API
-    echo "[INFO] Authenticating with Port API..."
+    print_info "Authenticating with Port API..."
     PORT_ACCESS_TOKEN=$(curl -s --location --request POST 'https://api.getport.io/v1/auth/access_token' \
         --header 'Content-Type: application/json' \
         --data-raw "{
@@ -119,10 +122,10 @@ function execute() {
             \"clientSecret\": \"${INPUT_PORT_CLIENT_SECRET}\"
         }" | jq -r '.accessToken')
     echo "::add-mask::$PORT_ACCESS_TOKEN"
-    echo "[INFO] Successfully authenticated with Port API."
+    print_info "Successfully authenticated with Port API."
 
     # Transform and Map JSON Data for Port
-    echo "[INFO] Transforming Code Scanning Alerts..."
+    print_info "Transforming Code Scanning Alerts..."
     jq '[.[] | {
         identifier: .rule.id,
         icon: "vulnerability",
@@ -135,7 +138,7 @@ function execute() {
         }
     }]' < ${code_scanning_alerts_file} > code_scanning_alert_entities.json
 
-    echo "[INFO] Transforming Dependabot Alerts..."
+    print_info "Transforming Dependabot Alerts..."
     jq '[.[] | {
         identifier: .security_advisory.cve_id,
         icon: "vulnerability",
@@ -147,7 +150,7 @@ function execute() {
         }
     }]' < ${dependabot_alerts_file} > dependabot_alert_entities.json
 
-    echo "[INFO] Transforming Dependencies..."
+    print_info "Transforming Dependencies..."
     jq '[.sbom.packages[] | {
         identifier: .name,
         title: .name,
@@ -159,7 +162,7 @@ function execute() {
     }]' < ${sbom_file} > dependency_entities.json
 
     # Upsert Data to Port
-    echo "[INFO] Upserting Code Scanning Alerts to Port..."
+    print_info "Upserting Code Scanning Alerts to Port..."
     while IFS= read -r entity; do
         curl -s --location --request POST "https://api.getport.io/v1/blueprints/code_scanning_alert/entities?upsert=true" \
             --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
@@ -170,7 +173,7 @@ function execute() {
     done < <(jq -c '.[]' code_scanning_alert_entities.json)
     wait
 
-    echo "[INFO] Upserting Dependabot Alerts to Port..."
+    print_info "Upserting Dependabot Alerts to Port..."
     while IFS= read -r entity; do
         curl -s --location --request POST "https://api.getport.io/v1/blueprints/dependabot_alert/entities?upsert=true" \
             --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
@@ -181,7 +184,7 @@ function execute() {
     done < <(jq -c '.[]' dependabot_alert_entities.json)
     wait
 
-    echo "[INFO] Upserting Dependencies to Port..."
+    print_info "Upserting Dependencies to Port..."
     while IFS= read -r entity; do
         curl -s --location --request POST "https://api.getport.io/v1/blueprints/dependency/entities?upsert=true" \
             --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
@@ -193,7 +196,7 @@ function execute() {
     wait
 
     # Prepare Container Image JSON
-    echo "[INFO] Preparing Container Image JSON..."
+    print_info "Preparing Container Image JSON..."
     DEPENDENCIES=$(jq -r '[.[] | .identifier]' < dependency_entities.json)
     CODE_SCANNING_ALERTS=$(jq -r '[.[] | .identifier]' < code_scanning_alert_entities.json)
     DEPENDABOT_ALERTS=$(jq -r '[.[] | .identifier]' < dependabot_alert_entities.json)
@@ -217,13 +220,13 @@ function execute() {
             }
         }' > container_image.json
 
-    echo "[INFO] Upserting Container Image to Port..."
+    print_info "Upserting Container Image to Port..."
     curl -s --location --request POST "https://api.getport.io/v1/blueprints/container_image/entities?upsert=true" \
         --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" \
         --header "Content-Type: application/json" \
         --data-raw "$(cat container_image.json)"
 
-    echo "[INFO] Updating Port App with Container Image..."
+    print_info "Updating Port App with Container Image..."
     EXISTING_CONTAINER_IMAGES=$(curl -s --location --request GET "https://api.getport.io/v1/blueprints/app/entities/${INPUT_APPLICATION}" \
         --header "Authorization: Bearer ${PORT_ACCESS_TOKEN}" | jq -r '.entity.relations.container_images')
     UPDATED_CONTAINER_IMAGES=$(echo "${EXISTING_CONTAINER_IMAGES}" | jq -c --arg new_image "${INPUT_APPLICATION}:${INPUT_VERSION}" '. + [$new_image]')
@@ -236,7 +239,7 @@ function execute() {
             }
         }"
 
-    echo "[INFO] GitHub-to-Port export process completed successfully."
+    print_info "GitHub-to-Port export process completed successfully."
     echo "success=true" >> "${GITHUB_OUTPUT}"
 }
 
