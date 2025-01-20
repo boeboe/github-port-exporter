@@ -90,7 +90,7 @@ function upload_to_port() {
 
   wait
 
-  print_info "Analyzing ${entity} entity upload responses..."
+  print_info "Analyzing ${entity_type} entity upload responses..."
   for response_file in "${output_dir}"/*.txt; do
     local http_status
     local response_body
@@ -105,7 +105,7 @@ function upload_to_port() {
     fi
   done
 
-  print_info "Upload ${entity} entities completed."
+  print_info "Upload ${entity_type} entities completed."
   print_info "Success: ${success_count}, Failures: ${failure_count}"
 }
 
