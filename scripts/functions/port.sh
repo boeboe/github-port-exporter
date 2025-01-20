@@ -62,7 +62,6 @@ function upload_to_port() {
   local failure=0
 
   jq -c '.[]' "${json_file}" | while IFS= read -r entity; do
-    print_debug "ENTITY >>> ${entity}" 
     curl -s --location --request POST \
       "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
       --header "Authorization: Bearer ${access_token}" \
@@ -72,7 +71,6 @@ function upload_to_port() {
       print_error "Failed to upload entity: ${entity}" >> "${error_log}"
       ((failure++))
     } && {
-      print_debug "Successfully uploaded entity: ${entity}"
       ((success++))
     } &
   done
