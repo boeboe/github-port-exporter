@@ -50,23 +50,24 @@ function authenticate_with_port() {
 #   $2 - Entity type (blueprint name)
 #   $3 - Path to the JSON file containing entities
 function upload_to_port() {
-    local access_token="$1"
-    local entity_type="$2"
-    local json_file="$3"
+  local access_token="$1"
+  local entity_type="$2"
+  local json_file="$3"
 
-    print_info "Uploading ${entity_type} entities to Port..."
-    # TODO: this is not actually working as intended and will just spawn a bunch of curl processes in the background
-    # without taking 20 into account, as this is not how parallel works
-    while IFS= read -r entity; do
-        curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-            --header "Authorization: Bearer ${access_token}" \
-            --header "Content-Type: application/json" \
-            --data-raw "${entity}" \
-            --parallel \
-            --parallel-max 20 &
-    done < <(jq -c '.[]' "${json_file}")
-    wait
-    print_success "Successfully uploaded ${entity_type} entities to Port."
+  # TODO: this is not working as intended. As much curl processes are spawned as there are entries in the JSON file.
+  # The parallel flag is supposed to work on a file with input URL's, which is not the case here, and we send
+  # entities one by one to a curl in the background task instead.
+  print_info "Uploading ${entity_type} entities to Port..."
+  while IFS= read -r entity; do
+    curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+      --header "Authorization: Bearer ${access_token}" \
+      --header "Content-Type: application/json" \
+      --data-raw "${entity}" \
+      --parallel \
+      --parallel-max 20 &
+  done < <(jq -c '.[]' "${json_file}")
+  wait
+  print_success "Successfully uploaded ${entity_type} entities to Port."
 }
 
 # Upload code scanning alerts to Port
