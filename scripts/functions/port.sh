@@ -66,13 +66,7 @@ function upload_to_port() {
     # Generate curl commands and write to file
     local index=0
     jq -c '.[]' "${json_file}" | while IFS= read -r entity; do
-        echo "curl -s --location --request POST \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" \\
-            --header \"Authorization: Bearer ${access_token}\" \\
-            --header \"Content-Type: application/json\" \\
-            --data-raw '${entity}' \\
-            --write-out '%{http_code}' --output \"${output_dir}/success/${index}.json\" --silent || \\
-            mv \"${output_dir}/success/${index}.json\" \"${output_dir}/failure/${index}.json\"" >>"${command_file}"
-        ((index++))
+        echo "curl -s --location --request POST \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" --header \"Authorization: Bearer ${access_token}\" --header \"Content-Type: application/json\" --data-raw '${entity}' --write-out \"\n%{http_code}\"" >> "${command_file}"
     done
 
     print_debug "DEBUG: Curl commands generated in ${command_file}"
