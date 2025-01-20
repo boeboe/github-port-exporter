@@ -60,7 +60,7 @@ function upload_to_port() {
   local current_jobs=0
 
   if [[ ! -f "${json_file}" ]]; then
-    print_error "JSON file not found: ${json_file}"
+    print_error "JSON file for entity ${entity_type} not found: ${json_file}"
     exit 1
   fi
 
@@ -90,7 +90,7 @@ function upload_to_port() {
 
   wait
 
-  print_info "Analyzing responses..."
+  print_info "Analyzing ${entity} entity upload responses..."
   for response_file in "${output_dir}"/*.txt; do
     local http_status
     local response_body
@@ -105,7 +105,7 @@ function upload_to_port() {
     fi
   done
 
-  print_info "Upload completed."
+  print_info "Upload ${entity} entities completed."
   print_info "Success: ${success_count}, Failures: ${failure_count}"
 }
 
