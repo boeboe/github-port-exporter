@@ -72,6 +72,7 @@ function upload_to_port() {
                 print_error "Failed to upload entity: ${entity}" >> "${error_log}"
                 ((failure++))
             } && {
+                print_debug "Successfully uploaded entity: ${entity}"
                 ((success++))
             }
     done
