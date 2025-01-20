@@ -71,7 +71,7 @@ function upload_to_port() {
     {
       local unique_id
       local response_file
-      unique_id=$(LC_ALL=C tr -dc 'a-f0-9' </dev/urandom | head -c 32)
+      unique_id=$(date +%s%N | shasum | head -c 32)
       response_file="${output_dir}/response_${unique_id}.txt"
 
       curl -s -w "\n%{http_code}" --location --request POST \
