@@ -16,7 +16,6 @@ function authenticate_with_port() {
 
   print_info "Authenticating with Port API..." >&2
 
-  # Perform the API call to get the access token
   local response
   response=$(curl -s -w "\n%{http_code}" --location -X POST \
     --header 'Content-Type: application/json' \
@@ -28,7 +27,6 @@ function authenticate_with_port() {
   local response_body
   response_body=$(echo "${response}" | sed '$d')
 
-  # Check HTTP status code
   if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
     print_error "Failed to authenticate with Port API. HTTP Status: ${http_status}" >&2
     print_error "Response body: ${response_body}" >&2
@@ -57,16 +55,41 @@ function upload_to_port() {
     local json_file="$3"
 
     print_info "Uploading ${entity_type} entities to Port..."
-    while IFS= read -r entity; do
-        curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+
+    local parallel_limit="${PARALLEL_LIMIT:-20}"
+    local error_log
+    error_log=$(mktemp)
+
+    # shellcheck disable=SC2016
+    jq -c '.[]' "${json_file}" | xargs -P "${parallel_limit}" -I {} bash -c '
+        entity="$0"
+        access_token="$1"
+        entity_type="$2"
+        error_log="$3"
+
+        response=$(curl -s -w "\n%{http_code}" --location -X POST \
+            "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
             --header "Authorization: Bearer ${access_token}" \
             --header "Content-Type: application/json" \
-            --data-raw "${entity}" \
-            --parallel \
-            --parallel-max 20 &
-    done < <(jq -c '.[]' "${json_file}")
-    wait
-    print_success "Successfully uploaded ${entity_type} entities to Port."
+            --data-raw "${entity}")
+
+        http_status=$(echo "${response}" | tail -n1)
+        response_body=$(echo "${response}" | sed "$d")
+
+        if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+            echo "[Error] HTTP Status: ${http_status}, Response: ${response_body}" >> "${error_log}"
+        fi
+    ' '{}' "${access_token}" "${entity_type}" "${error_log}"
+
+    if [ -s "${error_log}" ]; then
+        print_error "Some ${entity_type} entities failed to upload. Details:"
+        cat "${error_log}" >&2
+        rm -f "${error_log}"
+        return 1
+    else
+        print_success "Successfully uploaded ${entity_type} entities to Port."
+        rm -f "${error_log}"
+    fi
 }
 
 # Upload code scanning alerts to Port

@@ -3,6 +3,9 @@
 # shellcheck disable=SC1091
 
 # Transform Code Scanning Alerts for Port
+# Arguments:
+#   $1 - Path to the input JSON file containing code scanning alerts
+#   $2 - Path to the output JSON file for transformed code scanning alerts
 function transform_code_scanning_alerts() {
   local input_file="${1}"
   local output_file="${2}"
@@ -27,6 +30,9 @@ function transform_code_scanning_alerts() {
 }
 
 # Transform Dependabot Alerts for Port
+# Arguments:
+#   $1 - Path to the input JSON file containing Dependabot alerts
+#   $2 - Path to the output JSON file for transformed Dependabot alerts
 function transform_dependabot_alerts() {
   local input_file="${1}"
   local output_file="${2}"
@@ -50,6 +56,9 @@ function transform_dependabot_alerts() {
 }
 
 # Transform Dependencies (SBOM) for Port
+# Arguments:
+#   $1 - Path to the input JSON file containing SBOM data
+#   $2 - Path to the output JSON file for transformed dependencies
 function transform_dependencies() {
   local input_file="${1}"
   local output_file="${2}"
@@ -72,6 +81,13 @@ function transform_dependencies() {
 }
 
 # Transform Container Image JSON for Port
+# Arguments:
+#   $1 - Application name
+#   $2 - Version of the container image
+#   $3 - Path to the JSON file containing dependencies
+#   $4 - Path to the JSON file containing code scanning alerts
+#   $5 - Path to the JSON file containing Dependabot alerts
+#   $6 - Path to the output JSON file for the container image
 function transform_container_image_json() {
   local application="${1}"
   local version="${2}"

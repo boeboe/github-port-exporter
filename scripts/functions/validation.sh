@@ -3,6 +3,11 @@
 # shellcheck disable=SC1091
 
 # Ensure a parameter is set
+# Arguments:
+#   $1 - Parameter name (e.g., "PORT_CLIENT_ID")
+#   $2 - Parameter value
+# Exits:
+#   If the parameter value is empty or unset
 function validate_set() {
   local param_name="${1}"
   local param_value="${2}"
@@ -15,6 +20,12 @@ function validate_set() {
 }
 
 # Validate that a value belongs to a predefined list (enum)
+# Arguments:
+#   $1 - Parameter name
+#   $2 - Parameter value
+#   $@ - Valid values (e.g., "value1 value2 value3")
+# Exits:
+#   If the parameter value does not match any of the valid values
 function validate_enum() {
   local param_name="$1"
   local param_value="$2"
@@ -33,6 +44,11 @@ function validate_enum() {
 }
 
 # Validate that a parameter value is a boolean
+# Arguments:
+#   $1 - Parameter name
+#   $2 - Parameter value ("true" or "false")
+# Exits:
+#   If the parameter value is not "true" or "false"
 function validate_boolean() {
   local param_name="${1}"
   local param_value="${2}"
@@ -45,6 +61,11 @@ function validate_boolean() {
 }
 
 # Validate that a parameter value is a positive integer
+# Arguments:
+#   $1 - Parameter name
+#   $2 - Parameter value
+# Exits:
+#   If the parameter value is not a positive integer
 function validate_positive_integer() {
   local param_name="${1}"
   local param_value="${2}"
@@ -57,6 +78,11 @@ function validate_positive_integer() {
 }
 
 # Validate that a parameter value is valid JSON
+# Arguments:
+#   $1 - Parameter name
+#   $2 - Parameter value (JSON string)
+# Exits:
+#   If the parameter value is not valid JSON
 function validate_json() {
   local param_name="${1}"
   local param_value="${2}"
@@ -69,6 +95,11 @@ function validate_json() {
 }
 
 # Validate that a file exists
+# Arguments:
+#   $1 - Parameter name
+#   $2 - File path
+# Exits:
+#   If the file does not exist
 function validate_file_exists() {
   local param_name="${1}"
   local file_path="${2}"

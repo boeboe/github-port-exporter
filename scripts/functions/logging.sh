@@ -22,31 +22,43 @@ readonly LIGHTBLUE="\033[0;36m" ;
 readonly LIGHTBLUEB="\033[1;36m" ;
 
 # Print info messages
+# Arguments:
+#   $1 - The message to be displayed
 function print_info {
   echo -e "${BLUEB}[INFO]${END} ${1}" ;
 }
 
 # Print warning messages
+# Arguments:
+#   $1 - The message to be displayed
 function print_warning {
   echo -e "${YELLOWB}[WARNING]${END} ${1}" ;
 }
 
 # Print debug messages
+# Arguments:
+#   $1 - The message to be displayed
 function print_debug {
   echo -e "${LIGHTBLUEB}[DEBUG]${END} ${1}" ;
 }
 
 # Print success messages
+# Arguments:
+#   $1 - The message to be displayed
 function print_success {
   echo -e "${GREENB}[SUCCESS]${END} ${1}" ;
 }
 
 # Print error messages
+# Arguments:
+#   $1 - The message to be displayed
 function print_error {
   echo -e "${REDB}[ERROR]${END} ${1}" ;
 }
 
 # Print command messages
+# Arguments:
+#   $1 - The message to be displayed
 function print_command {
   echo -e "${PURPLEB}[COMMAND]${END} ${1}" ;
 }

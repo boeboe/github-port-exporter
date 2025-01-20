@@ -3,6 +3,11 @@
 # shellcheck disable=SC1091
 
 # Fetch Code Scanning Alerts
+# Arguments:
+#   $1 - GitHub token
+#   $2 - Repository name (e.g., "owner/repo")
+#   $3 - Version (ref) to filter alerts (e.g., "v1.0.0")
+#   $4 - Path to the output file where alerts will be saved
 function fetch_code_scanning_alerts() {
   local token="${1}"
   local repository="${2}"
@@ -49,6 +54,11 @@ function fetch_code_scanning_alerts() {
 }
 
 # Fetch Dependabot Alerts
+# Arguments:
+#   $1 - GitHub token
+#   $2 - Repository name (e.g., "owner/repo")
+#   $3 - Version (ref) to filter alerts (e.g., "v1.0.0")
+#   $4 - Path to the output file where alerts will be saved
 function fetch_dependabot_alerts() {
   local token="${1}"
   local repository="${2}"
@@ -94,7 +104,11 @@ function fetch_dependabot_alerts() {
   print_success "Written ${alert_count} Dependabot Alerts to file ${output_file}."
 }
 
-# Fetch Dependencies
+# Fetch Dependencies (SBOM)
+# Arguments:
+#   $1 - GitHub token
+#   $2 - Repository name (e.g., "owner/repo")
+#   $3 - Path to the output file where the SBOM will be saved
 function fetch_dependencies() {
   local token="${1}"
   local repository="${2}"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sync-code-scanning-alerts.sh - Script to orchestrate the GitHub-to-Port export process
+# main.sh - Script to orchestrate the GitHub-to-Port export process
 # shellcheck disable=SC1091
 
 set -euo pipefail
