@@ -61,7 +61,7 @@ function upload_to_port() {
     error_log=$(mktemp)
 
     # shellcheck disable=SC2016
-    jq -c '.[]' "${json_file}" | xargs -P "${parallel_limit}" -I {} bash -c '
+    jq -c '.[]' "${json_file}" | xargs -0 -P "${parallel_limit}" -I {} bash -c '
         entity="$0"
         access_token="$1"
         entity_type="$2"
