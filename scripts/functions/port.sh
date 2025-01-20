@@ -54,31 +54,17 @@ function upload_to_port() {
     local entity_type="$2"
     local json_file="$3"
 
-    local output_dir
-    output_dir="/tmp/${entity_type}"
-    mkdir -p "${output_dir}/success"
-    mkdir -p "${output_dir}/failure"
-    local command_file="${output_dir}/upload_commands.sh"
-    >"${command_file}" # Clear the file if it exists
-
-    print_info "Generating curl commands for ${entity_type} entities..."
-
-    # Generate curl commands and write to file
-    local index=0
-    jq -c '.[]' "${json_file}" | while IFS= read -r entity; do
-        echo "curl -s --location --request POST \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" --header \"Authorization: Bearer ${access_token}\" --header \"Content-Type: application/json\" --data-raw '${entity}' --write-out \"\n%{http_code}\"" >> "${command_file}"
-    done
-
-    print_debug "DEBUG: Curl commands generated in ${command_file}"
-    print_info "Preview of generated commands:"
-    head -n 10 "${command_file}"
-
-    # Execute commands in parallel batches of 20
-    print_info "Executing commands in parallel (20 at a time)..."
-    chmod +x "${command_file}"
-    cat "${command_file}" | xargs -P 20 -n 1 bash -c
-
-    print_success "Upload complete. Check ${output_dir}/success and ${output_dir}/failure for results."
+    print_info "Uploading ${entity_type} entities to Port..."
+    while IFS= read -r entity; do
+        curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+            --header "Authorization: Bearer ${access_token}" \
+            --header "Content-Type: application/json" \
+            --data-raw "${entity}" \
+            --parallel \
+            --parallel-max 20 &
+    done < <(jq -c '.[]' "${json_file}")
+    wait
+    print_success "Successfully uploaded ${entity_type} entities to Port."
 }
 
 # Upload code scanning alerts to Port
