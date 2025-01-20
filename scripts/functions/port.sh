@@ -66,7 +66,7 @@ function upload_to_port() {
             "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
             --header "Authorization: Bearer ${access_token}" \
             --header "Content-Type: application/json" \
-            --data-raw "${entity}" --parallel --parallel-max 20 -o /dev/null -w "%{http_code}" \
+            --data-raw "${entity}" --parallel --parallel-max 20 -o /dev/null \
             || {
                 echo "[Error] Failed to upload entity: ${entity}" >> "${error_log}"
                 ((failure++))
