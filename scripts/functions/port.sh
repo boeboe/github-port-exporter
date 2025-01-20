@@ -56,53 +56,34 @@ function upload_to_port() {
 
     print_info "Uploading ${entity_type} entities to Port..."
 
-    local parallel_limit="${PARALLEL_LIMIT:-20}"
     local error_log
     error_log=$(mktemp)
-    local queue_file
-    queue_file=$(mktemp)
+    local success=0
+    local failure=0
 
-    jq -c '.[]' "${json_file}" > "${queue_file}"
-
-    function worker() {
-        while true; do
-            local entity
-            {
-                IFS= read -r entity || break
-            } <&3
-
-            if [[ -n "${entity}" ]]; then
-                response=$(curl -s -w "\n%{http_code}" --location -X POST \
-                    "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-                    --header "Authorization: Bearer ${access_token}" \
-                    --header "Content-Type: application/json" \
-                    --data-raw "${entity}")
-
-                http_status=$(echo "${response}" | tail -n1)
-                response_body=$(echo "${response}" | sed '$d')
-
-                if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-                    echo "[Error] HTTP Status: ${http_status}, Response: ${response_body}" >> "${error_log}"
-                fi
-            fi
-        done
-    }
-
-    exec 3< "${queue_file}"
-    for ((i = 0; i < parallel_limit; i++)); do
-        worker &
+    jq -c '.[]' "${json_file}" | while IFS= read -r entity; do
+        curl -s --location --request POST \
+            "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+            --header "Authorization: Bearer ${access_token}" \
+            --header "Content-Type: application/json" \
+            --data-raw "${entity}" --parallel --parallel-max 20 -o /dev/null -w "%{http_code}" \
+            || {
+                echo "[Error] Failed to upload entity: ${entity}" >> "${error_log}"
+                ((failure++))
+            } && {
+                ((success++))
+            }
     done
-    wait
-    exec 3<&-
 
     if [ -s "${error_log}" ]; then
         print_error "Some ${entity_type} entities failed to upload. Details:"
         cat "${error_log}" >&2
-        rm -f "${error_log}" "${queue_file}"
+        rm -f "${error_log}"
+    fi
+
+    print_info "Upload Summary: ${success} succeeded, ${failure} failed."
+    if ((failure > 0)); then
         return 1
-    else
-        print_success "Successfully uploaded ${entity_type} entities to Port."
-        rm -f "${error_log}" "${queue_file}"
     fi
 }
 
