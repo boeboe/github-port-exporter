@@ -56,25 +56,35 @@ function upload_to_port() {
 
     local output_dir
     output_dir="/tmp/${entity_type}"
-    mkdir -p "${output_dir}"
     mkdir -p "${output_dir}/success"
     mkdir -p "${output_dir}/failure"
-    print_debug "DEBUG: Output directory: ${output_dir}"
+    local command_file="${output_dir}/upload_commands.sh"
+    >"${command_file}" # Clear the file if it exists
 
-    print_info "Uploading ${entity_type} entities to Port..."
+    print_info "Generating curl commands for ${entity_type} entities..."
 
-    jq -c '.[]' "${json_file}" | xargs -P 20 -I {} echo "curl -s --location --request POST \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" \
-      --header \"Authorization: Bearer ${access_token}\" \
-      --header \"Content-Type: application/json\" \
-      --data-raw '{}'" | while IFS= read -r cmd; do
-      # Print the command for debugging
-      print_debug "DEBUG: Executing: $cmd" >&2
-
-      # Execute the command
-      eval "$cmd"
+    # Generate curl commands and write to file
+    local index=0
+    jq -c '.[]' "${json_file}" | while IFS= read -r entity; do
+        echo "curl -s --location --request POST \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" \\
+            --header \"Authorization: Bearer ${access_token}\" \\
+            --header \"Content-Type: application/json\" \\
+            --data-raw '${entity}' \\
+            --write-out '%{http_code}' --output \"${output_dir}/success/${index}.json\" --silent || \\
+            mv \"${output_dir}/success/${index}.json\" \"${output_dir}/failure/${index}.json\"" >>"${command_file}"
+        ((index++))
     done
 
-    print_success "Successfully uploaded ${entity_type} entities to Port."
+    print_debug "DEBUG: Curl commands generated in ${command_file}"
+    print_info "Preview of generated commands:"
+    head -n 10 "${command_file}"
+
+    # Execute commands in parallel batches of 20
+    print_info "Executing commands in parallel (20 at a time)..."
+    chmod +x "${command_file}"
+    cat "${command_file}" | xargs -P 20 -n 1 bash -c
+
+    print_success "Upload complete. Check ${output_dir}/success and ${output_dir}/failure for results."
 }
 
 # Upload code scanning alerts to Port
