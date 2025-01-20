@@ -61,11 +61,11 @@ function upload_to_port() {
     error_log=$(mktemp)
 
     # shellcheck disable=SC2016
-    jq -c '.[]' "${json_file}" | xargs -0 -P "${parallel_limit}" -I {} bash -c '
-        entity="$0"
-        access_token="$1"
-        entity_type="$2"
-        error_log="$3"
+    jq -c '.[]' "${json_file}" | xargs -0 -n 1 -P "${parallel_limit}" bash -c '
+        entity="$1"
+        access_token="$2"
+        entity_type="$3"
+        error_log="$4"
 
         echo [DBEUG] curl -s -w "\n%{http_code}" --location -X POST \
             "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
@@ -85,7 +85,7 @@ function upload_to_port() {
         if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
             echo "[Error] HTTP Status: ${http_status}, Response: ${response_body}" >> "${error_log}"
         fi
-    ' "{}" "${access_token}" "${entity_type}" "${error_log}"
+    ' _ "{}" "${access_token}" "${entity_type}" "${error_log}"
 
     if [ -s "${error_log}" ]; then
         print_error "Some ${entity_type} entities failed to upload. Details:"
