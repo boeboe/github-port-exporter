@@ -107,19 +107,35 @@ function upload_to_port() {
 
   print_info "Upload ${entity_type} entities completed."
   print_info "Success: ${success_count}, Failures: ${failure_count}"
+
+  if [[ "${failure_count}" -eq 0 ]]; then
+    print_success "All ${success_count} ${entity_type} entities were uploaded successfully!"
+  else
+    print_error "Failed to upload ${failure_count} ${entity_type} entities."
+    exit 1
+  fi
 }
 
 # Upload code scanning alerts to Port
+# Arguments:
+#   $1 - Access token
+#   $2 - Path to the JSON file containing code scanning alerts
 function upload_code_scanning_alerts() {
   upload_to_port "$1" "code_scanning_alert" "$2"
 }
 
 # Upload Dependabot alerts to Port
+# Arguments:
+#   $1 - Access token
+#   $2 - Path to the JSON file containing Dependabot alerts
 function upload_dependabot_alerts() {
   upload_to_port "$1" "dependabot_alert" "$2"
 }
 
 # Upload dependencies to Port
+# Arguments:
+#   $1 - Access token
+#   $2 - Path to the JSON file containing dependencies
 function upload_dependencies() {
   upload_to_port "$1" "dependency" "$2"
 }
@@ -155,6 +171,10 @@ function upload_container_image() {
 }
 
 # Update Port application with the new container image
+# Arguments:
+#   $1 - Access token
+#   $2 - Application ID
+#   $3 - Container image identifier
 function update_port_app_with_container_image() {
   local access_token="$1"
   local application_id="$2"
