@@ -54,16 +54,26 @@ function upload_to_port() {
     local entity_type="$2"
     local json_file="$3"
 
+    local output_dir
+    output_dir="/tmp/${entity_type}"
+    mkdir -p "${output_dir}"
+    mkdir -p "${output_dir}/success"
+    mkdir -p "${output_dir}/failure"
+    print_debug "DEBUG: Output directory: ${output_dir}"
+
     print_info "Uploading ${entity_type} entities to Port..."
-    while IFS= read -r entity; do
-        curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-            --header "Authorization: Bearer ${access_token}" \
-            --header "Content-Type: application/json" \
-            --data-raw "${entity}" \
-            --parallel \
-            --parallel-max 20 &
-    done < <(jq -c '.[]' "${json_file}")
-    wait
+
+    jq -c '.[]' "${json_file}" | xargs -P 20 -I {} echo "curl -s --location --request POST \"https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true\" \
+      --header \"Authorization: Bearer ${access_token}\" \
+      --header \"Content-Type: application/json\" \
+      --data-raw '{}'" | while IFS= read -r cmd; do
+      # Print the command for debugging
+      print_debug "DEBUG: Executing: $cmd" >&2
+
+      # Execute the command
+      eval "$cmd"
+    done
+
     print_success "Successfully uploaded ${entity_type} entities to Port."
 }
 
