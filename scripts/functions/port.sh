@@ -59,42 +59,50 @@ function upload_to_port() {
     local parallel_limit="${PARALLEL_LIMIT:-20}"
     local error_log
     error_log=$(mktemp)
+    local queue_file
+    queue_file=$(mktemp)
 
-    # shellcheck disable=SC2016
-    jq -c '.[]' "${json_file}" | xargs -n 1 -P "${parallel_limit}" bash -c '
-        entity="$1"
-        access_token="$2"
-        entity_type="$3"
-        error_log="$4"
+    jq -c '.[]' "${json_file}" > "${queue_file}"
 
-        echo [DBEUG] curl -s -w "\n%{http_code}" --location -X POST \
-            "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-            --header "Authorization: Bearer ${access_token}" \
-            --header "Content-Type: application/json" \
-            --data-raw "${entity}"
-        
-        response=$(curl -s -w "\n%{http_code}" --location -X POST \
-            "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-            --header "Authorization: Bearer ${access_token}" \
-            --header "Content-Type: application/json" \
-            --data-raw "${entity}")
+    function worker() {
+        while true; do
+            local entity
+            {
+                IFS= read -r entity || break
+            } <&3
 
-        http_status=$(echo "${response}" | tail -n1)
-        response_body=$(echo "${response}" | sed "$d")
+            if [[ -n "${entity}" ]]; then
+                response=$(curl -s -w "\n%{http_code}" --location -X POST \
+                    "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+                    --header "Authorization: Bearer ${access_token}" \
+                    --header "Content-Type: application/json" \
+                    --data-raw "${entity}")
 
-        if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
-            echo "[Error] HTTP Status: ${http_status}, Response: ${response_body}" >> "${error_log}"
-        fi
-    ' _ "{}" "${access_token}" "${entity_type}" "${error_log}"
+                http_status=$(echo "${response}" | tail -n1)
+                response_body=$(echo "${response}" | sed '$d')
+
+                if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+                    echo "[Error] HTTP Status: ${http_status}, Response: ${response_body}" >> "${error_log}"
+                fi
+            fi
+        done
+    }
+
+    exec 3< "${queue_file}"
+    for ((i = 0; i < parallel_limit; i++)); do
+        worker &
+    done
+    wait
+    exec 3<&-
 
     if [ -s "${error_log}" ]; then
         print_error "Some ${entity_type} entities failed to upload. Details:"
         cat "${error_log}" >&2
-        rm -f "${error_log}"
+        rm -f "${error_log}" "${queue_file}"
         return 1
     else
         print_success "Successfully uploaded ${entity_type} entities to Port."
-        rm -f "${error_log}"
+        rm -f "${error_log}" "${queue_file}"
     fi
 }
 
