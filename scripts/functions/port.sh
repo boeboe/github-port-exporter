@@ -55,6 +55,8 @@ function upload_to_port() {
     local json_file="$3"
 
     print_info "Uploading ${entity_type} entities to Port..."
+    # TODO: this is not actually working as intended and will just spawn a bunch of curl processes in the background
+    # without taking 20 into account, as this is not how parallel works
     while IFS= read -r entity; do
         curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
             --header "Authorization: Bearer ${access_token}" \
