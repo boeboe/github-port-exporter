@@ -53,21 +53,58 @@ function upload_to_port() {
   local access_token="$1"
   local entity_type="$2"
   local json_file="$3"
+  local output_dir="/tmp/${entity_type}_responses"
+  local success_count=0
+  local failure_count=0
+  local parallel_limit=20
+  local current_jobs=0
 
-  # TODO: this is not working as intended. As much curl processes are spawned as there are entries in the JSON file.
-  # The parallel flag is supposed to work on a file with input URL's, which is not the case here, and we send
-  # entities one by one to a curl in the background task instead.
+  if [[ ! -f "${json_file}" ]]; then
+    print_error "JSON file not found: ${json_file}"
+    exit 1
+  fi
+
+  mkdir -p "${output_dir}"
   print_info "Uploading ${entity_type} entities to Port..."
+
   while IFS= read -r entity; do
-    curl -s --location --request POST "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-      --header "Authorization: Bearer ${access_token}" \
-      --header "Content-Type: application/json" \
-      --data-raw "${entity}" \
-      --parallel \
-      --parallel-max 20 &
+    {
+      local response_file
+      response_file="${output_dir}/response_$(uuidgen).txt"
+
+      curl -s -w "\n%{http_code}" --location --request POST \
+        "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+        --header "Authorization: Bearer ${access_token}" \
+        --header "Content-Type: application/json" \
+        --data-raw "${entity}" >"${response_file}"
+    } &
+
+    current_jobs=$((current_jobs + 1))
+    if [[ "${current_jobs}" -ge "${parallel_limit}" ]]; then
+      wait -n
+      current_jobs=$((current_jobs - 1))
+    fi
   done < <(jq -c '.[]' "${json_file}")
+
   wait
-  print_success "Successfully uploaded ${entity_type} entities to Port."
+
+  print_info "Analyzing responses..."
+  for response_file in "${output_dir}"/*.txt; do
+    local http_status
+    local response_body
+    response_body=$(sed '$d' "${response_file}")
+    http_status=$(tail -n1 "${response_file}")
+    if [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+      success_count=$((success_count + 1))
+    else
+      failure_count=$((failure_count + 1))
+      print_error "Failed to upload a ${entity_type} entity. HTTP Status: ${http_status}"
+      print_error "Response body: ${response_body}"
+    fi
+  done
+
+  print_info "Upload completed."
+  print_info "Success: ${success_count}, Failures: ${failure_count}"
 }
 
 # Upload code scanning alerts to Port
