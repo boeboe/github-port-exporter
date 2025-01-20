@@ -56,15 +56,15 @@ function upload_to_port() {
 
   print_info "Uploading ${entity_type} entities to Port..."
 
-  # Temporary files for counters and error log
+  # Generate unique temporary files for this function call
   local error_log
-  error_log=$(mktemp)
   local success_file
-  success_file=$(mktemp)
   local failure_file
-  failure_file=$(mktemp)
   local lock_file
-  lock_file=$(mktemp) # Ensure lock file is created
+  error_log=$(mktemp "/tmp/${entity_type}_error_log.XXXXXX")
+  success_file=$(mktemp "/tmp/${entity_type}_success_file.XXXXXX")
+  failure_file=$(mktemp "/tmp/${entity_type}_failure_file.XXXXXX")
+  lock_file=$(mktemp "/tmp/${entity_type}_lock_file.XXXXXX")
   echo 0 > "${success_file}"
   echo 0 > "${failure_file}"
 
@@ -75,11 +75,10 @@ function upload_to_port() {
   # Function to safely increment a counter
   function safe_increment() {
     local file="$1"
-    echo "[DBEUG] Incrementing file: ${file}"
     (
-      flock -x 200 || exit 1
+      flock -x 200
       echo $(( $(<"$file") + 1 )) > "$file"
-    ) 200>"${lock_file}" # Locking on the shared lock file
+    ) 200>"${lock_file}"
   }
 
   # Process JSON entities in parallel
