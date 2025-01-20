@@ -68,9 +68,9 @@ function upload_to_port() {
   echo 0 > "${success_file}"
   echo 0 > "${failure_file}"
 
-  print_deobug "Temporary file success_file created: ${success_file}"
-  print_deobug "Temporary file failure_file created: ${failure_file}"
-  print_deobug "Temporary file lock_file created: ${lock_file}"
+  print_debug "Temporary file success_file created: ${success_file}"
+  print_debug "Temporary file failure_file created: ${failure_file}"
+  print_debug "Temporary file lock_file created: ${lock_file}"
 
   # Function to safely increment a counter
   function safe_increment() {
