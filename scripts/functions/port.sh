@@ -74,7 +74,7 @@ function upload_to_port() {
     } && {
       print_debug "Successfully uploaded entity: ${entity}"
       ((success++))
-    }
+    } &
   done
 
   wait
