@@ -56,27 +56,63 @@ function upload_to_port() {
 
   print_info "Uploading ${entity_type} entities to Port..."
 
+  # Temporary files for counters and error log
   local error_log
   error_log=$(mktemp)
-  local success=0
-  local failure=0
+  local success_file
+  success_file=$(mktemp)
+  local failure_file
+  failure_file=$(mktemp)
+  local lock_file
+  lock_file=$(mktemp)
+  echo 0 > "${success_file}"
+  echo 0 > "${failure_file}"
 
+  # Function to safely increment a counter
+  function safe_increment() {
+    local file="$1"
+    (
+      flock -x 200
+      echo $(( $(<"$file") + 1 )) > "$file"
+    ) 200>"${lock_file}" # Locking on the shared lock file
+  }
+
+  # Process JSON entities in parallel
   jq -c '.[]' "${json_file}" | while IFS= read -r entity; do
-    curl -s --location --request POST \
-      "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
-      --header "Authorization: Bearer ${access_token}" \
-      --header "Content-Type: application/json" \
-      --data-raw "${entity}" --parallel --parallel-max 20 -o /dev/null \
-    || {
-      print_error "Failed to upload entity: ${entity}" >> "${error_log}"
-      ((failure++))
-    } && {
-      ((success++))
+    {
+      response=$(curl -s -w "\n%{http_code}" --location -X POST \
+        "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+        --header "Authorization: Bearer ${access_token}" \
+        --header "Content-Type: application/json" \
+        --data-raw "${entity}" -o /dev/null)
+
+      http_status=$(echo "${response}" | tail -n1)
+      response_body=$(echo "${response}" | sed '$d')
+
+      if [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
+        # Safely increment success counter
+        safe_increment "${success_file}"
+      else
+        # Safely increment failure counter and log error
+        safe_increment "${failure_file}"
+        echo "[Error] HTTP Status: ${http_status}. Entity: ${entity}" >> "${error_log}"
+      fi
     } &
   done
 
+  # Wait for all background processes to complete
   wait
 
+  # Read final counters
+  local success
+  local failure
+  success=$(<"${success_file}")
+  failure=$(<"${failure_file}")
+
+  # Clean up temporary files
+  rm -f "${success_file}" "${failure_file}" "${lock_file}"
+
+  # Handle errors
   if [ -s "${error_log}" ]; then
     print_error "Some ${entity_type} entities failed to upload. Details:"
     cat "${error_log}" >&2
