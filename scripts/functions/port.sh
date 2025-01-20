@@ -67,6 +67,12 @@ function upload_to_port() {
         entity_type="$2"
         error_log="$3"
 
+        echo [DBEUG] curl -s -w "\n%{http_code}" --location -X POST \
+            "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
+            --header "Authorization: Bearer ${access_token}" \
+            --header "Content-Type: application/json" \
+            --data-raw "${entity}"
+        
         response=$(curl -s -w "\n%{http_code}" --location -X POST \
             "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
             --header "Authorization: Bearer ${access_token}" \
