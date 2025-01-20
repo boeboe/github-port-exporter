@@ -64,7 +64,7 @@ function upload_to_port() {
   local failure_file
   failure_file=$(mktemp)
   local lock_file
-  lock_file=$(mktemp)
+  lock_file=$(mktemp) # Ensure lock file is created
   echo 0 > "${success_file}"
   echo 0 > "${failure_file}"
 
@@ -72,7 +72,7 @@ function upload_to_port() {
   function safe_increment() {
     local file="$1"
     (
-      flock -x 200
+      flock -x 200 || exit 1
       echo $(( $(<"$file") + 1 )) > "$file"
     ) 200>"${lock_file}" # Locking on the shared lock file
   }
