@@ -61,7 +61,7 @@ function upload_to_port() {
     error_log=$(mktemp)
 
     # shellcheck disable=SC2016
-    jq -c '.[]' "${json_file}" | xargs -0 -P "${parallel_limit}" -I {} bash -c '
+    jq -c '.[]' "${json_file}" | xargs -P "${parallel_limit}" -I {} bash -c '
         entity="$0"
         access_token="$1"
         entity_type="$2"
@@ -85,7 +85,7 @@ function upload_to_port() {
         if ! [[ "${http_status}" =~ ^2[0-9]{2}$ ]]; then
             echo "[Error] HTTP Status: ${http_status}, Response: ${response_body}" >> "${error_log}"
         fi
-    ' '{}' "${access_token}" "${entity_type}" "${error_log}"
+    ' "{}" "${access_token}" "${entity_type}" "${error_log}"
 
     if [ -s "${error_log}" ]; then
         print_error "Some ${entity_type} entities failed to upload. Details:"
