@@ -77,6 +77,8 @@ function upload_to_port() {
     }
   done
 
+  wait
+
   if [ -s "${error_log}" ]; then
     print_error "Some ${entity_type} entities failed to upload. Details:"
     cat "${error_log}" >&2
