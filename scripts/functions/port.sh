@@ -69,8 +69,10 @@ function upload_to_port() {
 
   while IFS= read -r entity; do
     {
+      local unique_id
       local response_file
-      response_file="${output_dir}/response_$(uuidgen).txt"
+      unique_id=$(LC_ALL=C tr -dc 'a-f0-9' </dev/urandom | head -c 32)
+      response_file="${output_dir}/response_${unique_id}.txt"
 
       curl -s -w "\n%{http_code}" --location --request POST \
         "https://api.getport.io/v1/blueprints/${entity_type}/entities?upsert=true" \
